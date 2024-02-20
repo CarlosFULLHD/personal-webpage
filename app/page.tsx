@@ -5,6 +5,23 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import DetailedCard from "@/components/DetailedCard";
+
+export const cardsData = [
+  {
+    id: 1,
+    title: "Card 1",
+    description: "Descripción de la Card 1",
+    avatarSrc: "/avatar1.png",
+  },
+  {
+    id: 2,
+    title: "Card 2",
+    description: "Descripción de la Card 2",
+    avatarSrc: "/avatar2.png",
+  },
+  // ... (agrega más cards aquí)
+];
 
 export default function Home() {
   return (
@@ -561,6 +578,17 @@ export default function Home() {
         <br />
         <br />
       </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {cardsData.map((card) => (
+          <DetailedCard
+            key={card.id}
+            title={card.title}
+            description={card.description}
+            avatarSrc={card.avatarSrc}
+          />
+        ))}
+      </div>
     </section>
   );
 }
