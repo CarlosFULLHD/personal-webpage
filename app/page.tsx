@@ -10,15 +10,128 @@ import DetailedCard from "@/components/DetailedCard";
 export const cardsData = [
   {
     id: 1,
-    title: "Card 1",
-    description: "Descripción de la Card 1",
-    avatarSrc: "/avatar1.png",
+    subtitle: `¿Cansado de Sentir que Pierdes Tu Tiempo y Desperdicias tu Vida?`,
+    title: " ⌛Maestro del Tiempo",
+    description: `
+    - Guía paso a paso sobre cómo identificar y limitar las distracciones del celular.
+    - Ejercicios de planificación semanal para priorizar tareas y objetivos.
+    - Plantilla del Menú del Descanso para programar tu tiempo.
+    - Apps y recomendaciones para seguimiento semanal y monitorear el uso del celular.
+    - El protocolo de retroalimentación de las personas exitosas.
+    - Aprende cómo dejar las redes sociales, todo el mal que hacen y obtener un balance sano para dejar de ser esclavo de las notificaciones.
+    `,
+    avatarSrc: "/1.avif",
   },
   {
     id: 2,
-    title: "Card 2",
-    description: "Descripción de la Card 2",
-    avatarSrc: "/avatar2.png",
+    subtitle: `¿Sientes que no eres todo lo que podrías llegar a ser?`,
+    title: "🌱Maestro del Carácter",
+    description: `
+    - Aprende cómo funciona tu identidad, entendimiento psicológico y profundo de los valores, creencias que tenemos de nosotros mismos y autopercepciones.
+    - Aprende cómo cambiar de identidad y dejar ir esa parte de ti para poder desarrollarte como una mejor persona.
+    - Mejora la imagen de ti mismo para que empieces a reconstruir tu vida.
+    - Cómo construir una nueva mentalidad resiliente ante las opiniones de las masas.
+    - Una llamada a la madurez y también a la responsabilidad hacia una vida con sentido y propósito.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 3,
+    subtitle: `¿El Autosabotaje Te Detiene?¿Te autodesprecias u odias a ti mismo?`,
+    title: "🛡️Cómo Dejar de Sabotearte a Ti Mismo",
+    description: `
+    - Como dejar de autodespreciarte y empezar a quererse uno mismo 
+    - Voy a mostrarte el porqué y el cómo dejar atrás el autosabotaje.
+    - Cómo superar las barreras internas y escapar del ciclo de intentos fallidos.
+    - Cómo obtener fe en tus acciones, paso a paso hacia la mejor versión de ti con logros y satisfacción personal.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 4,
+    subtitle: `¿Anhelas Crecimiento y Un Propósito?`,
+    title: "🧭Cómo Encontrar Definitivamente tu Propósito y Pasión",
+    description: `
+    - Exploraremos la responsabilidad de vivir a plenitud.
+    - Valorar tus experiencias y encontrar significado en tus sacrificios.
+    - Cómo disfrutar de este viaje, ya que no se trata sobre éxitos rápidos o ganancias monetarias instantáneas; te ofrezco algo infinitamente más valioso.
+    - Encontrar finalmente lo que llaman TU PASIÓN.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 5,
+    subtitle: `¿Tienes falta de sueño y no consigues descansar lo suficiente?`,
+    title: "🌙Cómo Llegar a Dormir Tan Bien como un Bebé",
+    description: `
+    - Rutinas de relajación pre-sueño para mejorar la calidad del descanso.
+    - Redescubre cómo volver a tener un sueño reparador, sin preocupaciones ni el estrés del celular por el trabajo y despertando cada día con propósito.
+    - Cómo alejarte de tu celular a altas horas de la noche.
+    - Cómo volver a recuperar un horario de sueño sano.
+    - Paso a paso de cómo superar dificultades para dormir.
+    - La magia de la escritura y liberación de preocupaciones.
+    - Guía sobre alimentación, ambiente necesario para dormir mejor.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 6,
+    subtitle: `¿Quieres Conocerte Mejor?`,
+    title: "📖Cómo Conocer Quién Rayos Eres",
+    description: `
+    - Aprende la magia detrás de cada uno de tus rasgos de la personalidad.
+    - Crea objetivos basados en tu personalidad y lo que te motivará hacia tu éxito futuro.
+    - Aprende sobre las ventajas y desventajas de tu personalidad.
+    - Cómo sacarle el mejor partido a tu personalidad y también cómo puedes influir en esos rasgos para una mejor vida.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 7,
+    subtitle: `¿El Miedo y la Procrastinación Te Dominan?`,
+    title: "🦁Cómo David Goggins y los Exitosos Mantienen su Disciplina",
+    description: `
+    - Aprende a superar la procrastinación creando una visión negativa que te motive hacia adelante y una visión futura para obtener dirección y claridad de tu futuro deseado.
+    - Aprende cómo las personas millonarias toman decisiones y se comprometen a su propósito.
+    - Aprende a liberarte de las ataduras para no salir de tu zona de confort y tampoco perderte en el burnout.
+    - Aprende la mentalidad del estudiante de por vida y dejar atrás tu ego para aprender de verdad.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 8,
+    subtitle: `¿Tienes Falta de Confianza?`,
+    title: "🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos",
+    description: `
+    - Aprende por qué las soluciones superficiales como afirmaciones o frases bonitas no funcionan. Entonces te revelaré qué SÍ te da confianza.
+    - Aprende a aceptar a tu yo pasado y seguir un camino incluso si te encuentras en el peor momento de tu vida.
+    - Encuentra propósito y significado en hacer sacrificios.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 9,
+    subtitle: `¿Tienes Amistades Verdaderas?`,
+    title: "🤝Cómo Convertirte y Ser el Amigo que Siempre Estará a tu Lado",
+    description: `
+    - Entiende la razón verdadera por la cual debes cuidarte a ti mismo y a tu familia.
+    - Aprende cómo encontrar malas amistades y encontrar buenas amistades que te eleven y no te hundan.
+    - Elimina las limitaciones mentales para conseguir nuevas amistades.
+    - Aprende a convertirte en ese amigo en el cual puedes confiar.
+    `,
+    avatarSrc: "/darkside.webp",
+  },
+  {
+    id: 10,
+    subtitle: `¿Intentaste mejorar tus hábitos y nada te funcionó?`,
+    title: "⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea",
+    description: `
+    - Crea, descubre y destruye hábitos, paso a paso.
+    - Aprende cómo tener hábitos que no requieran fuerza de voluntad.
+    - Aprende el ÚNICO ingrediente necesario para formar hábitos DE POR VIDA.
+    - Motívate para poder seguir esos hábitos y continuarlos a pesar de la falta de disciplina.
+    `,
+    avatarSrc: "/darkside.webp",
   },
   // ... (agrega más cards aquí)
 ];
@@ -47,17 +160,13 @@ export default function Home() {
       </div>
 
       <h2 className={subtitle({ class: "mt-4" })}>
-        Este no es un curso mediocre.
-        <br />
+        <strong>Este no es un curso mediocre.</strong>
         <br />
         Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
         <br />
-        <br />
         Aqui aprenderás a resolver tus problemas con el celular y muchos más.
         <br />
-        <br />
         No aprenderás algunas configuraciones simples
-        <br />
         <br />
         Aprenderás a dominar tus habitos, a dominar tu mente, tus creencias, tu
         identidad, como mejorarla y dejar de verte como un inútil.
@@ -68,8 +177,7 @@ export default function Home() {
         Encontrarás un propósito y vivirás una vida significativa.
         <br />
         <br />
-        ***¿En que te diferencias de los demas? ¿por que deberia creerte?***
-        <br />
+        <em>¿En que te diferencias de los demas? ¿por que deberia creerte?</em>
         <br />
         A lo poco que sé otras personas creen saberlo todo, hablan con tanta
         seguridad pero despues te venden un producto mal hecho, todo con
@@ -78,96 +186,104 @@ export default function Home() {
         <br />
         Todo lo que está dentro del curso viene desde las enseñanzas de Jordan
         Peterson, Viktor Frankl, Tony Robbins, James Clear, Cal Newport, Ryan
-        Holiday, Marco Aurelio y muchos más,
+        Holiday, Marco Aurelio y muchos más...
         <br />
-        <br />
-        No he puesto nada que me inventé por ahí, incluso te ofrezco una
-        garantía de 30 días, si crees que soy un mentiroso, un papanatas y un
-        loco.
+        No hay nada inventado porque todo esta con evidencia detrás, incluso te
+        ofrezco una garantía de 30 días, si crees que soy un mentiroso, un
+        papanatas y un loco.
         <br />
         <br />
         Si no te gusta, lo unico que tienes que hacer es mandarme un correo y te
         regreso cada centavo de tu inversion
         <br />
-        <br />
         Porque esto es una inversión y quiero que sea la mejor que hagas en tu
         vida
         <br />
-        <br />
         Si, así de seguro estoy.
-        <br />
         <br />
         Esto te cambiará la vida
         <br />
         <br />
-        **EL MUNDO ESTÁ CAMBIANDO**
+        <strong>EL MUNDO ESTÁ CAMBIANDO</strong>
         <br />
+        <strong>¿Por Qué Debería Importarme la Desintoxicación Digital?</strong>
         <br />
-        **¿Por Qué Debería Importarme la Desintoxicación Digital?**
-        <br />
-        <br />
-        ***El futuro de vivir plenamente está en reconectar con lo esencial.***
+        <em>
+          El futuro de vivir plenamente está en reconectar con lo esencial.
+        </em>
         <br />
         <br />
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
         <br />
-        <br />
         Miles de personas viven una vida **sin propósito y sienten que estan
         desperdiciando su vida**
-        <br />
         <br />
         La adicción al celular se ha convertido en una de las mayores adicciones
         en todo el mundo, afectando a adolescentes, universitarios y adultos.
         <br />
-        <br />
-        - **El aislamiento digital está creciendo.**
-        <br />
-        En un mundo hiperconectado, paradójicamente nos encontramos más solos
-        que nunca.
-        <br />
-        <br />
-        - **La adicción al celular domina nuestras vidas.**
-        <br />
-        Desde el momento en que despertamos hasta el instante en que cerramos
-        los ojos, nuestras pantallas nos capturan, robándonos momentos preciosos
-        de la vida real.
-        <br />
-        <br />
-        - **El miedo a perdernos de alguna tendencia o mensaje nos mantiene
-        pegados a las pantallas**
-        <br />
-        pero en el proceso, estamos perdiendo lo que realmente importa.
-        <br />
-        <br />
-        <br />
-        <br />
-        **Tan solo te invito a dar una vuelta por tu universidad o por el
-        trabajo, compruebalo por tí mismo**
-        <br />
-        Es como una pandemia, solo que esta vez todos se hacen a la vista gorda
-        <br />
-        <br />
-        - Las redes sociales te prometen conexión, pero a menudo te deja
-        sintiéndote más vacío y tonto que antes.
-        <br />
-        <br />
-        - Las notificaciones constantes interrumpen, estresa y solamente fueron
-        creadas para hacerte adicto al celular.
-        <br />
-        <br />
-        - Tiktok, Shorts y muchas plataformas reducen nuestro tiempo de atención
-        a menos de 8 segundos.
-        <br />
-        <br />
-        - La comparación constante en plataformas como Instagram y Facebook te
-        hace cuestionar tu valor y logros.
-        <br />
-        <br />
-        - El celular te deja expuesto a adicciones más severas como el p*rn0,
-        onlyfans, redes sociales etc.
-        <br />
-        <br />
+        <ul>
+          <li>
+            <strong>El aislamiento digital está creciendo.</strong>
+            <br />
+            En un mundo hiperconectado, paradójicamente nos encontramos más
+            solos que nunca.
+          </li>
+          <br />
+          <li>
+            <strong>La adicción al celular domina nuestras vidas.</strong>
+            <br />
+            Desde el momento en que despertamos hasta el instante en que
+            cerramos los ojos, nuestras pantallas nos capturan, robándonos
+            momentos preciosos de la vida real.
+          </li>
+          <br />
+          <li>
+            <strong>
+              El miedo a perdernos de alguna tendencia o mensaje nos mantiene
+              pegados a las pantallas
+            </strong>
+            <br />
+            pero en el proceso, estamos perdiendo lo que realmente importa.
+          </li>
+        </ul>
+        <ul>
+          <br />
+          <strong>
+            Tan solo te invito a dar una vuelta por tu colegio, universidad o
+            por el trabajo, compruebalo por tí mismo
+          </strong>
+          <br />
+          Es como una pandemia, solo que esta vez todos se hacen a la vista
+          gorda, como si nada malo pasara
+          <br />
+          <br />
+          <li>
+            - Las redes sociales te prometen conexión, pero a menudo te deja
+            sintiéndote más vacío y tonto que antes.
+          </li>
+          <br />
+          <li>
+            - Las notificaciones constantes interrumpen, estresa y solamente
+            fueron creadas para hacerte adicto al celular.
+          </li>
+          <br />
+          <li>
+            - Tiktok, Shorts y muchas plataformas reducen nuestro tiempo de
+            atención a menos de 8 segundos.
+          </li>
+          <br />
+          <li>
+            - La comparación constante en plataformas como Instagram y Facebook
+            te hace cuestionar tu valor y logros.
+          </li>
+          <br />
+          <li>
+            - El celular te deja expuesto a adicciones más severas como el
+            p*rn0, onlyfans, redes sociales etc.
+          </li>
+          <br />
+        </ul>
         Veo esto repetidas veces en internet:
         <br />
         **"He pasado más tiempo preocupándome por que cosas subo en Instagram
@@ -583,6 +699,7 @@ export default function Home() {
         {cardsData.map((card) => (
           <DetailedCard
             key={card.id}
+            subtitle={card.subtitle}
             title={card.title}
             description={card.description}
             avatarSrc={card.avatarSrc}
