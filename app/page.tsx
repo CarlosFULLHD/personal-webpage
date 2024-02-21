@@ -140,11 +140,9 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="container mx-auto md:pt-16 px-6 flex-grow inline-block max-w-lg text-center justify-center  xl:max-w-none">
-        <h1 className={title()}>
-          Si estas leyendo esto desde el celular.&nbsp;
-        </h1>
+        <h1 className={title()}>Si estas leyendo esto desde el celular</h1>
         <br />
-        <h1 className={title({ color: "blue" })}>Tienes un problema.&nbsp;</h1>
+        <h1 className={title({ color: "blue" })}>Tienes un problema</h1>
         <br />
         <h1 className={title()}>Tengo la solución</h1>
 
@@ -159,7 +157,7 @@ export default function Home() {
         </h2>
       </div>
 
-      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-xl">
+      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-lg">
         <span className="font-bold">Este no es un curso mediocre.</span>
         <br />
         Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
