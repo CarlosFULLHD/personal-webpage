@@ -28,7 +28,7 @@ import {
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
-
+import customLogo from "@/public/logocarlitosnina.png";
 export const Navbar = () => {
   const searchInput = (
     <Input
@@ -52,12 +52,15 @@ export const Navbar = () => {
   );
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+    <NextUINavbar
+      className="bg-custom-background"
+      maxWidth="xl"
+      position="sticky"
+    >
+      <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">Carlitos Nina</p>
+            <img src={customLogo.src} alt="Logo" width="450" height="50" />
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -95,9 +98,9 @@ export const Navbar = () => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-custom-background">
         {/* {searchInput} */}
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        <div className="mx-4 mt-2 flex flex-col gap-2 ">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link

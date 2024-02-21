@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DetailedCard from "@/components/DetailedCard";
+import { Button } from "@nextui-org/react";
 
 export const cardsData = [
   {
@@ -139,12 +140,18 @@ export const cardsData = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="container mx-auto md:pt-16 px-6 flex-grow inline-block max-w-lg text-center justify-center  xl:max-w-none">
-        <h1 className={title()}>Si estas leyendo esto desde el celular</h1>
-        <br />
-        <h1 className={title({ color: "blue" })}>Tienes un problema</h1>
-        <br />
-        <h1 className={title()}>Tengo la solución</h1>
+      <div className="container mx-auto md:pt-16 px-6 flex-grow inline-block max-w-lg text-center justify-center  xl:max-w-none py-3 ">
+        <h1 className=" text-center text-5xl font-bold tracking-tighter ">
+          Si estas leyendo esto desde el celular
+        </h1>
+
+        <h1 className="text-5xl font-bold tracking-tighter text-blue-500">
+          Tienes un problema
+        </h1>
+
+        <h1 className="text-5xl font-bold tracking-tighter">
+          Tengo la solución
+        </h1>
 
         <h2 className={subtitle({ class: "mt-4" })}>
           Te enseño como dejar de desperdiciar más de 1460 Horas al año (4h/dia
@@ -156,23 +163,29 @@ export default function Home() {
           ¿Te interesa?
         </h2>
       </div>
+      <Button
+        radius="full"
+        className="bg-gradient-to-tr from-orange-400  to-sky-500 text-white shadow-lg w-40 my-6 mb-12 p-3"
+      >
+        SI, me interesa!!
+      </Button>
 
-      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-lg">
+      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
         <span className="font-bold">Este no es un curso mediocre.</span>
         <br />
         Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
         <br />
-        Aqui aprenderás a resolver tus problemas con el celular y muchos más.
+        Aqui aprenderás a resolver tus problemas con el celular y muchos más
         <br />
         No aprenderás algunas configuraciones simples
         <br />
         Aprenderás a dominar tus habitos, a dominar tu mente, tus creencias, tu
-        identidad, como mejorarla y dejar de verte como un inútil.
+        identidad, como mejorarla y dejar de verte como un inútil
         <br />
         Volverás a dormir bien como cuando eras un bebe, construiras una
-        confianza increible como si fueras otra persona
+        confianza increible y seguridad en ti mismo
         <br />
-        Encontrarás un propósito y vivirás una vida significativa.
+        Encontrarás un propósito y vivirás una vida significativa
         <br />
         <br />
         <em>¿En que te diferencias de los demas? ¿por que deberia creerte?</em>
@@ -188,7 +201,7 @@ export default function Home() {
         <br />
         No hay nada inventado porque todo esta con evidencia detrás, incluso te
         ofrezco una garantía de 30 días, si crees que soy un mentiroso, un
-        papanatas y un loco.
+        papanatas y un loco
         <br />
         <br />
         Si no te gusta, lo unico que tienes que hacer es mandarme un correo y te
@@ -197,11 +210,13 @@ export default function Home() {
         Porque esto es una inversión y quiero que sea la mejor que hagas en tu
         vida
         <br />
-        Si, así de seguro estoy.
+        Si, así de seguro estoy
         <br />
         Esto te cambiará la vida
         <br />
         <br />
+      </h2>
+      <div className="bg-cyan-700 w-full text-center">
         <strong>EL MUNDO ESTÁ CAMBIANDO</strong>
         <br />
         <strong>¿Por Qué Debería Importarme la Desintoxicación Digital?</strong>
@@ -209,6 +224,9 @@ export default function Home() {
         <em>
           El futuro de vivir plenamente está en reconectar con lo esencial.
         </em>
+      </div>
+
+      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
         <br />
         <br />
         La educación moderna está fallando en enseñarnos cómo vivir con la

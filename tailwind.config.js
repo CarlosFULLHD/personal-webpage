@@ -13,6 +13,17 @@ module.exports = {
       fontFamily: {
         circular: ["Circular", "sans-serif"],
       },
+      letterSpacing: {
+        tighter: "-0.02em", // -2% aproximadamente
+        tightest: "-0.01em", // -1% aproximadamente
+      },
+      colors: {
+        "custom-blue": "#006692",
+        "custom-yellow": "#FFE3A4",
+        "custom-orange": "#F5A67E",
+        "custom-gray": "#8A92A6",
+        "custom-background": "#1A3A50",
+      },
     },
   },
   darkMode: "class",
