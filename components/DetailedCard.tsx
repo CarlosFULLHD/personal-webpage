@@ -19,7 +19,7 @@ export default function DetailedCard({
     .map((item) => item.trim())
     .filter((item) => item);
   return (
-    <Card className="py-4">
+    <Card className="py-4 bg-custom-blue">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         {/* Utiliza la propiedad title para mostrar el subtítulo */}
         <h4 className="font-bold text-md">{subtitle}</h4>

@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
+import Accordion from "@/components/Accordion";
 
 const cardsData = [
   {
@@ -152,7 +153,7 @@ export default function Home() {
           Tengo la solución
         </h1>
 
-        <h2 className={subtitle({ class: "mt-4" })}>
+        <h2 className="mx-auto px-4 text-2xl font-bold tracking-tighter py-3 max-w-lg lg:max-w-[600px]">
           Te enseño como dejar de desperdiciar más de 1460 Horas al año (4h/dia
           en el celular)
           <br />
@@ -163,14 +164,21 @@ export default function Home() {
         </h2>
       </div>
       <Button
-        radius="full"
-        className="bg-gradient-to-tr from-orange-400  to-sky-500 text-white shadow-lg w-40 my-6 mb-12 p-3"
+        radius="sm"
+        className="text-2xl text-bold bg-gradient-to-tr from-sky-900    to-sky-500 text-white shadow-lg w-40 my-6 mb-12 p-12 px-32"
       >
-        SI, me interesa!!
+        <img
+          src="/shoppingcart.png"
+          alt="Carrito de compras"
+          className="absolute left-4 top-6 w-10 h-10 "
+        />
+        Únete Ya
       </Button>
 
-      <h2 className="container mx-auto max-w-5xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
-        <span className="font-bold">Este no es un curso mediocre.</span>
+      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+        <span className="font-bold">
+          Este no es un curso mediocre de resúmenes de libros.
+        </span>
         <br />
         Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
         <br />
@@ -187,41 +195,39 @@ export default function Home() {
         Encontrarás un propósito y vivirás una vida significativa
         <br />
         <br />
-        <em>¿En que te diferencias de los demas? ¿por que deberia creerte?</em>
-        <br />
-        A lo poco que sé otras personas creen saberlo todo, hablan con tanta
-        seguridad pero despues te venden un producto mal hecho, todo con
-        historias baratas y cuentos de hadas
+        <strong className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          ¿En que te diferencias de los demas? ¿por que deberia creerte?
+        </strong>
         <br />
         <br />
         Todo lo que está dentro del curso viene desde las enseñanzas de Jordan
         Peterson, Viktor Frankl, Tony Robbins, James Clear, Cal Newport, Ryan
         Holiday, Marco Aurelio y muchos más...
         <br />
+        <br />
         No hay nada inventado porque todo esta con evidencia detrás, incluso te
         ofrezco una garantía de 30 días, si crees que soy un mentiroso, un
-        papanatas y un loco
+        papanatas y un loco.
         <br />
         <br />
-        Si no te gusta, lo unico que tienes que hacer es mandarme un correo y te
+        Si es así, lo unico que tienes que hacer es mandarme un correo y te
         regreso cada centavo de tu inversion
         <br />
         Porque esto es una inversión y quiero que sea la mejor que hagas en tu
         vida
         <br />
+        <br />
         Si, así de seguro estoy
         <br />
         Esto te cambiará la vida
-        <br />
-        <br />
       </h2>
-      <div className="bg-custom-blue w-full text-center justify-center items-center">
-        <div className="">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
             EL MUNDO ESTÁ CAMBIANDO
           </span>
           <br />
-          <span className="text-lg font-bold md:text-xl lg:text-4xl">
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
             ¿Por Qué Debería Importarme la Desintoxicación Digital?
           </span>
           <br />
@@ -231,9 +237,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto max-w-5xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
-        <br />
-        <br />
+      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
         <br />
@@ -379,14 +383,25 @@ export default function Home() {
         Si es así, te ayudaré a resolver esos problemas en los siguientes 30
         días.
         <br />
-        <br />
-        EL INSTRUCTOR azul
-        <br />
-        ¿Quién es este tipo que dice todas estas tonterías? Solo negrillas soy
-        alguien que quiere ayudarte italic
-        <br />
-        <br />
-        He caído muchas veces.
+      </h2>
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+            EL INSTRUCTOR
+          </span>
+          <br />
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+            ¿Quién es este tipo que dice todas estas tonterías?
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            Solo soy alguien que quiere ayudarte
+          </em>
+        </div>
+      </div>
+
+      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+        He caído muchas veces
         <br />
         Y con estas nuevas redes, quien no lo haría?
         <br />
@@ -395,11 +410,6 @@ export default function Home() {
         Robarnos nuestros sueños
         <br />
         Robar nuestro futuro
-        <br />
-        Me dí cuenta de eso despues de:
-        <br />
-        Haber reprobado materias en la universidad. Tratar de ser un jugador
-        profesional en League of Legends.
         <br />
         Con el tiempo fuí mejorando mis habilidades de ventas ayudando a mi
         mamá.
@@ -507,16 +517,18 @@ export default function Home() {
         <br />
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {cardsData.map((card) => (
-          <DetailedCard
-            key={card.id}
-            subtitle={card.subtitle}
-            title={card.title}
-            description={card.description}
-            avatarSrc={card.avatarSrc}
-          />
-        ))}
+      <div className="mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8">
+        <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
+          {cardsData.map((card) => (
+            <DetailedCard
+              key={card.id}
+              subtitle={card.subtitle}
+              title={card.title}
+              description={card.description}
+              avatarSrc={card.avatarSrc}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
