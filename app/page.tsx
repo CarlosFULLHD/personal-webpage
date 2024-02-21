@@ -170,7 +170,7 @@ export default function Home() {
         SI, me interesa!!
       </Button>
 
-      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+      <h2 className="container mx-auto max-w-5xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
         <span className="font-bold">Este no es un curso mediocre.</span>
         <br />
         Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
@@ -216,24 +216,30 @@ export default function Home() {
         <br />
         <br />
       </h2>
-      <div className="bg-cyan-700 w-full text-center">
-        <strong>EL MUNDO ESTÁ CAMBIANDO</strong>
+      <div className="bg-custom-blue w-full text-center">
+        <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+          EL MUNDO ESTÁ CAMBIANDO
+        </span>
         <br />
-        <strong>¿Por Qué Debería Importarme la Desintoxicación Digital?</strong>
+        <span className="text-lg font-bold md:text-xl lg:text-2xl">
+          ¿Por Qué Debería Importarme la Desintoxicación Digital?
+        </span>
         <br />
-        <em>
+        <em className="text-lg font-italic md:text-xl lg:text-2xl">
           El futuro de vivir plenamente está en reconectar con lo esencial.
         </em>
       </div>
 
-      <h2 className="container mx-auto max-w-7xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+      <h2 className="container mx-auto max-w-5xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
         <br />
         <br />
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
         <br />
-        Miles de personas viven una vida **sin propósito y sienten que estan
-        desperdiciando su vida**
+        Miles de personas viven una vida{" "}
+        <strong>
+          sin propósito y sienten que estan desperdiciando su vida
+        </strong>
         <br />
         La adicción al celular se ha convertido en una de las mayores adicciones
         en todo el mundo, afectando a adolescentes, universitarios y adultos.
