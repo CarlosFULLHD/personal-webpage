@@ -4,11 +4,10 @@ import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
 
-export const cardsData = [
+const cardsData = [
   {
     id: 1,
     subtitle: `¿Cansado de Sentir que Pierdes Tu Tiempo y Desperdicias tu Vida?`,
@@ -216,18 +215,20 @@ export default function Home() {
         <br />
         <br />
       </h2>
-      <div className="bg-custom-blue w-full text-center">
-        <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
-          EL MUNDO ESTÁ CAMBIANDO
-        </span>
-        <br />
-        <span className="text-lg font-bold md:text-xl lg:text-2xl">
-          ¿Por Qué Debería Importarme la Desintoxicación Digital?
-        </span>
-        <br />
-        <em className="text-lg font-italic md:text-xl lg:text-2xl">
-          El futuro de vivir plenamente está en reconectar con lo esencial.
-        </em>
+      <div className="bg-custom-blue w-full text-center justify-center items-center">
+        <div className="">
+          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+            EL MUNDO ESTÁ CAMBIANDO
+          </span>
+          <br />
+          <span className="text-lg font-bold md:text-xl lg:text-4xl">
+            ¿Por Qué Debería Importarme la Desintoxicación Digital?
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            El futuro de vivir plenamente está en reconectar con lo esencial.
+          </em>
+        </div>
       </div>
 
       <h2 className="container mx-auto max-w-5xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
