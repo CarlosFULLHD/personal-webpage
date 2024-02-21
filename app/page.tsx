@@ -11,7 +11,7 @@ export const cardsData = [
   {
     id: 1,
     subtitle: `¿Cansado de Sentir que Pierdes Tu Tiempo y Desperdicias tu Vida?`,
-    title: " ⌛Maestro del Tiempo",
+    title: ` ⌛Maestro del Tiempo`,
     description: `
     - Guía paso a paso sobre cómo identificar y limitar las distracciones del celular.
     - Ejercicios de planificación semanal para priorizar tareas y objetivos.
@@ -20,12 +20,12 @@ export const cardsData = [
     - El protocolo de retroalimentación de las personas exitosas.
     - Aprende cómo dejar las redes sociales, todo el mal que hacen y obtener un balance sano para dejar de ser esclavo de las notificaciones.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 2,
     subtitle: `¿Sientes que no eres todo lo que podrías llegar a ser?`,
-    title: "🌱Maestro del Carácter",
+    title: `🌱Maestro del Carácter`,
     description: `
     - Aprende cómo funciona tu identidad, entendimiento psicológico y profundo de los valores, creencias que tenemos de nosotros mismos y autopercepciones.
     - Aprende cómo cambiar de identidad y dejar ir esa parte de ti para poder desarrollarte como una mejor persona.
@@ -33,36 +33,36 @@ export const cardsData = [
     - Cómo construir una nueva mentalidad resiliente ante las opiniones de las masas.
     - Una llamada a la madurez y también a la responsabilidad hacia una vida con sentido y propósito.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 3,
     subtitle: `¿El Autosabotaje Te Detiene?¿Te autodesprecias u odias a ti mismo?`,
-    title: "🛡️Cómo Dejar de Sabotearte a Ti Mismo",
+    title: `🛡️Cómo Dejar de Sabotearte a Ti Mismo`,
     description: `
     - Como dejar de autodespreciarte y empezar a quererse uno mismo 
     - Voy a mostrarte el porqué y el cómo dejar atrás el autosabotaje.
     - Cómo superar las barreras internas y escapar del ciclo de intentos fallidos.
     - Cómo obtener fe en tus acciones, paso a paso hacia la mejor versión de ti con logros y satisfacción personal.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 4,
     subtitle: `¿Anhelas Crecimiento y Un Propósito?`,
-    title: "🧭Cómo Encontrar Definitivamente tu Propósito y Pasión",
+    title: `🧭Cómo Encontrar Definitivamente tu Propósito y Pasión`,
     description: `
     - Exploraremos la responsabilidad de vivir a plenitud.
     - Valorar tus experiencias y encontrar significado en tus sacrificios.
     - Cómo disfrutar de este viaje, ya que no se trata sobre éxitos rápidos o ganancias monetarias instantáneas; te ofrezco algo infinitamente más valioso.
     - Encontrar finalmente lo que llaman TU PASIÓN.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 5,
     subtitle: `¿Tienes falta de sueño y no consigues descansar lo suficiente?`,
-    title: "🌙Cómo Llegar a Dormir Tan Bien como un Bebé",
+    title: `🌙Cómo Llegar a Dormir Tan Bien como un Bebé`,
     description: `
     - Rutinas de relajación pre-sueño para mejorar la calidad del descanso.
     - Redescubre cómo volver a tener un sueño reparador, sin preocupaciones ni el estrés del celular por el trabajo y despertando cada día con propósito.
@@ -72,66 +72,66 @@ export const cardsData = [
     - La magia de la escritura y liberación de preocupaciones.
     - Guía sobre alimentación, ambiente necesario para dormir mejor.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 6,
     subtitle: `¿Quieres Conocerte Mejor?`,
-    title: "📖Cómo Conocer Quién Rayos Eres",
+    title: `📖Cómo Conocer Quién Rayos Eres`,
     description: `
     - Aprende la magia detrás de cada uno de tus rasgos de la personalidad.
     - Crea objetivos basados en tu personalidad y lo que te motivará hacia tu éxito futuro.
     - Aprende sobre las ventajas y desventajas de tu personalidad.
     - Cómo sacarle el mejor partido a tu personalidad y también cómo puedes influir en esos rasgos para una mejor vida.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 7,
     subtitle: `¿El Miedo y la Procrastinación Te Dominan?`,
-    title: "🦁Cómo David Goggins y los Exitosos Mantienen su Disciplina",
+    title: `🦁Cómo David Goggins y los Exitosos Mantienen su Disciplina`,
     description: `
     - Aprende a superar la procrastinación creando una visión negativa que te motive hacia adelante y una visión futura para obtener dirección y claridad de tu futuro deseado.
     - Aprende cómo las personas millonarias toman decisiones y se comprometen a su propósito.
     - Aprende a liberarte de las ataduras para no salir de tu zona de confort y tampoco perderte en el burnout.
     - Aprende la mentalidad del estudiante de por vida y dejar atrás tu ego para aprender de verdad.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 8,
     subtitle: `¿Tienes Falta de Confianza?`,
-    title: "🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos",
+    title: `🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos`,
     description: `
     - Aprende por qué las soluciones superficiales como afirmaciones o frases bonitas no funcionan. Entonces te revelaré qué SÍ te da confianza.
     - Aprende a aceptar a tu yo pasado y seguir un camino incluso si te encuentras en el peor momento de tu vida.
     - Encuentra propósito y significado en hacer sacrificios.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 9,
     subtitle: `¿Tienes Amistades Verdaderas?`,
-    title: "🤝Cómo Convertirte y Ser el Amigo que Siempre Estará a tu Lado",
+    title: `🤝Cómo Convertirte y Ser el Amigo que Siempre Estará a tu Lado`,
     description: `
     - Entiende la razón verdadera por la cual debes cuidarte a ti mismo y a tu familia.
     - Aprende cómo encontrar malas amistades y encontrar buenas amistades que te eleven y no te hundan.
     - Elimina las limitaciones mentales para conseguir nuevas amistades.
     - Aprende a convertirte en ese amigo en el cual puedes confiar.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   {
     id: 10,
     subtitle: `¿Intentaste mejorar tus hábitos y nada te funcionó?`,
-    title: "⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea",
+    title: `⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea`,
     description: `
     - Crea, descubre y destruye hábitos, paso a paso.
     - Aprende cómo tener hábitos que no requieran fuerza de voluntad.
     - Aprende el ÚNICO ingrediente necesario para formar hábitos DE POR VIDA.
     - Motívate para poder seguir esos hábitos y continuarlos a pesar de la falta de disciplina.
     `,
-    avatarSrc: "/darkside.webp",
+    avatarSrc: `/darkside.webp`,
   },
   // ... (agrega más cards aquí)
 ];
@@ -281,13 +281,17 @@ export default function Home() {
         <br />
         Veo esto repetidas veces en internet:
         <br />
-        **He pasado más tiempo preocupándome por que cosas subo en Instagram que
-        viviendo mi propia vida.**
+        <span className="text-bold">
+          He pasado más tiempo preocupándome por que cosas subo en Instagram que
+          viviendo mi propia vida.
+        </span>
         <br />
         <br />
         <br />
-        Una mejor vida ta espera si **decides tomar el control de tu vidas y tu
-        relación con la tecnología.**
+        Una mejor vida ta espera si{" "}
+        <span className="text-bold">
+          decides tomar el control de tu vidas y tu relación con la tecnología.
+        </span>
         <br />
         <br />
         - Si buscas redescubrir la alegría de los momentos sin una pantalla
@@ -307,34 +311,46 @@ export default function Home() {
         <br />
         <br />
         <br />
-        **Este curso es para ti si:**
-        <br />
-        - Anhelas **liberarte del ciclo constante de distracción y
-        procrastinación** que el celular impone en tu vida.
-        <br />
-        - Te preocupas por **desperdiciar tu vida en trivialidades digitales**,
-        soñando con lo que podrías lograr si solo pudieras desconectar.
-        <br />
-        - Sientes que **la adicción al celular te ha robado momentos
-        irreemplazables** con seres queridos, oportunidades de crecimiento
-        personal y la capacidad de disfrutar del aquí y ahora.
-        <br />
-        - Buscas una forma de **vivir con propósito, sentido y autenticidad** en
-        un mundo que parece valorar lo opuesto.
+        <span className="text-bold">Este curso es para ti si:</span>
+        <br />- Anhelas{" "}
+        <span className="text-bold">
+          liberarte del ciclo constante de distracción y procrastinación
+        </span>
+        que el celular impone en tu vida.
+        <br />- Te preocupas por{" "}
+        <span className="text-bold">
+          desperdiciar tu vida en trivialidades digitales
+        </span>
+        , soñando con lo que podrías lograr si solo pudieras desconectar.
+        <br />- Sientes que{" "}
+        <span className="text-bold">
+          la adicción al celular te ha robado momentos irreemplazables
+        </span>{" "}
+        con seres queridos, oportunidades de crecimiento personal y la capacidad
+        de disfrutar del aquí y ahora.
+        <br />- Buscas una forma de{" "}
+        <span className="text-bold">
+          vivir con propósito, sentido y autenticidad
+        </span>{" "}
+        en un mundo que parece valorar lo opuesto.
         <br />
         - Intentaste mejorar tu vida sin éxito porque no tienes disciplina
         necesaria, no tienes dirección y no sabes que hacer.
-        <br />
-        - Sabes que hay muchos cursos en las redes sociales gratuitos y de pago
-        **pero se siente que todos son lo mismo** (y no estas seguro en cual
-        debes invertir tu dinero)
+        <br />- Sabes que hay muchos cursos en las redes sociales gratuitos y de
+        pago
+        <span className="text-bold">
+          pero se siente que todos son lo mismo
+        </span>{" "}
+        (y no estas seguro en cual debes invertir tu dinero)
         <br />
         - Por ultimo si no tienes tiempo para invertir todo el día intentando
         leer libros y ver videos en youtube para solucionar tus problemas. (A lo
         que me refiero es que puedo ahorrarte bastante tiempo)
         <br />
         <br />
-        **¿Te identificas con alguno de estos puntos?**
+        <span className="text-bold">
+          ¿Te identificas con alguno de estos puntos?
+        </span>
         <br />
         <br />
         Si es así, te ayudaré a resolver esos problemas en los siguientes 30
@@ -398,9 +414,11 @@ export default function Home() {
         entonces inicie resolviendo mi adiccion al celular.
         <br />
         <br />
-        **Para finalmente....
-        <br />
-        Después de mucho tiempo...**
+        <span className="text-bold">
+          Para finalmente....
+          <br />
+          Después de mucho tiempo...
+        </span>
         <br />
         Horas y horas investigando, leyendo y aplicando teorías de todo tipo,
         desde las enseñanzas antiguas de los estoicos hasta las modernas
@@ -410,11 +428,11 @@ export default function Home() {
         <br />
         Porque encontré conocimiento y sabíduría en personas mucho más grandes
         que yo, acepté sus enseñanzas.
+        <br />Y ahora vengo aca no como gurú, ni como un padre, si no como{" "}
+        <span className="text-bold">un amigo</span>,
         <br />
-        Y ahora vengo aca no como gurú, ni como un padre, si no como **un
-        amigo**,
-        <br />
-        Como **un guía** para enseñarte lo que pocos saben...
+        Como <span className="text-bold">un guía</span> para enseñarte lo que
+        pocos saben...
         <br />
         Pues tampoco te la daré gratis porque si no, no lo valorarás.
         <br />
@@ -426,8 +444,10 @@ export default function Home() {
         primeras personas que lo compren, porque quiero premiar a los que
         invierten su tiempo a leer
         <br />
-        Te enseñaré a construir: **El carácter:** ***Valores, principios,
-        creencias e identidad***
+        Te enseñaré a construir:{" "}
+        <span className="text-italic">
+          El carácter: Valores, principios, creencias e identidad
+        </span>
         <br />
         <br />
         Según yo eso es lo más valioso y es la clave para TODO en la vida.
