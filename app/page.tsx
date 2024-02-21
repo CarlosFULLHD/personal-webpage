@@ -281,8 +281,8 @@ export default function Home() {
         <br />
         Veo esto repetidas veces en internet:
         <br />
-        **"He pasado más tiempo preocupándome por que cosas subo en Instagram
-        que viviendo mi propia vida."**
+        **He pasado más tiempo preocupándome por que cosas subo en Instagram que
+        viviendo mi propia vida.**
         <br />
         <br />
         <br />
