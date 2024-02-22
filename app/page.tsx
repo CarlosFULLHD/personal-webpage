@@ -582,54 +582,68 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:max-w-2xl w-full">
-          {/* NOSOTROS COMO MEJOR OPCION */}
-          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg"></div>
-          {/* COMPARACION CONTRA LA COMPETENCIA */}
-          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
-            <div className="flex items-center p-4">
+        <div className="md:grid md:grid-cols-2 md:max-w-2xl w-full">
+          <div className="bg-white m-2 p-4 shadow-lg rounded-lg h-[600px]"></div>
+
+          <div className="flex flex-col justify-between">
+            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
               <img
                 src="/jordanpeterson-photo.jpg"
                 className="max-w-24 max-h-24 mr-4"
                 alt="Descripción de la imagen"
               />
+
               <div className="flex-1">
                 <p className="text-left align-middle text-black text-lg font-bold">
-                  Slack: realtime chat
+                  IZQUIERDA
                 </p>
                 <p className="text-left align-middle text-black text-lg">
                   $7.25/month per user
                 </p>
               </div>
             </div>
-          </div>
-          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
-            <div className="flex items-center p-4">
+            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
               <img
                 src="/jordanpeterson-photo.jpg"
                 className="max-w-24 max-h-24 mr-4"
                 alt="Descripción de la imagen"
               />
+
               <div className="flex-1">
                 <p className="text-left align-middle text-black text-lg font-bold">
-                  Slack: realtime chat
+                  IZQUIERDA
                 </p>
                 <p className="text-left align-middle text-black text-lg">
                   $7.25/month per user
                 </p>
               </div>
             </div>
-          </div>
-          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
-            <div className="flex items-center p-4">
+            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
               <img
                 src="/jordanpeterson-photo.jpg"
                 className="max-w-24 max-h-24 mr-4"
                 alt="Descripción de la imagen"
               />
+
               <div className="flex-1">
                 <p className="text-left align-middle text-black text-lg font-bold">
-                  Slack: realtime chat
+                  IZQUIERDA
+                </p>
+                <p className="text-left align-middle text-black text-lg">
+                  $7.25/month per user
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
+              <img
+                src="/jordanpeterson-photo.jpg"
+                className="max-w-24 max-h-24 mr-4"
+                alt="Descripción de la imagen"
+              />
+
+              <div className="flex-1">
+                <p className="text-left align-middle text-black text-lg font-bold">
+                  IZQUIERDA
                 </p>
                 <p className="text-left align-middle text-black text-lg">
                   $7.25/month per user
@@ -638,6 +652,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* TERMINA BLOQUE DE LA DERECHA */}
       </div>
 
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
@@ -659,7 +675,7 @@ export default function Home() {
       <Accordion
         type="single"
         collapsible
-        className="p-4 bg-custom-blue rounded-lg my-8 mx-2 "
+        className="p-4 bg-custom-blue rounded-lg my-8 mx-2"
       >
         <AccordionItem
           value="item-1"
