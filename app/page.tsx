@@ -181,7 +181,7 @@ export default function Home() {
       </div>
       <Button
         radius="sm"
-        className="text-2xl text-bold bg-gradient-to-tr from-sky-900    to-sky-500 text-white shadow-lg w-40 my-6 mb-12 p-12 px-32"
+        className="text-2xl text-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-2 px-32"
       >
         <img
           src="/shoppingcart.png"
