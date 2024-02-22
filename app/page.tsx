@@ -568,6 +568,77 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* COMPARACION DE PRECIOS */}
+      <div className=" w-full flex flex-col items-center justify-center bg-custom-blue">
+        <div className="text-custom-blue w-full md:max-w-2xl bg-white m-2 p-4 shadow-lg rounded-lg">
+          <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl text-center justify-center">
+            <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+              Save big with Basecamp.
+            </span>
+            <br />
+            <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+              Basecamp replaces a bunch of apps. See how our pricing compares to
+              bundling Slack, Asana, & Google Workspace together:
+            </span>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row md:max-w-2xl w-full">
+          {/* NOSOTROS COMO MEJOR OPCION */}
+          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg"></div>
+          {/* COMPARACION CONTRA LA COMPETENCIA */}
+          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
+            <div className="flex items-center p-4">
+              <img
+                src="/jordanpeterson-photo.jpg"
+                className="max-w-24 max-h-24 mr-4"
+                alt="Descripción de la imagen"
+              />
+              <div className="flex-1">
+                <p className="text-left align-middle text-black text-lg font-bold">
+                  Slack: realtime chat
+                </p>
+                <p className="text-left align-middle text-black text-lg">
+                  $7.25/month per user
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
+            <div className="flex items-center p-4">
+              <img
+                src="/jordanpeterson-photo.jpg"
+                className="max-w-24 max-h-24 mr-4"
+                alt="Descripción de la imagen"
+              />
+              <div className="flex-1">
+                <p className="text-left align-middle text-black text-lg font-bold">
+                  Slack: realtime chat
+                </p>
+                <p className="text-left align-middle text-black text-lg">
+                  $7.25/month per user
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 bg-white m-2 p-4 shadow-lg rounded-lg">
+            <div className="flex items-center p-4">
+              <img
+                src="/jordanpeterson-photo.jpg"
+                className="max-w-24 max-h-24 mr-4"
+                alt="Descripción de la imagen"
+              />
+              <div className="flex-1">
+                <p className="text-left align-middle text-black text-lg font-bold">
+                  Slack: realtime chat
+                </p>
+                <p className="text-left align-middle text-black text-lg">
+                  $7.25/month per user
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">

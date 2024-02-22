@@ -35,7 +35,6 @@ export default function BonusCard({
         </ul>
       </CardHeader>
       <CardBody className="overflow-visible pt-2">
-        {/* Utiliza la propiedad avatarSrc para la imagen */}
         <Image
           alt="Card background"
           className="object-cover mb-0 rounded-b-lg p-0"
