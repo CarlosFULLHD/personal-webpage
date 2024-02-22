@@ -34,7 +34,7 @@ export const Navbar = () => {
     <NextUINavbar
       className="bg-custom-background"
       maxWidth="xl"
-      position="sticky"
+      shouldHideOnScroll
     >
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">

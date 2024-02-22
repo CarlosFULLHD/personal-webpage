@@ -40,7 +40,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen font-circular">
+          <div className="relative flex flex-col font-circular">
             <Navbar />
             <main className="bg-custom-background">{children}</main>
             <footer className="w-full flex items-center justify-center py-3"></footer>
