@@ -1,25 +1,25 @@
 import React from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 // Define una interfaz para las props de tu componente
-interface DetailedCardProps {
+interface BonusCardProps {
   title: string;
   subtitle: string;
   description: string;
   avatarSrc: string;
 }
 // Añade las propiedades title, description, y avatarSrc como argumentos de la función
-export default function DetailedCard({
+export default function BonusCard({
   title,
   subtitle,
   description,
   avatarSrc,
-}: DetailedCardProps) {
+}: BonusCardProps) {
   const descriptionItems = description
     .split("-")
     .map((item) => item.trim())
     .filter((item) => item);
   return (
-    <Card className="py-4 bg-custom-blue rounded-xl">
+    <Card className="pt-4 bg-custom-blue rounded-xl">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         {/* Utiliza la propiedad title para mostrar el subtítulo */}
         <h4 className="font-bold text-md">{subtitle}</h4>
@@ -34,11 +34,11 @@ export default function DetailedCard({
           ))}
         </ul>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
+      <CardBody className="overflow-visible pt-2">
         {/* Utiliza la propiedad avatarSrc para la imagen */}
         <Image
           alt="Card background"
-          className="object-cover rounded-xl m-8 sm:w-32 mx-auto"
+          className="object-cover mb-0 rounded-b-lg p-0"
           src={avatarSrc}
           width={570}
         />

@@ -6,7 +6,14 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
-import Accordion from "@/components/Accordion";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import BonusCard from "@/components/BonusCard";
 
 const cardsData = [
   {
@@ -135,6 +142,15 @@ const cardsData = [
     avatarSrc: `/darkside.webp`,
   },
   // ... (agrega más cards aquí)
+];
+const bonusData = [
+  {
+    id: 1,
+    subtitle: `BONUS #1 - Plantilla de Notion`,
+    title: `Menú del Descanso - Planifica tu ocio conscientemente`,
+    description: ` `,
+    avatarSrc: `/tonyrobbins-photo.jpg`,
+  },
 ];
 
 export default function Home() {
@@ -507,17 +523,25 @@ export default function Home() {
         <br />
         Me interesa!
         <br />
-        <br />
-        <br />
-        <strong>LA MEJOR INVERSION DE TU VIDA</strong>
-        <br />
-        ¿No me convence, que me enseñarás?
-        <br />
-        <em>Una oferta que única con un valor único</em>
-        <br />
       </h2>
 
-      <div className="mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+            LA MEJOR INVERSION DE TU VIDA
+          </span>
+          <br />
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+            ¿No me convence, que me enseñarás?
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            Una oferta que única con un valor único
+          </em>
+        </div>
+      </div>
+
+      <div className=" mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
         <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
           {cardsData.map((card) => (
             <DetailedCard
@@ -530,6 +554,77 @@ export default function Home() {
           ))}
         </div>
       </div>
+      {/* BONUS CARD DE BONUSES PARA EL CURSO */}
+      <div className=" max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8">
+        <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
+          {bonusData.map((card) => (
+            <BonusCard
+              key={card.id}
+              subtitle={card.subtitle}
+              title={card.title}
+              description={card.description}
+              avatarSrc={card.avatarSrc}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+            TIENES PREGUNTAS?
+          </span>
+          <br />
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+            Yo tengo respuestas
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            Asegurate de hacer la dicisión correcta
+          </em>
+        </div>
+      </div>
+
+      <Accordion
+        type="single"
+        collapsible
+        className="p-4 bg-custom-blue rounded-lg my-8 mx-2 "
+      >
+        <AccordionItem
+          value="item-1"
+          className="no-underline hover:no-underline"
+        >
+          <AccordionTrigger>
+            Es necesario que sepa utilizar Notion?
+          </AccordionTrigger>
+          <AccordionContent>
+            No problem mai frend. He preparado una guía detallada paso a paso,
+            especialmente para principiantes, y nuestro soporte está listo para
+            asistirte en cada duda que surja.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>
+            ¿Es dificil de leer y poner en práctica?
+          </AccordionTrigger>
+          <AccordionContent>
+            Simplifiqué al maximo las enseñanzas de muchos autores con tal de
+            que sea facil de seguir, leer y poner en práctica, incluso si tienes
+            poco tiempo, si crees que no es para tí puedes pedir un reembolso
+            hasta 30 dias despues de la compra!!
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-3">
+          <AccordionTrigger>
+            ¿Necesito una cuenta de Notion para usarla? ¿Hay costos extras?
+          </AccordionTrigger>
+          <AccordionContent>
+            Totalmente accesible con una cuenta gratuita de Notion, esta
+            plantilla no implica costos adicionales. Su diseño asegura una
+            integración sin problemas y una experiencia de usuario optimizada.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </section>
   );
 }
