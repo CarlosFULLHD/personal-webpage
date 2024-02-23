@@ -47,7 +47,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full "
         justify="end"
       >
-        <ul className="hidden md:flex gap-14 ">
+        <ul className="hidden md:flex gap-14 italic">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link

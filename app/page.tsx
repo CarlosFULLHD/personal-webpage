@@ -174,19 +174,19 @@ export default function Home() {
           en el celular)
           <br />
           Una guia de desintoxicación digital, ejercicios profundos de
-          autoconocimiento y busqueda de propósito y sentido.
+          autoconocimiento y una busqueda de propósito y sentido.
           <br />
           ¿Te interesa?
         </h2>
       </div>
       <Button
         radius="sm"
-        className="text-2xl text-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-2 px-32"
+        className="text-2xl text-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-6 px-32"
       >
         <img
           src="/shoppingcart.png"
           alt="Carrito de compras"
-          className="absolute left-4 top-6 w-10 h-10 "
+          className="absolute left-4 top-1 w-10 h-10 "
         />
         Únete Ya
       </Button>
