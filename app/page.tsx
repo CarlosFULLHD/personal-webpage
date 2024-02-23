@@ -156,87 +156,48 @@ const bonusData = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="container mx-auto md:pt-16 px-6 flex-grow inline-block max-w-lg text-center justify-center  xl:max-w-none py-3 ">
-        <h1 className=" text-center text-5xl font-bold tracking-tighter ">
-          Si estas leyendo esto desde el celular
-        </h1>
+      <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 ">
+        <div className=" lg:text-left lg:basis-1/2 lg:p-6  xl:text-3xl 2xl:text-4xl xl:pl-14">
+          <h1 className="text-5xl font-bold tracking-tighter md:inline lg:text-5xl xl:text-7xl">
+            Si estas leyendo esto desde el celular
+          </h1>
 
-        <h1 className="text-5xl font-bold tracking-tighter text-blue-500">
-          Tienes un problema
-        </h1>
+          <span className="text-5xl font-bold tracking-tighter text-blue-500 md:inline lg:block lg:text-5xl xl:text-7xl">
+            {" "}
+            Tienes un problema
+          </span>
 
-        <h1 className="text-5xl font-bold tracking-tighter">
-          Tengo la solución
-        </h1>
+          <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
+            Tengo la solución
+          </h1>
 
-        <h2 className="mx-auto px-4 text-2xl font-bold tracking-tighter py-3 max-w-lg lg:max-w-[600px]">
-          Te enseño como dejar de desperdiciar más de 1460 Horas al año (4h/dia
-          en el celular)
-          <br />
-          Una guia de desintoxicación digital, ejercicios profundos de
-          autoconocimiento y una busqueda de propósito y sentido.
-          <br />
-          ¿Te interesa?
-        </h2>
+          <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
+            Un Sistema de Desintoxicación Digital, Desarrollo Personal y De
+            Sentido, con Propósito.
+            <span> (En un plantilla de Notion)</span>
+            <span className="block">¿Te interesa?</span>
+          </h2>
+          <Button
+            radius="sm"
+            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-6 px-32 flex items-center justify-center relative"
+          >
+            <img
+              src="/shoppingcart.png"
+              alt="Carrito de compras"
+              className="absolute left-4 top-1 w-10 h-10 "
+            />
+            Únete Ya
+          </Button>
+        </div>
+        <div className=" lg:basis-1/2 lg:p-6">
+          <img
+            src="/ryanholiday-photo.jpg"
+            alt="Carrito de compras"
+            className="max-w-24 md:px-24 lg:px-0"
+          />
+        </div>
       </div>
-      <Button
-        radius="sm"
-        className="text-2xl text-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-6 px-32"
-      >
-        <img
-          src="/shoppingcart.png"
-          alt="Carrito de compras"
-          className="absolute left-4 top-1 w-10 h-10 "
-        />
-        Únete Ya
-      </Button>
 
-      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
-        <span className="font-bold">
-          Este no es un curso mediocre de resúmenes de libros.
-        </span>
-        <br />
-        Tampoco un PDF de 10 páginas con imagenes bonitas y consejos baratos
-        <br />
-        Aqui aprenderás a resolver tus problemas con el celular y muchos más
-        <br />
-        No aprenderás algunas configuraciones simples
-        <br />
-        Aprenderás a dominar tus habitos, a dominar tu mente, tus creencias, tu
-        identidad, como mejorarla y dejar de verte como un inútil
-        <br />
-        Volverás a dormir bien como cuando eras un bebe, construiras una
-        confianza increible y seguridad en ti mismo
-        <br />
-        Encontrarás un propósito y vivirás una vida significativa
-        <br />
-        <br />
-        <strong className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          ¿En que te diferencias de los demas? ¿por que deberia creerte?
-        </strong>
-        <br />
-        <br />
-        Todo lo que está dentro del curso viene desde las enseñanzas de Jordan
-        Peterson, Viktor Frankl, Tony Robbins, James Clear, Cal Newport, Ryan
-        Holiday, Marco Aurelio y muchos más...
-        <br />
-        <br />
-        No hay nada inventado porque todo esta con evidencia detrás, incluso te
-        ofrezco una garantía de 30 días, si crees que soy un mentiroso, un
-        papanatas y un loco.
-        <br />
-        <br />
-        Si es así, lo unico que tienes que hacer es mandarme un correo y te
-        regreso cada centavo de tu inversion
-        <br />
-        Porque esto es una inversión y quiero que sea la mejor que hagas en tu
-        vida
-        <br />
-        <br />
-        Si, así de seguro estoy
-        <br />
-        Esto te cambiará la vida
-      </h2>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
