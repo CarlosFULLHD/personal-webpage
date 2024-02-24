@@ -108,3 +108,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Configuraciones para gradientes */
+
+/* En tu archivo CSS global o componente */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange;
+}
+/* En tu archivo CSS global o componente */
+/* Adaptación para usar con Tailwind CSS y colores personalizados */

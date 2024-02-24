@@ -156,13 +156,13 @@ const bonusData = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 ">
-        <div className=" lg:text-left lg:basis-1/2 lg:p-6  xl:text-3xl 2xl:text-4xl xl:pl-14">
+      <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
+        <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
           <h1 className="text-5xl font-bold tracking-tighter md:inline lg:text-5xl xl:text-7xl">
             Si estas leyendo esto desde el celular
           </h1>
 
-          <span className="text-5xl font-bold tracking-tighter text-blue-500 md:inline lg:block lg:text-5xl xl:text-7xl">
+          <span className="text-5xl font-bold tracking-tighter text-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
             {" "}
             Tienes un problema
           </span>
@@ -174,31 +174,31 @@ export default function Home() {
           <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
             Un Sistema de Desintoxicación Digital, Desarrollo Personal y De
             Sentido, con Propósito.
-            <span> (En un plantilla de Notion)</span>
+            <span className="block md:inline lg:block">
+              {" "}
+              (En una plantilla de Notion)
+            </span>
             <span className="block">¿Te interesa?</span>
           </h2>
-          <Button
-            radius="sm"
-            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-sky-900 to-sky-500 text-white shadow-lg w-40 my-6 mb-12 py-6 px-32 flex items-center justify-center relative"
-          >
+          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange text-white shadow-lg w-40 my-6 mb-12 py-6 px-32 xl:px-40 xl:py-8 flex items-center justify-center relative">
             <img
               src="/shoppingcart.png"
               alt="Carrito de compras"
-              className="absolute left-4 top-1 w-10 h-10 "
+              className="w-10 h-10 mr-2 "
             />
-            Únete Ya
+            Sí, quiero unirme
           </Button>
         </div>
         <div className=" lg:basis-1/2 lg:p-6">
           <img
-            src="/ryanholiday-photo.jpg"
-            alt="Carrito de compras"
+            src="/notion_product.gif"
+            alt="Video de nuestro producto hecho en Notion"
             className="max-w-24 md:px-24 lg:px-0"
           />
         </div>
       </div>
 
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
             EL MUNDO ESTÁ CAMBIANDO
@@ -214,17 +214,20 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black my-6">
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
+        <br />
         <br />
         Miles de personas viven una vida{" "}
         <strong>
           sin propósito y sienten que estan desperdiciando su vida
         </strong>
         <br />
+        <br />
         La adicción al celular se ha convertido en una de las mayores adicciones
         en todo el mundo, afectando a adolescentes, universitarios y adultos.
+        <br />
         <br />
         <ul>
           <li>
@@ -232,14 +235,6 @@ export default function Home() {
             <br />
             En un mundo hiperconectado, paradójicamente nos encontramos más
             solos que nunca.
-          </li>
-          <br />
-          <li>
-            <strong>La adicción al celular domina nuestras vidas.</strong>
-            <br />
-            Desde el momento en que despertamos hasta el instante en que
-            cerramos los ojos, nuestras pantallas nos capturan, robándonos
-            momentos preciosos de la vida real.
           </li>
           <br />
           <li>
@@ -258,8 +253,9 @@ export default function Home() {
             por el trabajo, compruebalo por tí mismo
           </strong>
           <br />
-          Es como una pandemia, solo que esta vez todos se hacen a la vista
-          gorda, como si nada malo pasara
+          <br />
+          Es como un virus, al que todos se hacen a la vista gorda, como si nada
+          malo pasara
           <br />
           <li>
             - Las redes sociales te prometen conexión, pero a menudo te deja
@@ -285,14 +281,15 @@ export default function Home() {
         <br />
         Veo esto repetidas veces en internet:
         <br />
-        <span className="text-bold">
-          He pasado más tiempo preocupándome por que cosas subo en Instagram que
-          viviendo mi propia vida.
+        <br />
+        <span className="text-bold italic ">
+          "He pasado más tiempo preocupándome por las cosas subo en Instagram
+          que viviendo mi propia vida, vivo solo para los demás."
         </span>
         <br />
         <br />
         <br />
-        Una mejor vida ta espera si{" "}
+        Una mejor vida te espera si{" "}
         <span className="text-bold">
           decides tomar el control de tu vidas y tu relación con la tecnología.
         </span>
@@ -377,7 +374,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto max-w-6xl  px-6 flex-grow md:px-24 lg:px-52 text-xl font-normal lg:text-2xl">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         He caído muchas veces
         <br />
         Y con estas nuevas redes, quien no lo haría?
