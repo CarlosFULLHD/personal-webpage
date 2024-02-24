@@ -185,11 +185,11 @@ export default function Home() {
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
-          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange text-white shadow-lg w-40 my-6 mb-12 py-6 px-32 xl:px-40 xl:py-8 flex items-center justify-center relative">
+          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange text-white shadow-lg w-40 my-6 mb-12 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative">
             <img
               src="/shoppingcart.png"
               alt="Carrito de compras"
-              className="w-10 h-10 mr-2 "
+              className="w-8 h-8 absolute left-4"
             />
             Sí, quiero unirme
           </Button>
