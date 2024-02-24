@@ -177,6 +177,11 @@ export default function Home() {
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
+              <img
+                src="/Notion_app_logo.png"
+                alt="Logo de Notion"
+                className="w-8 h-8 inline lg:w-12 lg:h-12"
+              />
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
@@ -200,7 +205,7 @@ export default function Home() {
 
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
             EL MUNDO ESTÁ CAMBIANDO
           </span>
           <br />
@@ -229,9 +234,9 @@ export default function Home() {
         en todo el mundo, afectando a adolescentes, universitarios y adultos.
         <br />
         <br />
-        <ul>
+        <ul className="list-disc px-8">
           <li>
-            <strong>El aislamiento digital está creciendo.</strong>
+            <strong>📈 El aislamiento digital está creciendo.</strong>
             <br />
             En un mundo hiperconectado, paradójicamente nos encontramos más
             solos que nunca.
@@ -239,17 +244,17 @@ export default function Home() {
           <br />
           <li>
             <strong>
-              El miedo a perdernos de alguna tendencia o mensaje nos mantiene
+              😖 El miedo a perdernos de alguna tendencia o mensaje nos mantiene
               pegados a las pantallas
             </strong>
             <br />
             pero en el proceso, estamos perdiendo lo que realmente importa.
           </li>
         </ul>
-        <ul>
+        <ul className="list-disc px-8">
           <br />
           <strong>
-            Tan solo te invito a dar una vuelta por tu colegio, universidad o
+            👀 Tan solo te invito a dar una vuelta por tu colegio, universidad o
             por el trabajo, compruebalo por tí mismo
           </strong>
           <br />
@@ -258,23 +263,23 @@ export default function Home() {
           malo pasara
           <br />
           <li>
-            - Las redes sociales te prometen conexión, pero a menudo te deja
+            🥴 Las redes sociales te prometen conexión, pero a menudo te deja
             sintiéndote más vacío y tonto que antes.
           </li>
           <li>
-            - Las notificaciones constantes interrumpen, estresa y solamente
+            🔔 Las notificaciones constantes interrumpen, estresa y solamente
             fueron creadas para hacerte adicto al celular.
           </li>
           <li>
-            - Tiktok, Shorts y muchas plataformas reducen nuestro tiempo de
+            📉 Tiktok, Shorts y muchas plataformas reducen nuestro tiempo de
             atención a menos de 8 segundos.
           </li>
           <li>
-            - La comparación constante en plataformas como Instagram y Facebook
+            😥 La comparación constante en plataformas como Instagram y Facebook
             te hace cuestionar tu valor y logros.
           </li>
           <li>
-            - El celular te deja expuesto a adicciones más severas como el
+            🥵 El celular te deja expuesto a adicciones más severas como el
             p*rn0, onlyfans, redes sociales etc.
           </li>
         </ul>
@@ -291,20 +296,28 @@ export default function Home() {
         <br />
         Una mejor vida te espera si{" "}
         <span className="text-bold">
-          decides tomar el control de tu vidas y tu relación con la tecnología.
+          decides tomar el control de tu vida y tu relación con la tecnología.
         </span>
         <br />
         <br />
-        - Si buscas redescubrir la alegría de los momentos sin una pantalla
-        vacía.
-        <br />
-        - Di estas dispuesto a desafiar la normas de la sociedad actual,
-        eligiendo conscientemente qué, cuándo y cómo interactuar con el mundo
-        digital.
-        <br />
-        - Si anhelas recuperar tu tiempo, atención y energía para invertirlo en
-        pasiones, personas y proyectos que realmente enriquezcan tu vida.
-        <br />
+        <ul className="list-disc px-8">
+          <li>
+            🌞 Si buscas redescubrir la alegría de los momentos sin una pantalla
+            vacía.
+          </li>
+
+          <li>
+            ✂️ Si estas dispuesto a romper la normas de la sociedad actual,
+            eligiendo conscientemente qué, cuándo y cómo interactuar con el
+            mundo digital.
+          </li>
+
+          <li>
+            🔥 Si anhelas recuperar tu tiempo, atención y energía para
+            invertirlo en pasiones, personas y proyectos que realmente
+            enriquezcan tu vida.
+          </li>
+        </ul>
         <br />
         Estas habilidades y conocimientos no solo se pueden aprender, sino que
         son esenciales para cualquier persona que desee liderar una vida plena
@@ -313,41 +326,55 @@ export default function Home() {
         <br />
         <br />
         <span className="text-bold">Este curso es para ti si:</span>
-        <br />- Anhelas{" "}
-        <span className="text-bold">
-          liberarte del ciclo constante de distracción y procrastinación
-        </span>
-        que el celular impone en tu vida.
-        <br />- Te preocupas por{" "}
-        <span className="text-bold">
-          desperdiciar tu vida en trivialidades digitales
-        </span>
-        , soñando con lo que podrías lograr si solo pudieras desconectar.
-        <br />- Sientes que{" "}
-        <span className="text-bold">
-          la adicción al celular te ha robado momentos irreemplazables
-        </span>{" "}
-        con seres queridos, oportunidades de crecimiento personal y la capacidad
-        de disfrutar del aquí y ahora.
-        <br />- Buscas una forma de{" "}
-        <span className="text-bold">
-          vivir con propósito, sentido y autenticidad
-        </span>{" "}
-        en un mundo que parece valorar lo opuesto.
-        <br />
-        - Intentaste mejorar tu vida sin éxito porque no tienes disciplina
-        necesaria, no tienes dirección y no sabes que hacer.
-        <br />- Sabes que hay muchos cursos en las redes sociales gratuitos y de
-        pago
-        <span className="text-bold">
-          pero se siente que todos son lo mismo
-        </span>{" "}
-        (y no estas seguro en cual debes invertir tu dinero)
-        <br />
-        - Por ultimo si no tienes tiempo para invertir todo el día intentando
-        leer libros y ver videos en youtube para solucionar tus problemas. (A lo
-        que me refiero es que puedo ahorrarte bastante tiempo)
-        <br />
+        <ul className="list-disc px-8">
+          <li>
+            Anhelas{" "}
+            <span className="text-bold">
+              liberarte del ciclo constante de distracción y procrastinación
+            </span>
+            que el celular impone en tu vida.
+          </li>
+          <li>
+            Te preocupas por{" "}
+            <span className="text-bold">
+              desperdiciar tu vida en trivialidades digitales
+            </span>
+            , soñando con lo que podrías lograr si solo pudieras desconectar.
+          </li>
+          <li>
+            Sientes que{" "}
+            <span className="text-bold">
+              la adicción al celular te ha robado momentos irreemplazables
+            </span>{" "}
+            con seres queridos, oportunidades de crecimiento personal y la
+            capacidad de disfrutar del aquí y ahora.
+          </li>
+          <li>
+            Buscas una forma de{" "}
+            <span className="text-bold">
+              vivir con propósito, sentido y autenticidad
+            </span>{" "}
+            en un mundo que parece valorar lo opuesto.
+          </li>
+          <li>
+            Intentaste mejorar tu vida sin éxito porque no tienes disciplina
+            necesaria, no tienes dirección y no sabes que hacer.
+          </li>
+          <li>
+            Sabes que hay muchos cursos en las redes sociales gratuitos y de
+            pago
+            <span className="text-bold">
+              {" "}
+              pero se siente que todos son lo mismo
+            </span>{" "}
+            (y no estas seguro en cual debes invertir tu dinero)
+          </li>
+          <li>
+            Por ultimo si no tienes tiempo para invertir todo el día intentando
+            leer libros y ver videos en youtube para solucionar tus problemas.
+            (A lo que me refiero es que puedo ahorrarte bastante tiempo)
+          </li>
+        </ul>
         <br />
         <span className="text-bold">
           ¿Te identificas con alguno de estos puntos?
@@ -355,12 +382,12 @@ export default function Home() {
         <br />
         <br />
         Si es así, te ayudaré a resolver esos problemas en los siguientes 30
-        días.
+        días. 💪
         <br />
       </h2>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
             EL INSTRUCTOR
           </span>
           <br />

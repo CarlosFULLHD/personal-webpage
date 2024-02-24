@@ -22,10 +22,10 @@ const config = {
         circular: ["Circular", "sans-serif"],
       },
       letterSpacing: {
-        tighter: "-0.02em", // -2% aproximadamente
-        tightest: "-0.01em", // -1% aproximadamente
-        espaciado: "+0.02em", // 2% aproximadamente
-        espaciadomas: "+0.04em", // 4% aproximadamente
+        tighter: "-0.06em", // -2% aproximadamente
+        tightest: "-0.03em", // -1% aproximadamente
+        espaciado: "+0.04em", // 2% aproximadamente
+        espaciadomas: "+0.08em", // 4% aproximadamente
       },
 
       colors: {
