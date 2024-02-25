@@ -185,7 +185,7 @@ export default function Home() {
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
-          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange text-white shadow-lg w-40 my-6 mb-12 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative">
+          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow animate-pulse text-white w-40 my-6 mb-12 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none">
             <img
               src="/shoppingcart.png"
               alt="Carrito de compras"
@@ -402,112 +402,117 @@ export default function Home() {
       </div>
 
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        He caído muchas veces
+        Probé todas las soluciones superficiales:
+        <ul className="list-disc px-8">
+          <li>Aplicaciones de bloqueo</li>
+          <li>Rutinas de desconexión</li>
+          <li>Ayuno de dopamina</li>
+          <li>Meditaciones guiadas</li>
+        </ul>
+        Lo intenté todo...
         <br />
-        Y con estas nuevas redes, quien no lo haría?
-        <br />
-        Tratan de volvernos adictos y robarnos nuestra atención
-        <br />
-        Robarnos nuestros sueños
-        <br />
-        Robar nuestro futuro
-        <br />
-        Con el tiempo fuí mejorando mis habilidades de ventas ayudando a mi
-        mamá.
-        <br />
-        Vendía bastante bien
-        <br />
-        Entonces todo empezo a mejorar con el tiempo
-        <br />
-        Dejé de reprobar en la U para sacar notas de 80 para arriba
-        <br />
-        Empecé a tener pocas pero sinceras y significativas amistades
-        <br />
-        Empecé a programar para mi universidad, entré a competencias y estaba
-        entre los que más luchaban a pesar de ser un novato entre tantos genios.
-        <br />
-        Mi físico estaba como nunca pense que estaría
-        <br />
-        Todo fue mejorando día tras día
-        <br />
-        Libros de autoayuda, psicología y filosofía. Videos de YouTube.
-        Podcasts. Universidad. Todo buscando la clave para vida mejor.
-        <br />
-        Pero eso sí, apesto para tocar instrumentos, apesto para bailar, apesto
-        para química, apesto para historía y para muchas otras cosas.
-        <br />
-        Pero sabes para lo que no apesto?, para hacer paginas web, para escribir
-        y para vender.(Es por eso que te tengo hasta aqui)
-        <br />
-        Pero no iba a lograr nada si no eliminaba ciertos malos habitos que me
-        jalaban atrás.
-        <br />
-        James Clear lo sabe mejor que yo.
-        <br />
-        Así que me enfoqué en lo mejor que pude para eliminar mis adicciones,
-        entonces inicie resolviendo mi adiccion al celular.
+        Después de incontables horas pegado a la pantalla, innumerables intentos
+        fallidos y noches en vela buscando la solución, estaba exhausto.
         <br />
         <br />
-        <span className="text-bold">
-          Para finalmente....
+        No solo había fallado en cada táctica, sino que cada intento me alejaba
+        más de la verdadera solución. <br />
+        Sabía que necesitaba una respuesta que atacara la raíz de mi problema,
+        algo que finalmente encontré tras años de lectura y experimentación.{" "}
+        <br />
+        <br />
+        Quizás era porque estaba demasiado enganchado al celular, o tal vez era
+        especial y necesitaba una solución excepcional para romper el ciclo.{" "}
+        <br />A pesar de mi adicción de más de 14 horas diarias frente a
+        pantallas, principalmente el celular, logré controlarla y cambiar mi
+        vida radicalmente. <br />
+        <br />
+      </h2>
+
+      <div className="container my-4 md:my-0 md:py-8 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0">
+        <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end">
+          <img
+            src="/carlitos.png"
+            alt="Foto del instructor carlitos"
+            className="max-w-44 max-h-44 lg:max-h-64 lg:max-w-64 mx-auto xl:ml-80 2xl:ml-96"
+          />
+        </div>
+        <div className="text-xl lg:text-2xl lg:text-left md:basis-1/2 lg:p-0  text-white lg:max-w-sm">
+          <span className="text-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-4xl ">
+            Hey, soy Carlitos.
+          </span>
           <br />
-          Después de mucho tiempo...
-        </span>
-        <br />
-        Horas y horas investigando, leyendo y aplicando teorías de todo tipo,
-        desde las enseñanzas antiguas de los estoicos hasta las modernas
-        técnicas de psicología y desarrollo personal.
-        <br />
-        Porque hasta ahora NADIE ha dado una solución como la que te propongo
-        <br />
-        Porque encontré conocimiento y sabíduría en personas mucho más grandes
-        que yo, acepté sus enseñanzas.
-        <br />Y ahora vengo aca no como gurú, ni como un padre, si no como{" "}
-        <span className="text-bold">un amigo</span>,
-        <br />
-        Como <span className="text-bold">un guía</span> para enseñarte lo que
-        pocos saben...
-        <br />
-        Pues tampoco te la daré gratis porque si no, no lo valorarás.
-        <br />
-        Pero tampoco esta caro, de hecho es accesible en comparación a lo que
-        puedes ganar despues de haberte quitado tantos problemas que te frenan
-        <br />
-        Esta a 30$, Y es más, para animarte a comprar además de la garantía,
-        daré un Bonus exclusivo(Actualizaciones, cursos exclusivos) a las 100
-        primeras personas que lo compren, porque quiero premiar a los que
-        invierten su tiempo a leer
-        <br />
-        Te enseñaré a construir:{" "}
-        <span className="text-italic">
-          El carácter: Valores, principios, creencias e identidad
-        </span>
+          <br />
+          Soy estudiante de último año en ingeniería de sistemas y contabilidad.
+          <br />
+          Me fascina construir sistemas y leer apasionadamente sobre filosofía y
+          psicología.
+        </div>
+      </div>
+
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+        Comencé como cualquiera
         <br />
         <br />
-        Según yo eso es lo más valioso y es la clave para TODO en la vida.
-        <br />
-        La respuesta no está en bloquear el celular y ya,
-        <br />
-        La respuesta está en entrenar a nuestra mente, convertirnos en alguien
-        diferente y trascender nuestra identidad, ahí se encuentra la solución
-        definitiva que estoy dispuesto a enseñarte.
-        <br />
-        La mayoría simplemente no tiene 5 años para pasar por un ciclo de prueba
-        y error para hacerlo funcionar.
-        <br />
-        Por eso creé esta guía: para darte un atajo hacia ese equilibrio, para
-        que puedas empezar a vivir la vida que deseas ahora, no después de años
-        de lucha. <br />
-        Te doy las soluciones a los problemas de tus problemas.
-        <br />
-        No necesitas ser alguien con superpoderes para leerla, solo necesito tu
-        compromiso para aceptar todos estos conocimientos de los mas grandes
-        hombres, esas enseñanzas te harán volar la mente. Y te las enseñaré de
-        manera simple.
+        Sumergido en el peor escenario posible con las redes sociales
         <br />
         <br />
-        Me interesa!
+        Una espiral de consumo sin fin, donde cada notificación era una cadena
+        más en mi prisión digital.
         <br />
+        <br />
+        Pero, poco a poco, aplicando las lecciones de cada libro que devoraba,
+        empecé a tallar mi escape.
+        <br />
+        <br />
+        Cada día era una conversación con mentores que nunca conocí
+        personalmente, pero cuyas palabras resonaban como un diálogo interno.
+        <br />
+        Me tomaba las noches para reflexionar sobre mis éxitos, para celebrar y
+        planificar mejoras aún más significativas.
+        <br />
+        Pequeños pasos incrementales hacia un futuro que, según Jordan Peterson,
+        prometía ser mejor.
+        <br />Y así fue como gradualmente rompí las cadenas de la tecnología y
+        comencé a utilizarla como una herramienta, en lugar de ser devorado por
+        ella.
+        <br />
+        Es por eso que creé este curso moderno.
+        <br />
+        <br />
+        Algo faltaba en el discurso convencional. Nadie ofrecía una solución
+        rápida y verdadera para obtener claridad en la dirección de tu vida.
+        <br />
+        ¿La razón? Todo esto es muy nuevo. Todos todavía lo están descifrando.
+        <br />
+        <br /> Por eso puedo decir que he descifrado el código, lo he logrado.
+        <br /> ¿Pruebas? Compara mi físico de hace un año con el de ahora, mis
+        calificaciones en la universidad antes y después, mi página web, los
+        videos en YouTube, mis estrategias de marketing y ventas, y las
+        múltiples habilidades que he adquirido, incluso cursando ingeniería que
+        consideran ser una de las carreras con mayor dificultad
+        <br />
+        Todo esto demuestra el tiempo libre que tengo para lograr todo esto.
+        <br />
+        <br />
+        Quizá no te interese hacer exactamente lo que yo hago, pero seguro que
+        te gustaría tener tiempo libre para dedicarte a lo que realmente te
+        apasiona, ya sea dibujar, programar, bailar...
+        <br />
+        <br />
+        Sea lo que sea, podrás lograrlo si cuentas con tiempo libre.
+        <br />
+        Por eso propongo este programa que te brindará una solución definitiva y
+        de raíz a la adicción al celular, cómo construir realmente una
+        mentalidad con dirección y sentido y, finalmente, encontrar un propósito
+        en tu vida.
+        <br />
+        <br />
+        Puede sonar increíble, pero en realidad no lo descubri yo, fueron ellos:
+        <br />
+        Ellos, con su sabiduría, me enseñaron a aplicar todo esto. Ahora, vengo
+        a compartir contigo las lecciones clave para que puedas triunfar sobre
+        esta adicción que te roba incontables horas de tu vida.
       </h2>
 
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
