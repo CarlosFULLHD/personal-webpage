@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import BonusCard from "@/components/BonusCard";
+import { AuthorsSection } from "@/components/AuthorsSection";
 
 const cardsData = [
   {
@@ -219,7 +220,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black my-6">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6">
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
         <br />
@@ -401,7 +402,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         Probé todas las soluciones superficiales:
         <ul className="list-disc px-8">
           <li>Aplicaciones de bloqueo</li>
@@ -429,7 +430,7 @@ export default function Home() {
         <br />
       </h2>
 
-      <div className="container my-4 md:my-0 md:py-8 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0">
+      <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end">
           <img
             src="/carlitos.png"
@@ -450,7 +451,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-6xl md:max-w-2xl lg:max-w-3xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         Comencé como cualquiera
         <br />
         <br />
@@ -510,23 +511,29 @@ export default function Home() {
         <br />
         Puede sonar increíble, pero en realidad no lo descubri yo, fueron ellos:
         <br />
-        Ellos, con su sabiduría, me enseñaron a aplicar todo esto. Ahora, vengo
-        a compartir contigo las lecciones clave para que puedas triunfar sobre
-        esta adicción que te roba incontables horas de tu vida.
+      </h2>
+
+      <AuthorsSection />
+
+      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+        Ellos y muchos más, con su sabiduría me enseñaron a aplicar todo esto.
+        Ahora, vengo a compartir contigo las lecciones clave para que puedas
+        triunfar sobre esta adicción que te roba incontables horas de tu vida.
       </h2>
 
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
-            LA MEJOR INVERSION DE TU VIDA
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+            LA HABILIDAD DEL SIGLO
           </span>
           <br />
           <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
-            ¿No me convence, que me enseñarás?
+            Vivir Intencionalmente en la Era Digital
           </span>
           <br />
           <em className="text-lg font-italic md:text-xl lg:text-2xl">
-            Una oferta que única con un valor único
+            En este mundo acelerado, la desintoxicación digital no es un lujo,
+            es una necesidad.
           </em>
         </div>
       </div>
