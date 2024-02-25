@@ -7,143 +7,11 @@ import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
+import { ModulesSection } from "@/components/ModulesSection";
+import { FaqsSection } from "@/components/FaqsSection";
 
-const cardsData = [
-  {
-    id: 1,
-    subtitle: `¿Cansado de Sentir que Pierdes Tu Tiempo y Desperdicias tu Vida?`,
-    title: ` ⌛Maestro del Tiempo`,
-    description: `
-    - Guía paso a paso sobre cómo identificar y limitar las distracciones del celular.
-    - Ejercicios de planificación semanal para priorizar tareas y objetivos.
-    - Plantilla del Menú del Descanso para programar tu tiempo.
-    - Apps y recomendaciones para seguimiento semanal y monitorear el uso del celular.
-    - El protocolo de retroalimentación de las personas exitosas.
-    - Aprende cómo dejar las redes sociales, todo el mal que hacen y obtener un balance sano para dejar de ser esclavo de las notificaciones.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 2,
-    subtitle: `¿Sientes que no eres todo lo que podrías llegar a ser?`,
-    title: `🌱Maestro del Carácter`,
-    description: `
-    - Aprende cómo funciona tu identidad, entendimiento psicológico y profundo de los valores, creencias que tenemos de nosotros mismos y autopercepciones.
-    - Aprende cómo cambiar de identidad y dejar ir esa parte de ti para poder desarrollarte como una mejor persona.
-    - Mejora la imagen de ti mismo para que empieces a reconstruir tu vida.
-    - Cómo construir una nueva mentalidad resiliente ante las opiniones de las masas.
-    - Una llamada a la madurez y también a la responsabilidad hacia una vida con sentido y propósito.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 3,
-    subtitle: `¿El Autosabotaje Te Detiene?¿Te autodesprecias u odias a ti mismo?`,
-    title: `🛡️Cómo Dejar de Sabotearte a Ti Mismo`,
-    description: `
-    - Como dejar de autodespreciarte y empezar a quererse uno mismo 
-    - Voy a mostrarte el porqué y el cómo dejar atrás el autosabotaje.
-    - Cómo superar las barreras internas y escapar del ciclo de intentos fallidos.
-    - Cómo obtener fe en tus acciones, paso a paso hacia la mejor versión de ti con logros y satisfacción personal.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 4,
-    subtitle: `¿Anhelas Crecimiento y Un Propósito?`,
-    title: `🧭Cómo Encontrar Definitivamente tu Propósito y Pasión`,
-    description: `
-    - Exploraremos la responsabilidad de vivir a plenitud.
-    - Valorar tus experiencias y encontrar significado en tus sacrificios.
-    - Cómo disfrutar de este viaje, ya que no se trata sobre éxitos rápidos o ganancias monetarias instantáneas; te ofrezco algo infinitamente más valioso.
-    - Encontrar finalmente lo que llaman TU PASIÓN.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 5,
-    subtitle: `¿Tienes falta de sueño y no consigues descansar lo suficiente?`,
-    title: `🌙Cómo Llegar a Dormir Tan Bien como un Bebé`,
-    description: `
-    - Rutinas de relajación pre-sueño para mejorar la calidad del descanso.
-    - Redescubre cómo volver a tener un sueño reparador, sin preocupaciones ni el estrés del celular por el trabajo y despertando cada día con propósito.
-    - Cómo alejarte de tu celular a altas horas de la noche.
-    - Cómo volver a recuperar un horario de sueño sano.
-    - Paso a paso de cómo superar dificultades para dormir.
-    - La magia de la escritura y liberación de preocupaciones.
-    - Guía sobre alimentación, ambiente necesario para dormir mejor.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 6,
-    subtitle: `¿Quieres Conocerte Mejor?`,
-    title: `📖Cómo Conocer Quién Rayos Eres`,
-    description: `
-    - Aprende la magia detrás de cada uno de tus rasgos de la personalidad.
-    - Crea objetivos basados en tu personalidad y lo que te motivará hacia tu éxito futuro.
-    - Aprende sobre las ventajas y desventajas de tu personalidad.
-    - Cómo sacarle el mejor partido a tu personalidad y también cómo puedes influir en esos rasgos para una mejor vida.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 7,
-    subtitle: `¿El Miedo y la Procrastinación Te Dominan?`,
-    title: `🦁Cómo David Goggins y los Exitosos Mantienen su Disciplina`,
-    description: `
-    - Aprende a superar la procrastinación creando una visión negativa que te motive hacia adelante y una visión futura para obtener dirección y claridad de tu futuro deseado.
-    - Aprende cómo las personas millonarias toman decisiones y se comprometen a su propósito.
-    - Aprende a liberarte de las ataduras para no salir de tu zona de confort y tampoco perderte en el burnout.
-    - Aprende la mentalidad del estudiante de por vida y dejar atrás tu ego para aprender de verdad.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 8,
-    subtitle: `¿Tienes Falta de Confianza?`,
-    title: `🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos`,
-    description: `
-    - Aprende por qué las soluciones superficiales como afirmaciones o frases bonitas no funcionan. Entonces te revelaré qué SÍ te da confianza.
-    - Aprende a aceptar a tu yo pasado y seguir un camino incluso si te encuentras en el peor momento de tu vida.
-    - Encuentra propósito y significado en hacer sacrificios.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 9,
-    subtitle: `¿Tienes Amistades Verdaderas?`,
-    title: `🤝Cómo Convertirte y Ser el Amigo que Siempre Estará a tu Lado`,
-    description: `
-    - Entiende la razón verdadera por la cual debes cuidarte a ti mismo y a tu familia.
-    - Aprende cómo encontrar malas amistades y encontrar buenas amistades que te eleven y no te hundan.
-    - Elimina las limitaciones mentales para conseguir nuevas amistades.
-    - Aprende a convertirte en ese amigo en el cual puedes confiar.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  {
-    id: 10,
-    subtitle: `¿Intentaste mejorar tus hábitos y nada te funcionó?`,
-    title: `⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea`,
-    description: `
-    - Crea, descubre y destruye hábitos, paso a paso.
-    - Aprende cómo tener hábitos que no requieran fuerza de voluntad.
-    - Aprende el ÚNICO ingrediente necesario para formar hábitos DE POR VIDA.
-    - Motívate para poder seguir esos hábitos y continuarlos a pesar de la falta de disciplina.
-    `,
-    avatarSrc: `/darkside.webp`,
-  },
-  // ... (agrega más cards aquí)
-];
 const bonusData = [
   {
     id: 1,
@@ -203,7 +71,6 @@ export default function Home() {
           />
         </div>
       </div>
-
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
@@ -219,7 +86,6 @@ export default function Home() {
           </em>
         </div>
       </div>
-
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6">
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
@@ -401,7 +267,6 @@ export default function Home() {
           </em>
         </div>
       </div>
-
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         Probé todas las soluciones superficiales:
         <ul className="list-disc px-8">
@@ -429,7 +294,6 @@ export default function Home() {
         vida radicalmente. <br />
         <br />
       </h2>
-
       <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end">
           <img
@@ -450,7 +314,6 @@ export default function Home() {
           psicología.
         </div>
       </div>
-
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         Comencé como cualquiera
         <br />
@@ -512,15 +375,12 @@ export default function Home() {
         Puede sonar increíble, pero en realidad no lo descubri yo, fueron ellos:
         <br />
       </h2>
-
       <AuthorsSection />
-
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         Ellos y muchos más, con su sabiduría me enseñaron a aplicar todo esto.
         Ahora, vengo a compartir contigo las lecciones clave para que puedas
         triunfar sobre esta adicción que te roba incontables horas de tu vida.
       </h2>
-
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
@@ -537,20 +397,11 @@ export default function Home() {
           </em>
         </div>
       </div>
-
-      <div className=" mx-auto max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8 rounded-lg">
-        <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
-          {cardsData.map((card) => (
-            <DetailedCard
-              key={card.id}
-              subtitle={card.subtitle}
-              title={card.title}
-              description={card.description}
-              avatarSrc={card.avatarSrc}
-            />
-          ))}
-        </div>
-      </div>
+      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+        Esto es lo que te ofrezco dentro del curso,
+      </h2>
+      <ModulesSection />
+      BONUSES
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
       <div className=" max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8">
         <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
@@ -652,10 +503,9 @@ export default function Home() {
 
         {/* TERMINA BLOQUE DE LA DERECHA */}
       </div>
-
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
             TIENES PREGUNTAS?
           </span>
           <br />
@@ -668,47 +518,7 @@ export default function Home() {
           </em>
         </div>
       </div>
-
-      <Accordion
-        type="single"
-        collapsible
-        className="p-4 bg-custom-blue rounded-lg my-8 mx-2"
-      >
-        <AccordionItem
-          value="item-1"
-          className="no-underline hover:no-underline"
-        >
-          <AccordionTrigger>
-            Es necesario que sepa utilizar Notion?
-          </AccordionTrigger>
-          <AccordionContent>
-            No problem mai frend. He preparado una guía detallada paso a paso,
-            especialmente para principiantes, y nuestro soporte está listo para
-            asistirte en cada duda que surja.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>
-            ¿Es dificil de leer y poner en práctica?
-          </AccordionTrigger>
-          <AccordionContent>
-            Simplifiqué al maximo las enseñanzas de muchos autores con tal de
-            que sea facil de seguir, leer y poner en práctica, incluso si tienes
-            poco tiempo, si crees que no es para tí puedes pedir un reembolso
-            hasta 30 dias despues de la compra!!
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>
-            ¿Necesito una cuenta de Notion para usarla? ¿Hay costos extras?
-          </AccordionTrigger>
-          <AccordionContent>
-            Totalmente accesible con una cuenta gratuita de Notion, esta
-            plantilla no implica costos adicionales. Su diseño asegura una
-            integración sin problemas y una experiencia de usuario optimizada.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <FaqsSection />
     </section>
   );
 }

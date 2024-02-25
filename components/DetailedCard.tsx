@@ -5,28 +5,26 @@ interface DetailedCardProps {
   title: string;
   subtitle: string;
   description: string;
-  avatarSrc: string;
 }
 // Añade las propiedades title, description, y avatarSrc como argumentos de la función
 export default function DetailedCard({
   title,
   subtitle,
   description,
-  avatarSrc,
 }: DetailedCardProps) {
   const descriptionItems = description
     .split("-")
     .map((item) => item.trim())
     .filter((item) => item);
   return (
-    <Card className="py-4 bg-custom-blue rounded-xl">
+    <Card className="py-4 bg-white text-black rounded-xl mb-2 mx-2 md:mx-16">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         {/* Utiliza la propiedad title para mostrar el subtítulo */}
-        <h4 className="font-bold text-md">{subtitle}</h4>
+        <h4 className="font-bold text-xl">{subtitle}</h4>
         {/* Utiliza la propiedad title para mostrar el título */}
-        <h1 className="font-bold text-large">{title}</h1>
+        <h1 className="font-bold text-2xl">{title}</h1>
         {/* Utiliza la propiedad description para mostrar la descripción */}
-        <ul className="text-base font-normal">
+        <ul className="text-lg font-normal">
           {descriptionItems.map((item, index) => (
             <li key={index} className="list-disc ml-4">
               {item}
@@ -34,15 +32,6 @@ export default function DetailedCard({
           ))}
         </ul>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        {/* Utiliza la propiedad avatarSrc para la imagen */}
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl m-8 sm:w-32 mx-auto"
-          src={avatarSrc}
-          width={570}
-        />
-      </CardBody>
     </Card>
   );
 }
