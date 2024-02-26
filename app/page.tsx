@@ -11,16 +11,7 @@ import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
-
-const bonusData = [
-  {
-    id: 1,
-    subtitle: `BONUS #1 - Plantilla de Notion`,
-    title: `Menú del Descanso - Planifica tu ocio conscientemente`,
-    description: ` `,
-    avatarSrc: `/tonyrobbins-photo.jpg`,
-  },
-];
+import { BonusSection } from "@/components/BonusSection";
 
 export default function Home() {
   return (
@@ -350,11 +341,13 @@ export default function Home() {
         ¿La razón? Todo esto es muy nuevo. Todos todavía lo están descifrando.
         <br />
         <br /> Por eso puedo decir que he descifrado el código, lo he logrado.
-        <br /> ¿Pruebas? Compara mi físico de hace un año con el de ahora, mis
-        calificaciones en la universidad antes y después, mi página web, los
-        videos en YouTube, mis estrategias de marketing y ventas, y las
+        <br />
+        <br /> ¿Pruebas?
+        <br />
+        Esta página web, los videos en YouTube, muchisimos libros leídos y mejor
+        aún.. "Aplicados", mis estrategias de marketing y ventas, y las
         múltiples habilidades que he adquirido, incluso cursando ingeniería que
-        consideran ser una de las carreras con mayor dificultad
+        consideran ser una de las carreras con mayor dificultad.
         <br />
         Todo esto demuestra el tiempo libre que tengo para lograr todo esto.
         <br />
@@ -401,21 +394,25 @@ export default function Home() {
         Esto es lo que te ofrezco dentro del curso,
       </h2>
       <ModulesSection />
-      BONUSES
-      {/* BONUS CARD DE BONUSES PARA EL CURSO */}
-      <div className=" max-w-[1024px] p-1 sm:p-2 md:p-4 lg:p-8">
-        <div className="grid grid-cols-1 gap-y-1 sm:gap-y-2 md:grid-cols-2 md:gap-y-4 lg:gap-y-8 gap-x-4">
-          {bonusData.map((card) => (
-            <BonusCard
-              key={card.id}
-              subtitle={card.subtitle}
-              title={card.title}
-              description={card.description}
-              avatarSrc={card.avatarSrc}
-            />
-          ))}
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+            Y ESO NO ES TODO
+          </span>
+          <br />
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+            ¿Alguien dijo Bonus gratuitos?
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            Solo para las primeras 100 personas en comprar, después subiré el
+            precio
+          </em>
         </div>
       </div>
+
+      {/* BONUS CARD DE BONUSES PARA EL CURSO */}
+      <BonusSection />
       {/* COMPARACION DE PRECIOS */}
       <div className=" w-full flex flex-col items-center justify-center bg-custom-blue">
         <div className="text-custom-blue w-full md:max-w-2xl bg-white m-2 p-4 shadow-lg rounded-lg">

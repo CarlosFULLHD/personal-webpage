@@ -19,14 +19,14 @@ export default function BonusCard({
     .map((item) => item.trim())
     .filter((item) => item);
   return (
-    <Card className="pt-4 bg-custom-blue rounded-xl">
+    <Card className="py-4 bg-white text-black rounded-xl mb-2 mx-2 md:mx-16">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         {/* Utiliza la propiedad title para mostrar el subtítulo */}
-        <h4 className="font-bold text-md">{subtitle}</h4>
+        <h4 className="font-bold text-xl">{subtitle}</h4>
         {/* Utiliza la propiedad title para mostrar el título */}
-        <h1 className="font-bold text-large">{title}</h1>
+        <h1 className="font-bold text-2xl">{title}</h1>
         {/* Utiliza la propiedad description para mostrar la descripción */}
-        <ul className="text-base font-normal">
+        <ul className="text-lg font-normal">
           {descriptionItems.map((item, index) => (
             <li key={index} className="list-disc ml-4">
               {item}
