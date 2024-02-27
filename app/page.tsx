@@ -1,3 +1,4 @@
+"use client";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -6,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
-
+import React, { useEffect } from "react";
 import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
@@ -45,7 +46,15 @@ export default function Home() {
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
-          <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow animate-pulse text-white w-40 my-6 mb-12 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none">
+          <Button
+            onClick={() => {
+              const section = document.getElementById("seccion-compra");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow animate-pulse text-white w-40 mt-6 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+          >
             <img
               src="/shoppingcart.png"
               alt="Carrito de compras"
@@ -53,6 +62,9 @@ export default function Home() {
             />
             Sí, quiero unirme
           </Button>
+          <p className="italic mb-6 block text-center lg:text-xl">
+            Garantía de 30 días
+          </p>
         </div>
         <div className=" lg:basis-1/2 lg:p-6">
           <img
@@ -374,6 +386,17 @@ export default function Home() {
         Ahora, vengo a compartir contigo las lecciones clave para que puedas
         triunfar sobre esta adicción que te roba incontables horas de tu vida.
       </h2>
+      <Button
+        onClick={() => {
+          const section = document.getElementById("seccion-compra");
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 my-6 mb-12 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+      >
+        Estoy listo para unirme
+      </Button>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
@@ -391,9 +414,20 @@ export default function Home() {
         </div>
       </div>
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        Esto es lo que te ofrezco dentro del curso,
+        Lo Que Obtendrás dentro de este curso:
       </h2>
       <ModulesSection />
+      <Button
+        onClick={() => {
+          const section = document.getElementById("seccion-compra");
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 my-6 mb-12 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+      >
+        Estoy listo para unirme
+      </Button>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
@@ -410,96 +444,162 @@ export default function Home() {
           </em>
         </div>
       </div>
-
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
       <BonusSection />
-      {/* COMPARACION DE PRECIOS */}
-      <div className=" w-full flex flex-col items-center justify-center bg-custom-blue">
-        <div className="text-custom-blue w-full md:max-w-2xl bg-white m-2 p-4 shadow-lg rounded-lg">
-          <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl text-center justify-center">
-            <span className="text-lg tracking-espaciadomas font-bold md:text-xl lg:text-2xl">
-              Save big with Basecamp.
-            </span>
-            <br />
-            <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
-              Basecamp replaces a bunch of apps. See how our pricing compares to
-              bundling Slack, Asana, & Google Workspace together:
-            </span>
-          </div>
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
+        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+            UNETE HOY
+          </span>
+          <br />
+          <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
+            Únete a la comunidad de personas decididas a transformar su vida
+          </span>
+          <br />
+          <em className="text-lg font-italic md:text-xl lg:text-2xl">
+            Obtén el curso inmediatamente.
+          </em>
         </div>
-        <div className="md:grid md:grid-cols-2 md:max-w-2xl w-full">
-          <div className="bg-white m-2 p-4 shadow-lg rounded-lg h-[600px]"></div>
-
-          <div className="flex flex-col justify-between">
-            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
-              <img
-                src="/jordanpeterson-photo.jpg"
-                className="max-w-24 max-h-24 mr-4"
-                alt="Descripción de la imagen"
-              />
-
-              <div className="flex-1">
-                <p className="text-left align-middle text-black text-lg font-bold">
-                  IZQUIERDA
-                </p>
-                <p className="text-left align-middle text-black text-lg">
-                  $7.25/month per user
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
-              <img
-                src="/jordanpeterson-photo.jpg"
-                className="max-w-24 max-h-24 mr-4"
-                alt="Descripción de la imagen"
-              />
-
-              <div className="flex-1">
-                <p className="text-left align-middle text-black text-lg font-bold">
-                  IZQUIERDA
-                </p>
-                <p className="text-left align-middle text-black text-lg">
-                  $7.25/month per user
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
-              <img
-                src="/jordanpeterson-photo.jpg"
-                className="max-w-24 max-h-24 mr-4"
-                alt="Descripción de la imagen"
-              />
-
-              <div className="flex-1">
-                <p className="text-left align-middle text-black text-lg font-bold">
-                  IZQUIERDA
-                </p>
-                <p className="text-left align-middle text-black text-lg">
-                  $7.25/month per user
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center p-4 bg-white rounded-lg mx-4 my-2">
-              <img
-                src="/jordanpeterson-photo.jpg"
-                className="max-w-24 max-h-24 mr-4"
-                alt="Descripción de la imagen"
-              />
-
-              <div className="flex-1">
-                <p className="text-left align-middle text-black text-lg font-bold">
-                  IZQUIERDA
-                </p>
-                <p className="text-left align-middle text-black text-lg">
-                  $7.25/month per user
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* TERMINA BLOQUE DE LA DERECHA */}
       </div>
+      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+        En un mundo que nos empuja constantemente hacia la distracción digital,
+        este curso es tu brújula hacia una vida con sentido, alejada de la
+        superficialidad de las pantallas y llena de propósitos auténticos.
+        <br /> <br />
+        He aquí donde la sabiduría de figuras como James Clear, Jordan Peterson,
+        Tony Robbins, Ryan Holiday, y Viktor Frankl se convierten en tu guía
+        hacia un renacer personal.
+        <br />
+        <br />
+        Este no es solo otro curso, es tu camino hacia una existencia plena en
+        el siglo XXI.
+      </h2>
+      <h2
+        id="seccion-compra"
+        className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
+      >
+        <span className="font-bold text-center block text-3xl text-gradient">
+          "LIBERTAD DIGITAL: Una vida más allá de las pantallas"
+        </span>
+        <span className="font-bold text-center block text-4xl pb-3"> $30</span>
+        <span className="font-bold text-center block">
+          Desarrolla dominio sobre tu vida digital y personal con estrategias
+          comprobadas para una transformación real.
+        </span>
+        <br />
+        ✓ Estrategias de desintoxicación digital basadas en las enseñanzas de
+        Cal Newport, para que retomes el control sobre tu tiempo y atención.
+        <br />
+        ✓ Ejercicios de autoconocimiento y desarrollo personal inspirados en los
+        principios de Jordan Peterson y Viktor Frankl, para vivir una vida con
+        propósito y significado.
+        <br />
+        ✓ Técnicas de formación y mantenimiento de hábitos efectivos, guiadas
+        por la sabiduría práctica de James Clear, para transformar tu día a día.
+        <br />
+        ✓ No solo teoría, sino práctica real: plantillas de Notion
+        personalizables para implementar lo aprendido de manera efectiva en tu
+        vida.
+        <br />
+        ✓ No solo teoría, sino práctica real: plantillas de Notion
+        personalizables para implementar lo aprendido de manera efectiva en tu
+        vida.
+        <br />
+        ✓ Comunidad de Apoyo Exclusiva: Acceso a un grupo privado donde podrás
+        compartir experiencias, desafíos y logros con personas que están en el
+        mismo camino de transformación que tú, ofreciendo un espacio de
+        motivación y apoyo mutuo.
+        <br />
+        <br />
+        <span className="font-bold">
+          Y no solo eso, en los modulos del curso también aprenderás estas
+          lecciones:
+        </span>
+        <br />
+        <br />⌛ Maestro del Tiempo: Técnicas y herramientas para gestionar
+        mejor tu tiempo y reducir las distracciones del celular.
+        <br />
+        🌱Maestro del Carácter: Estrategias para entender y mejorar tu
+        identidad, valores y auto percepción.
+        <br />
+        🛡️Cómo Dejar de Sabotearte a Ti Mismo: Superación del autosabotaje, el
+        autodesprecio y la construcción de una autoestima saludable.
+        <br />
+        🧭Cómo Encontrar tu Propósito y Pasión: Guía para descubrir y vivir
+        según tu pasión y propósito, valorando tus experiencias y sacrificios.
+        <br />
+        🌙Cómo Dormir Bien: Estrategias para mejorar tu sueño y descanso,
+        incluyendo rutinas de relajación y consejos para un sueño reparador.
+        <br />
+        📖Cómo Conocer Quién Eres: Descubre los rasgos de tu personalidad y cómo
+        estos pueden influir positivamente en tu vida.
+        <br />
+        🦁Cómo Mantenerse Disciplinado: Inspirado en David Goggins, aprende a
+        superar la procrastinación y a comprometerte con tus objetivos.
+        <br />
+        🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos: Estrategias para
+        construir una confianza auténtica y duradera.
+        <br />
+        🤝Cómo Ser el Amigo Ideal: Consejos para mejorar tus relaciones
+        personales, dejar atrás amistades tóxicas y construir conexiones
+        significativas.
+        <br />
+        ⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea: Técnicas para
+        formar y mantener hábitos saludables sin depender de la fuerza de
+        voluntad.
+        <br />
+        <br />
+        <span className="font-bold">
+          Cursos Futuros que recibirán para las primeras 100 personas,
+          totalmente gratuitos!!
+        </span>
+        <br />
+        ✓ Guía NoFap Definitiva: Herramientas y estrategias para superar la
+        adicción a la pornografía y reconstruir una sexualidad saludable.
+        <br />
+        ✓ Módulo de Inteligencia Emocional: Aprende a gestionar tus emociones,
+        superar la depresión y construir relaciones personales sólidas.
+        <br />
+        ✓ Resiliencia Estoica: Principios estoicos aplicados a la vida diaria
+        para una mentalidad resiliente ante la adversidad.
+        <br />
+        <br />
+        ¡Unete y transforma tu relación con la tecnología, contigo mismo y con
+        el mundo que te rodea!
+      </h2>
+      <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none">
+        <img
+          src="/shoppingcart.png"
+          alt="Carrito de compras"
+          className="w-8 h-8 absolute left-4"
+        />
+        Unete al curso!!
+      </Button>
+      <p className="italic">Garantía de 30 días</p>
+      <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
+        {" "}
+        <span className="font-bold text-3xl lg:text-4xl">
+          Garantía de Satisfacción Total
+        </span>
+        <br />
+        <br />
+        Entiendo que cada paso hacia el cambio es único y que tu camino hacia
+        una vida digitalmente equilibrada es personal. Por eso quiero que te
+        sientas completamente libre para explorar este curso sin ningún riesgo.
+        <br />
+        Si en cualquier momento dentro de los 30 días siguientes a tu compra
+        decides que este curso no es para ti, sea cual sea la razón, te ofrezco
+        una Garantía de Satisfacción Total. No necesitas completar el curso, ni
+        siquiera tienes que darme un motivo. Simplemente envíame un correo a
+        carlitos@carlitosnina.com pidiendo tu reembolso, y te devolveré el 100%
+        de tu inversión, sin preguntas.
+        <br />
+        Estoy comprometido a ofrecerte no solo conocimiento, sino también
+        confianza y seguridad en tu inversión. Creo firmemente en el valor
+        transformador de este curso y quiero que tengas la libertad de
+        experimentarlo por ti mismo, completamente a tu ritmo y según tus
+        términos.
+      </h2>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
@@ -516,6 +616,22 @@ export default function Home() {
         </div>
       </div>
       <FaqsSection />
+      <Button
+        onClick={() => {
+          const section = document.getElementById("seccion-compra");
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 my-6 mb-12 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+      >
+        <img
+          src="/shoppingcart.png"
+          alt="Carrito de compras"
+          className="w-8 h-8 absolute left-4"
+        />
+        Dudas resueltas
+      </Button>
     </section>
   );
 }

@@ -19,7 +19,7 @@ export default function BonusCard({
     .map((item) => item.trim())
     .filter((item) => item);
   return (
-    <Card className="py-4 bg-white text-black rounded-xl mb-2 mx-2 md:mx-16">
+    <Card className="pt-4 bg-white text-black rounded-xl mb-2 mx-2 md:mx-16">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         {/* Utiliza la propiedad title para mostrar el subtítulo */}
         <h4 className="font-bold text-xl">{subtitle}</h4>
