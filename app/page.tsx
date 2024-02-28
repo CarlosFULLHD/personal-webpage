@@ -567,7 +567,11 @@ export default function Home() {
         ¡Unete y transforma tu relación con la tecnología, contigo mismo y con
         el mundo que te rodea!
       </h2>
-      <Button className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none">
+      <Button
+        href="https://shop.carlitosnina.com/checkout/buy/5b19954b-791e-46b0-ad09-dfc19595482d?discount=0"
+        as={Link}
+        className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+      >
         <img
           src="/shoppingcart.png"
           alt="Carrito de compras"
