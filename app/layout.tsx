@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +32,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <Head>
+        {/* Agrega aquí otros elementos del Head como estilos o favicon */}
+        <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+      </Head>
 
       <body
         className={clsx(
