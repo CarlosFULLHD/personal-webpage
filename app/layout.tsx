@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -47,6 +48,7 @@ export default function RootLayout({
           <div className="relative flex flex-col font-circular ">
             <Navbar />
             <main className="bg-custom-background">{children}</main>
+            <Analytics />
             <footer className="w-full flex items-center justify-center py-3"></footer>
           </div>
         </Providers>
