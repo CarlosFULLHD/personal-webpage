@@ -487,6 +487,8 @@ export default function Home() {
           comprobadas para una transformación real.
         </span>
         <br />
+        Ten acceso de por vida a la plantilla y obtén:
+        <br />
         ✓ Estrategias de desintoxicación digital basadas en las enseñanzas de
         Cal Newport, para que retomes el control sobre tu tiempo y atención.
         <br />
@@ -496,10 +498,6 @@ export default function Home() {
         <br />
         ✓ Técnicas de formación y mantenimiento de hábitos efectivos, guiadas
         por la sabiduría práctica de James Clear, para transformar tu día a día.
-        <br />
-        ✓ No solo teoría, sino práctica real: plantillas de Notion
-        personalizables para implementar lo aprendido de manera efectiva en tu
-        vida.
         <br />
         ✓ No solo teoría, sino práctica real: plantillas de Notion
         personalizables para implementar lo aprendido de manera efectiva en tu
@@ -629,12 +627,7 @@ export default function Home() {
         }}
         className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 my-6 mb-12 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
-        <img
-          src="/shoppingcart.png"
-          alt="Carrito de compras"
-          className="w-8 h-8 absolute left-4"
-        />
-        Dudas resueltas
+        Mis dudas están resueltas
       </Button>
     </section>
   );
