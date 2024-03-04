@@ -5,7 +5,7 @@ export const AuthorsSection = () => {
     <section className="m-0 lg:max-w-3xl">
       <div className="container lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 md:my-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 md:my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
+          <Image
             src="jamesclear-photo.jpg" // Use your Cloudflare URL pointing to S3
             alt="Foto de James Clear de Hábitos Atómicos"
             width={500} // Specify width
@@ -27,9 +27,11 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
-            src="/jordanpeterson-photo.webp"
+          <Image
+            src="jordanpeterson-photo.webp"
             alt="Jordan Peterson de 12 Reglas para Vivir Un antidoto al caos"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>
@@ -48,9 +50,11 @@ export const AuthorsSection = () => {
       {/* OTRO AUTOR */}
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
-            src="/tonyrobbins-photo.jpg"
+          <Image
+            src="tonyrobbins-photo.webp"
             alt="Foto de Tony Robbins de Poder sin Límites y Despertando al gigante interior"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>
@@ -68,10 +72,12 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
-            src="/ryanholiday-photo.jpg"
+          <Image
+            src="ryanholiday-photo.webp"
             alt="Foto de Ryan Holiday de El Obstáculo es el
             Camino - Disciplina es el destino, Diario para estoicos, el ego es el enemigo"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>
@@ -88,9 +94,11 @@ export const AuthorsSection = () => {
       </div>
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
-            src="/calnewport-photo.jpg"
+          <Image
+            src="calnewport-photo.webp"
             alt="Foto de Cal Newport de Enfócate - Minimalismo digital"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>
@@ -108,9 +116,11 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0  md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
-          <img
-            src="/viktorfrankl-photo.jpg"
+          <Image
+            src="viktorfrankl-photo.webp"
             alt="Foto de Viktor Frankl de El Hombre en Busca de Sentido"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>

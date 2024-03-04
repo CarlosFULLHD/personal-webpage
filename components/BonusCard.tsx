@@ -39,7 +39,8 @@ export default function BonusCard({
           alt="Card background"
           className="object-cover mb-0 rounded-b-lg p-0"
           src={avatarSrc}
-          width={570}
+          width={300} // Specify width
+          height={300} // Specify height
         />
       </CardBody>
     </Card>

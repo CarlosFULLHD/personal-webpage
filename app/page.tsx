@@ -13,7 +13,7 @@ import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
@@ -38,9 +38,11 @@ export default function Home() {
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
-              <img
-                src="/Notion_app_logo.png"
+              <Image
+                src="Notion_app_logo.png"
                 alt="Logo de Notion"
+                width={32} // Specify width
+                height={32} // Specify height
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
               />
             </span>
@@ -55,9 +57,11 @@ export default function Home() {
             }}
             className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow animate-pulse text-white w-40 mt-6 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
           >
-            <img
-              src="/shoppingcart.png"
+            <Image
+              src="shoppingcart.png"
               alt="Carrito de compras"
+              width={32} // Specify width
+              height={32} // Specify height
               className="w-8 h-8 absolute left-4"
             />
             Sí, quiero unirme
@@ -67,9 +71,11 @@ export default function Home() {
           </p>
         </div>
         <div className=" lg:basis-1/2 lg:p-6">
-          <img
-            src="/notion_product.gif"
+          <Image
+            src="notion_product.gif"
             alt="Video de nuestro producto hecho en Notion"
+            width={300} // Specify width
+            height={300} // Specify height
             className="max-w-24 md:px-24 lg:px-0"
           />
         </div>
@@ -299,9 +305,11 @@ export default function Home() {
       </h2>
       <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end">
-          <img
-            src="/carlitos.png"
+          <Image
+            src="carlitos.png"
             alt="Foto del instructor carlitos"
+            width={200} // Specify width
+            height={200} // Specify height
             className="max-w-44 max-h-44 lg:max-h-64 lg:max-w-64 mx-auto xl:ml-80 2xl:ml-96"
           />
         </div>
@@ -570,9 +578,11 @@ export default function Home() {
         as={Link}
         className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
-        <img
-          src="/shoppingcart.png"
+        <Image
+          src="shoppingcart.png"
           alt="Carrito de compras"
+          width={32} // Specify width
+          height={32} // Specify height
           className="w-8 h-8 absolute left-4"
         />
         Unete al curso!!
