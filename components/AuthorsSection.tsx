@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 export const AuthorsSection = () => {
   return (
     <section className="m-0 lg:max-w-3xl">
       <div className="container lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 md:my-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 md:my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <img
-            src="/jamesclear-photo.jpg"
+            src="jamesclear-photo.jpg" // Use your Cloudflare URL pointing to S3
             alt="Foto de James Clear de Hábitos Atómicos"
+            width={500} // Specify width
+            height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
           />
         </div>
