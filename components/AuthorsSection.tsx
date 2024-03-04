@@ -24,7 +24,7 @@ export const AuthorsSection = () => {
       <div className="container md:my-0 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <img
-            src="/jordanpeterson-photo.jpg"
+            src="/jordanpeterson-photo.webp"
             alt="Jordan Peterson de 12 Reglas para Vivir Un antidoto al caos"
             className="w-full aspect-square object-cover xl:max-w-80"
           />
