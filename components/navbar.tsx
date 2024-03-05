@@ -11,24 +11,14 @@ import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-
+import Image from "next/image";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-} from "@/components/icons";
 
-import { Logo } from "@/components/icons";
-import customLogo from "@/public/logocarlitosnina.png";
 export const Navbar = () => {
   return (
     <NextUINavbar
@@ -39,7 +29,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start gap-1" href="/">
-            <img src={customLogo.src} alt="Logo" width="350" height="50" />
+            <Image src="logocarlitosnina.png" alt="Logo" width="350" height="50" />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -47,16 +37,12 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full "
         justify="end"
       >
-        <ul className="hidden md:flex gap-14 italic">
+        <ul className="hidden md:flex gap-14 italic text-white">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
                 isExternal
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
-                )}
-                color="foreground"
+                className="text-white"
                 href={item.href}
               >
                 {item.label}

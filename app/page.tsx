@@ -7,14 +7,22 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
+import {Skeleton} from "@nextui-org/react";
 import Image from "next/image";
 export default function Home() {
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  // Función para cambiar el estado a cargado una vez que la imagen ha terminado de cargar
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
@@ -23,31 +31,40 @@ export default function Home() {
             Si estas leyendo esto desde el celular
           </h1>
 
-          <span className="text-5xl font-bold tracking-tighter text-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
+       
+          <span className="text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
             {" "}
             Tienes un problema
           </span>
-
-          <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
+       
+          
+            <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
             Tengo la solución
           </h1>
-
+         
+          
+          
           <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
             Un Sistema de Desintoxicación Digital, Desarrollo Personal y De
             Sentido, con Propósito.
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
+              
               <Image
                 src="Notion_app_logo.png"
                 alt="Logo de Notion"
                 width={32} // Specify width
                 height={32} // Specify height
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
+                
               />
+              
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
+        
+          
           <Button
             onClick={() => {
               const section = document.getElementById("seccion-compra");
@@ -63,26 +80,32 @@ export default function Home() {
               width={32} // Specify width
               height={32} // Specify height
               className="w-8 h-8 absolute left-4"
+              onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
             />
             Sí, quiero unirme
           </Button>
+          
           <p className="italic mb-6 block text-center lg:text-xl">
             Garantía de 30 días
           </p>
         </div>
         <div className=" lg:basis-1/2 lg:p-6">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="notion_product.gif"
             alt="Video de nuestro producto hecho en Notion"
             width={300} // Specify width
             height={300} // Specify height
             className="max-w-24 md:px-24 lg:px-0"
+
           />
+          </Skeleton>
         </div>
+        
       </div>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             EL MUNDO ESTÁ CAMBIANDO
           </span>
           <br />
@@ -261,9 +284,9 @@ export default function Home() {
         días. 💪
         <br />
       </h2>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             EL INSTRUCTOR
           </span>
           <br />
@@ -405,9 +428,9 @@ export default function Home() {
       >
         Estoy listo para unirme
       </Button>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             LA HABILIDAD DEL SIGLO
           </span>
           <br />
@@ -436,9 +459,9 @@ export default function Home() {
       >
         Estoy listo para unirme
       </Button>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             Y ESO NO ES TODO
           </span>
           <br />
@@ -454,9 +477,9 @@ export default function Home() {
       </div>
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
       <BonusSection />
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             UNETE HOY
           </span>
           <br />
@@ -578,16 +601,17 @@ export default function Home() {
         as={Link}
         className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
         <Image
           src="shoppingcart.png"
           alt="Carrito de compras"
           width={32} // Specify width
           height={32} // Specify height
           className="w-8 h-8 absolute left-4"
-        />
+        /></Skeleton>
         Unete al curso!!
       </Button>
-      <p className="italic">Garantía de 30 días</p>
+      <p className="italic text-white">Garantía de 30 días</p>
       <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
         {" "}
         <span className="font-bold text-3xl lg:text-4xl">
@@ -612,9 +636,9 @@ export default function Home() {
         experimentarlo por ti mismo, completamente a tu ritmo y según tus
         términos.
       </h2>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3">
+      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             TIENES PREGUNTAS?
           </span>
           <br />

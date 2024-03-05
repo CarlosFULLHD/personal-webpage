@@ -1,17 +1,29 @@
 import Image from "next/image";
+import {Skeleton} from "@nextui-org/react";
+import React, { useState, useEffect } from "react";
 
 export const AuthorsSection = () => {
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  // Función para cambiar el estado a cargado una vez que la imagen ha terminado de cargar
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
+
   return (
     <section className="m-0 lg:max-w-3xl">
       <div className="container lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 md:my-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 md:my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
-            src="jamesclear-photo.jpg" // Use your Cloudflare URL pointing to S3
+            src="jamesclear-photo.webp" // Use your Cloudflare URL pointing to S3
             alt="Foto de James Clear de Hábitos Atómicos"
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
           />
+          </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
@@ -27,13 +39,16 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="jordanpeterson-photo.webp"
             alt="Jordan Peterson de 12 Reglas para Vivir Un antidoto al caos"
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
-          />
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
+            </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
@@ -50,13 +65,16 @@ export const AuthorsSection = () => {
       {/* OTRO AUTOR */}
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="tonyrobbins-photo.webp"
             alt="Foto de Tony Robbins de Poder sin Límites y Despertando al gigante interior"
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
-          />
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
+            </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
@@ -72,6 +90,7 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="ryanholiday-photo.webp"
             alt="Foto de Ryan Holiday de El Obstáculo es el
@@ -79,7 +98,9 @@ export const AuthorsSection = () => {
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
-          />
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
+            </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
@@ -94,13 +115,16 @@ export const AuthorsSection = () => {
       </div>
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="calnewport-photo.webp"
             alt="Foto de Cal Newport de Enfócate - Minimalismo digital"
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
-          />
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
+            </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
@@ -116,13 +140,16 @@ export const AuthorsSection = () => {
       {/* DIV AL LADO CONTRARIO */}
       <div className="container md:my-0  md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg">
           <Image
             src="viktorfrankl-photo.webp"
             alt="Foto de Viktor Frankl de El Hombre en Busca de Sentido"
             width={500} // Specify width
             height={500} // Specify height
             className="w-full aspect-square object-cover xl:max-w-80"
-          />
+            onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
+            </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
