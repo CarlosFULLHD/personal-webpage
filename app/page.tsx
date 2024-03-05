@@ -13,7 +13,7 @@ import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
-import {Skeleton} from "@nextui-org/react";
+import { Skeleton } from "@nextui-org/react";
 import Image from "next/image";
 export default function Home() {
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -31,40 +31,32 @@ export default function Home() {
             Si estas leyendo esto desde el celular
           </h1>
 
-       
           <span className="text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
             {" "}
             Tienes un problema
           </span>
-       
-          
-            <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
+
+          <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
             Tengo la solución
           </h1>
-         
-          
-          
+
           <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
             Un Sistema de Desintoxicación Digital, Desarrollo Personal y De
             Sentido, con Propósito.
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
-              
               <Image
                 src="Notion_app_logo.png"
                 alt="Logo de Notion"
                 width={32} // Specify width
                 height={32} // Specify height
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
-                
               />
-              
             </span>
             <span className="block">¿Te interesa?</span>
           </h2>
-        
-          
+
           <Button
             onClick={() => {
               const section = document.getElementById("seccion-compra");
@@ -84,24 +76,22 @@ export default function Home() {
             />
             Sí, quiero unirme
           </Button>
-          
+
           <p className="italic mb-6 block text-center lg:text-xl">
             Garantía de 30 días
           </p>
         </div>
         <div className=" lg:basis-1/2 lg:p-6">
-        <Skeleton isLoaded={isLoaded} className="rounded-lg">
-          <Image
-            src="notion_product.gif"
-            alt="Video de nuestro producto hecho en Notion"
-            width={300} // Specify width
-            height={300} // Specify height
-            className="max-w-24 md:px-24 lg:px-0"
-
-          />
+          <Skeleton isLoaded={isLoaded} className="rounded-lg">
+            <Image
+              src="notion_product.gif"
+              alt="Video de nuestro producto hecho en Notion"
+              width={300} // Specify width
+              height={300} // Specify height
+              className="max-w-24 md:px-24 lg:px-0"
+            />
           </Skeleton>
         </div>
-        
       </div>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
@@ -602,13 +592,14 @@ export default function Home() {
         className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
         <Skeleton isLoaded={isLoaded} className="rounded-lg">
-        <Image
-          src="shoppingcart.png"
-          alt="Carrito de compras"
-          width={32} // Specify width
-          height={32} // Specify height
-          className="w-8 h-8 absolute left-4"
-        /></Skeleton>
+          <Image
+            src="shoppingcart.png"
+            alt="Carrito de compras"
+            width={32} // Specify width
+            height={32} // Specify height
+            className="w-8 h-8 absolute left-4"
+          />
+        </Skeleton>
         Unete al curso!!
       </Button>
       <p className="italic text-white">Garantía de 30 días</p>
