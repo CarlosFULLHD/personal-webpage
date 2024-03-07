@@ -1,4 +1,3 @@
-"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -8,25 +7,14 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 import Image from "next/image";
 import { link as linkStyles } from "@nextui-org/theme";
-import React, { useState, useEffect } from "react";
-
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
 export const Navbar = () => {
-  const [isLoaded, setIsLoaded] = React.useState(false);
-
-  // Función para cambiar el estado a cargado una vez que la imagen ha terminado de cargar
-  const handleImageLoad = () => {
-    setIsLoaded(true);
-  };
   return (
     <NextUINavbar
       className="bg-custom-background"
@@ -52,7 +40,6 @@ export const Navbar = () => {
                 width={350} // Specify width
                 height={50} // Specify height
                 className=""
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </NextLink>

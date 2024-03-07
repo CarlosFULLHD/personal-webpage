@@ -1,14 +1,8 @@
 "use client";
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import DetailedCard from "@/components/DetailedCard";
+
 import { Button } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
-import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
@@ -72,7 +66,6 @@ export default function Home() {
               width={32} // Specify width
               height={32} // Specify height
               className="w-8 h-8 absolute left-4"
-              onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
             />
             Sí, quiero unirme
           </Button>

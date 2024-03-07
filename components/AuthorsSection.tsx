@@ -31,7 +31,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
@@ -67,7 +67,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
@@ -104,7 +104,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
@@ -141,7 +141,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
@@ -176,7 +176,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
@@ -212,7 +212,7 @@ export const AuthorsSection = () => {
                 width={256} // Specify width
                 height={256} // Specify height
                 className="w-full aspect-square object-cover xl:max-w-80"
-                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
               />
             </picture>
           </Skeleton>
