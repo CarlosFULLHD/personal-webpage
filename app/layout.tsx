@@ -1,3 +1,4 @@
+
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -8,6 +9,7 @@ import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -33,11 +35,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
         {/* Agrega aquí otros elementos del Head como estilos o favicon */}
-        <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
-      </Head>
-
+        <Script strategy="lazyOnload" src="https://app.lemonsqueezy.com/js/lemon.js" />
       <body
         className={clsx(
           "min-h-screen font-sans antialiased bg-custom-background ",
