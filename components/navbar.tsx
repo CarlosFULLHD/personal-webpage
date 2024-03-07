@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -13,13 +14,19 @@ import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
 import Image from "next/image";
 import { link as linkStyles } from "@nextui-org/theme";
+import React, { useState, useEffect } from "react";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-
 export const Navbar = () => {
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  // Función para cambiar el estado a cargado una vez que la imagen ha terminado de cargar
+  const handleImageLoad = () => {
+    setIsLoaded(true);
+  };
   return (
     <NextUINavbar
       className="bg-custom-background"
@@ -29,7 +36,25 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start gap-1" href="/">
-            <Image src="logocarlitosnina.png" alt="Logo" width="350" height="50" />
+            <picture>
+              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
+              <source
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.webp"
+                type="image/webp"
+              />
+              <source
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.jpg"
+                type="image/jpeg"
+              />
+              <Image
+                src="logocarlitosnina.jpg" // Use your Cloudflare URL pointing, FALLBACK
+                alt="Logo de Carlitos Nina Marca Personal"
+                width={350} // Specify width
+                height={50} // Specify height
+                className=""
+                onLoadingComplete={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+              />
+            </picture>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -40,11 +65,7 @@ export const Navbar = () => {
         <ul className="hidden md:flex gap-14 italic text-white">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link
-                isExternal
-                className="text-white"
-                href={item.href}
-              >
+              <Link isExternal className="text-white" href={item.href}>
                 {item.label}
               </Link>
             </NavbarItem>
