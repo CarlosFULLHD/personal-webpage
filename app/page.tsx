@@ -95,7 +95,7 @@ export default function Home() {
       </div>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
-          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
+          <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             EL MUNDO ESTÁ CAMBIANDO
           </span>
           <br />
@@ -499,7 +499,7 @@ export default function Home() {
         id="seccion-compra"
         className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
       >
-        <span className="font-bold text-center block text-3xl text-gradient">
+        <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
           "LIBERTAD DIGITAL: Una vida más allá de las pantallas"
         </span>
         <span className="font-bold text-center block text-4xl pb-3"> $30</span>
