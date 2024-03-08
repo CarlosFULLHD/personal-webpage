@@ -1,22 +1,20 @@
 "use client";
 import { Link } from "@nextui-org/link";
-
+import { Snippet } from "@nextui-org/snippet";
+import { Code } from "@nextui-org/code";
+import { button as buttonStyles } from "@nextui-org/theme";
+import { siteConfig } from "@/config/site";
+import { title, subtitle } from "@/components/primitives";
+import DetailedCard from "@/components/DetailedCard";
 import { Button } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
+import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
-import { Skeleton } from "@nextui-org/react";
 import Image from "next/image";
 export default function Home() {
-  const [isLoaded, setIsLoaded] = React.useState(false);
-
-  // Función para cambiar el estado a cargado una vez que la imagen ha terminado de cargar
-  const handleImageLoad = () => {
-    setIsLoaded(true);
-  };
-
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
@@ -74,16 +72,25 @@ export default function Home() {
             Garantía de 30 días
           </p>
         </div>
-        <div className=" lg:basis-1/2 lg:p-6">
-          <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <Image
-              src="notion_product.gif"
-              alt="Video de nuestro producto hecho en Notion"
-              width={300} // Specify width
-              height={300} // Specify height
-              className="max-w-24 md:px-24 lg:px-0"
+        <div className="lg:basis-1/2 lg:p-6">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full max-w-md h-auto"
+            style={{ maxWidth: "100%", height: "auto" }}
+          >
+            <source
+              src="https://d1kdkr2pswehq6.cloudfront.net/notion_libertaddigital_adiccionalcelular.webm"
+              type="video/webm"
             />
-          </Skeleton>
+            <source
+              src="https://d1kdkr2pswehq6.cloudfront.net/notion_libertaddigital_adiccionalcelular.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
@@ -584,15 +591,13 @@ export default function Home() {
         as={Link}
         className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
-        <Skeleton isLoaded={isLoaded} className="rounded-lg">
-          <Image
-            src="shoppingcart.png"
-            alt="Carrito de compras"
-            width={32} // Specify width
-            height={32} // Specify height
-            className="w-8 h-8 absolute left-4"
-          />
-        </Skeleton>
+        <Image
+          src="shoppingcart.png"
+          alt="Carrito de compras"
+          width={32} // Specify width
+          height={32} // Specify height
+          className="w-8 h-8 absolute left-4"
+        />
         Unete al curso!!
       </Button>
       <p className="italic text-white">Garantía de 30 días</p>

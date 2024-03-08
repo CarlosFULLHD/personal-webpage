@@ -1,40 +1,27 @@
-# Next.js & NextUI Template
+# Carlitos Nina Web Page
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+## Actualizaciones
 
-## Technologies Used
+Para cambios de imagenes, mp4 videos y otros se tiene que hacer cambio de NOMBRE del archivo, para así funciona correctamente con el cache
 
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+Contenido estático:
+En page.tsx se encuentra mucho contenido estatico para servirlo de manera preparada en HTML para el servidor gracias a next js
 
-## How to Use
+Imagenes y Scripts son renderizamos para mejor WebCoreVitals
+Esto tambien haciendo uso de Lemon JS como metodo de pago para productos
 
+Google Analytics id:
+Lemon js: Aplicado a 1 producto "Libertad Digital"
 
-### Use the template with create-next-app
+## Estilos
 
-To create a new project based on this template using `create-next-app`, run the following command:
+- Tailwind CSS
+- Next UI en lightmode
+- Shadcn para acordeon
 
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
+## CND
 
-### Install dependencies
+- S3
+- Cloud Front
 
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+##
