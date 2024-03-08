@@ -3,6 +3,8 @@
 ## Actualizaciones
 
 Para cambios de imagenes, mp4 videos y otros se tiene que hacer cambio de NOMBRE del archivo, para así funciona correctamente con el cache
+Tasmbien configurar metadata en cada elemento nuevo o cambios
+![alt text](image.png)
 
 Contenido estático:
 En page.tsx se encuentra mucho contenido estatico para servirlo de manera preparada en HTML para el servidor gracias a next js
