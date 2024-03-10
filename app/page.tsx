@@ -22,19 +22,16 @@ export default function Home() {
           <h1 className="text-5xl font-bold tracking-tighter md:inline lg:text-5xl xl:text-7xl">
             Si estas leyendo esto desde el celular
           </h1>
-
           <span className="text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
             {" "}
             Tienes un problema
           </span>
-
           <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
             Tengo la solución
           </h1>
-
           <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
-            Un Sistema de Desintoxicación Digital, Desarrollo Personal y De
-            Sentido, con Propósito.
+            Un Sistema de Desintoxicación Digital, Desarrollo Personal y
+            Búsqueda de Propósito.
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
@@ -46,9 +43,8 @@ export default function Home() {
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
               />
             </span>
-            <span className="block">¿Te interesa?</span>
+            <span className="block font-bold">¿Listo para el cambio?</span>
           </h2>
-
           <Button
             onClick={() => {
               const section = document.getElementById("seccion-compra");
@@ -56,7 +52,7 @@ export default function Home() {
                 section.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow animate-pulse text-white w-40 mt-6 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 mt-6 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
           >
             <Image
               src="shoppingcart.png"
@@ -65,13 +61,28 @@ export default function Home() {
               height={32} // Specify height
               className="w-8 h-8 absolute left-4"
             />
-            Sí, quiero unirme
+            Si, Estoy Listo
           </Button>
-
           <p className="italic mb-6 block text-center lg:text-xl">
-            Garantía de 30 días
+            Garantía de Satisfacción de 30 días
           </p>
+
+          <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
+            Accede gratuitamente a las primeras 4 lecciones de Libertad Digital:
+            <br />
+          </h3>
+
+          <Button
+            href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
+            as={Link}
+            isExternal
+            color="primary"
+            className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
+          >
+            🎁Ver mi regalo
+          </Button>
         </div>
+
         <div className="lg:basis-1/2 lg:p-6">
           <video
             autoPlay
@@ -636,6 +647,22 @@ export default function Home() {
         experimentarlo por ti mismo, completamente a tu ritmo y según tus
         términos.
       </h2>
+      <div className="my-2 container mx-auto flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+        <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
+          Accede gratuitamente a las primeras 4 lecciones de Libertad Digital:
+          <br />
+        </h3>
+        <Button
+          href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
+          as={Link}
+          isExternal
+          color="primary"
+          className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
+        >
+          🎁Ver mi regalo
+        </Button>
+      </div>
+
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
