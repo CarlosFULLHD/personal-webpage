@@ -37,10 +37,9 @@ export default function BonusCard({
       <CardBody className="overflow-visible pt-2">
         <Image
           alt="Card background"
-          className="object-cover mb-0 rounded-b-lg p-0"
           src={avatarSrc}
-          width={300} // Specify width
-          height={300} // Specify height
+          className="w-full max-w-md h-auto"
+            style={{ maxWidth: "100%", height: "auto" }}
         />
       </CardBody>
     </Card>

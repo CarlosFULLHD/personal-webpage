@@ -9,7 +9,7 @@ const bonusData = [
     - En la comunidad puedes hacernos cualquier pregunta, objeción y haremos el mejor trabajo para darte con la mejor solución posible.
     - Reuniones de 1 a 3 HORAS semanales durante 90 días para escucharte y conocerte mejor en tu camino, escuchar tus problemas y apoyarte a superarlos.
     - Oportunidad de solicitar soluciones a problemas para futuras actualizaciones.`,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/viktorfrankl-photo.webp`,
+    avatarSrc: ``,
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const bonusData = [
     - Mindfulness y Herramientas Prácticas: Incorpora técnicas de atención plena para manejar impulsos y desarrollar autocontrol.
     - Deconstrucción de Creencias Limitantes: Desmonta las falsas creencias que perpetúan el ciclo de la adicción.
     - Evitar la Culpa y Crear Nuevos Condicionamientos: Aprende a liberarte de la culpa y establece un nuevo condicionamiento positivo hacia la sexualidad.`,
-    avatarSrc: `tonyrobbins-photo.webp`,
+    avatarSrc: ``,
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const bonusData = [
     - Resiliencia Frente al Fracaso: Aprende a vivir con el fracaso, a aprender de él y a ser resiliente ante las adversidades.
     - Lucha Contra el Miedo, el Estrés y la Ansiedad: Herramientas y técnicas para gestionar el miedo, reducir el estrés y controlar la ansiedad.
     - Mejorando las Relaciones Personales: Consejos para fortalecer tus relaciones interpersonales a través de una mayor empatía y entendimiento emocional. `,
-    avatarSrc: `tonyrobbins-photo.webp`,
+    avatarSrc: ``,
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const bonusData = [
     - Principios Estoicos para la Vida Diaria: Aprende a aplicar enseñanzas estoicas en situaciones cotidianas, enfocándote en lo que realmente puedes controlar.
     - Desarrolla una Mentalidad Resiliente: Fortalece tu capacidad para enfrentar adversidades, aprendiendo de los desafíos y manteniéndote firme ante las dificultades.
     - Enfócate en lo que Puedes Controlar: Estrategias para concentrarte en tus acciones y reacciones, dejando de lado lo que escapa de tu control.`,
-    avatarSrc: `tonyrobbins-photo.webp`,
+    avatarSrc: ``,
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const bonusData = [
     - Construye tu Visión Futura, ten un futuro que te de esperanza 
     - Construye tu Antivisión, ten un futuro que te de miedo llegar y por lo tanto alejarte de el 
     - Trackeador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
-    avatarSrc: `tonyrobbins-photo.webp`,
+    avatarSrc: ``,
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const bonusData = [
     - Contenido audiovisual exclusivo
     - Guia paso a paso para cada actualización haciendo fácil cualquier nueva lección añadida
      `,
-    avatarSrc: `tonyrobbins-photo.webp`,
+    avatarSrc: ``,
   },
 ];
 export const BonusSection = () => {
