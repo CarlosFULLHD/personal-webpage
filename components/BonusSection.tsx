@@ -9,49 +9,49 @@ const bonusData = [
     - En la comunidad puedes hacernos cualquier pregunta, objeción y haremos el mejor trabajo para darte con la mejor solución posible.
     - Reuniones de 1 a 3 HORAS semanales durante 90 días para escucharte y conocerte mejor en tu camino, escuchar tus problemas y apoyarte a superarlos.
     - Oportunidad de solicitar soluciones a problemas para futuras actualizaciones.`,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/comunidad_seguimiento_y_apoyo`,
   },
   {
     id: 2,
-    subtitle: `BONUS #2 - sale en Abril`,
+    subtitle: `BONUS #2`,
     title: `🚫Guía Definitiva Contra la Pornografía`,
     description: ` - Estrategias para la Desexualización: Aprende cómo reducir la influencia de los estímulos sexuales en tu vida diaria.
     - Renovación de Identidad y Hábitos: Construye una nueva autoimagen alejada de la dependencia y cultiva hábitos saludables que refuercen tu determinación.
     - Mindfulness y Herramientas Prácticas: Incorpora técnicas de atención plena para manejar impulsos y desarrollar autocontrol.
     - Deconstrucción de Creencias Limitantes: Desmonta las falsas creencias que perpetúan el ciclo de la adicción.
     - Evitar la Culpa y Crear Nuevos Condicionamientos: Aprende a liberarte de la culpa y establece un nuevo condicionamiento positivo hacia la sexualidad.`,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/superar_adiccion`,
   },
   {
     id: 3,
-    subtitle: `BONUS #3 - sale en Abril`,
+    subtitle: `BONUS #3`,
     title: `🌱Cultivando la Inteligencia Emocional`,
     description: `- Comprende Tus Emociones: Descubre cómo navegar y entender tus emociones y sentimientos para una mejor salud mental.
     - Salida de la Depresión: Estrategias y prácticas para superar la depresión y fomentar un bienestar emocional duradero.
     - Resiliencia Frente al Fracaso: Aprende a vivir con el fracaso, a aprender de él y a ser resiliente ante las adversidades.
     - Lucha Contra el Miedo, el Estrés y la Ansiedad: Herramientas y técnicas para gestionar el miedo, reducir el estrés y controlar la ansiedad.
     - Mejorando las Relaciones Personales: Consejos para fortalecer tus relaciones interpersonales a través de una mayor empatía y entendimiento emocional. `,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/cultivando_inteligencia_emocional`,
   },
   {
     id: 4,
-    subtitle: `BONUS #4 - sale en Abril`,
+    subtitle: `BONUS #4`,
     title: `⚔️Fortaleza y Sabiduría Estoica`,
     description: ` - Amor Fati y Memento Mori: Encuentra belleza en el destino y recuerda la impermanencia de la vida como motivaciones para vivir plenamente.
     - Principios Estoicos para la Vida Diaria: Aprende a aplicar enseñanzas estoicas en situaciones cotidianas, enfocándote en lo que realmente puedes controlar.
     - Desarrolla una Mentalidad Resiliente: Fortalece tu capacidad para enfrentar adversidades, aprendiendo de los desafíos y manteniéndote firme ante las dificultades.
     - Enfócate en lo que Puedes Controlar: Estrategias para concentrarte en tus acciones y reacciones, dejando de lado lo que escapa de tu control.`,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/fortaleza_sabiduria_estoica`,
   },
   {
     id: 5,
-    subtitle: `BONUS #5 - `,
-    title: `📅📚✍️Plantillas de Notion ESPECIALES`,
+    subtitle: `BONUS #5`,
+    title: `📅📚✍️4 Plantillas de Notion EXCLUSIVAS`,
     description: ` - Menú del Descanso, programa tu descanso conscientemente 
     - Construye tu Visión Futura, ten un futuro que te de esperanza 
     - Construye tu Antivisión, ten un futuro que te de miedo llegar y por lo tanto alejarte de el 
     - Trackeador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/plantillas_de_notion`,
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const bonusData = [
     - Contenido audiovisual exclusivo
     - Guia paso a paso para cada actualización haciendo fácil cualquier nueva lección añadida
      `,
-    avatarSrc: ``,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/actualizaciones_exclusivas_para_los_cursos`,
   },
 ];
 export const BonusSection = () => {

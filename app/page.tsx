@@ -317,14 +317,25 @@ export default function Home() {
         <br />
       </h2>
       <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
-        <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end">
-          <Image
-            src="carlitos.png"
-            alt="Foto del instructor carlitos"
-            width={200} // Specify width
-            height={200} // Specify height
-            className="max-w-44 max-h-44 lg:max-h-64 lg:max-w-64 mx-auto xl:ml-80 2xl:ml-96"
-          />
+        <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end w-auto h-auto">
+          <picture>
+            {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
+            <source
+              srcSet="https://d1kdkr2pswehq6.cloudfront.net/carlitos_photo.webp"
+              type="image/webp"
+            />
+            <source
+              srcSet="https://d1kdkr2pswehq6.cloudfront.net/carlitos_photo.jpg"
+              type="image/jpeg"
+            />
+            <Image
+              src="carlitos_photo.jpg"
+              alt="Foto del instructor carlitos"
+              width={200} // Specify width
+              height={200} // Specify height
+              className="max-w-44 max-h-44 lg:max-h-64 lg:max-w-64 mx-auto xl:ml-80 2xl:ml-96"
+            />
+          </picture>
         </div>
         <div className="text-xl lg:text-2xl lg:text-left md:basis-1/2 lg:p-0  text-white lg:max-w-sm">
           <span className="text-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-4xl ">
