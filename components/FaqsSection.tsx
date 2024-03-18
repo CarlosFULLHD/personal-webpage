@@ -158,6 +158,31 @@ export const FaqsSection = () => {
             aquí para ayudarte.
           </AccordionContent>
         </AccordionItem>
+        <AccordionItem
+          value="item-7"
+          className="text-lg text-bold lg:text-xl xl:text-2xl"
+        >
+          <AccordionTrigger>
+          ¿Cómo puedo actualizar mi plantilla gratuita a la versión completa después de comprar el curso?
+          </AccordionTrigger>
+          <AccordionContent className="text-medium lg:text-lg xl:text-xl">
+          <span className="font-bold">¡Actualizarse es un proceso sencillo y rápido!</span>
+          <br /> Al adquirir la versión completa de "Libertad Digital", obtendrás acceso completo a todas las lecciones y
+           plantillas especiales, asegurando que puedas continuar tu progreso sin interrupciones.
+           <br /><br />
+            Simplemente sigue estos pasos para integrar tu trabajo previo en la versión completa:
+<br />
+
+1. <span className="font-bold">Compra la versión completa de "Libertad Digital":</span> para desbloquear todas las lecciones y plantillas.
+<br />
+2. <span className="font-bold">Accede a tu nueva plantilla completa:</span> Una vez realizada la compra, recibirás un enlace para acceder a la plantilla completa en Notion.
+<br />
+3. <span className="font-bold"> Transfiere tu progreso:</span> Abre tu plantilla gratuita y la completa en pestañas diferentes. Copia y pega fácilmente el contenido que hayas creado o modificado desde la plantilla gratuita a la completa.
+<br />
+¡Continúa tu desarrollo! Con todo tu trabajo previo transferido, puedes seguir avanzando en tu camino hacia la superación personal y la desintoxicación digital.
+No te preocupes, tu esfuerzo y progreso en la versión gratuita no se perderán. 
+        </AccordionContent>
+        </AccordionItem>
       </Accordion>
     </section>
   );
