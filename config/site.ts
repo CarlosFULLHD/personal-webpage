@@ -6,7 +6,7 @@ description: "",
 navItems: [
 {
 label: "📧Newsletter - Boletín",
-href: "https://www.newsletter.carlitosnina.com/subscribe",
+href: "https://carlitosnina.beehiiv.com/",
 },
 {
 label: "☕Apóyame con un café virtual",
