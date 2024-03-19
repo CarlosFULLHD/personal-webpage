@@ -14,6 +14,7 @@ import { ModulesSection } from "@/components/ModulesSection";
 import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
 import Image from "next/image";
+import { FooterSection } from "@/components/FooterSection";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
@@ -522,9 +523,19 @@ export default function Home() {
         className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
       >
         <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
-          "LIBERTAD DIGITAL: Una vida más allá de las pantallas"
+          "LIBERTAD DIGITAL"
         </span>
-        <span className="font-bold text-center block text-4xl pb-3"> $30</span>
+        <span className="line-through text-2xl font-sans text-gray-500/70 block text-right mr-14 md:mr-28 lg:mr-36 xl:mr-48">
+          $120
+        </span>
+        <span className="font-bold block text-4xl pb-3 items-center">
+          <span className="text-5xl font-bold tracking-tight text-gray-900 block items-center text-center ">
+            $69
+          </span>
+        </span>
+        <span className="italic text-xl font-sans text-gray-500/70 block text-center">
+          Con garantía de 30 días!!
+        </span>
         <span className="font-bold text-center block">
           Desarrolla dominio sobre tu vida digital y personal con estrategias
           comprobadas para una transformación real.
@@ -622,11 +633,15 @@ export default function Home() {
         />
         Unete al curso!!
       </Button>
-      <p className="italic text-white">Garantía de 30 días</p>
+
+      <span className="italic text-xl font-sans  block text-center">
+        Sin pagos ocultos ni costos extras
+      </span>
       <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
         {" "}
         <span className="font-bold text-3xl lg:text-4xl">
-          Garantía de Satisfacción Total
+          Te reembolso el 100% si no te cambia la vida, sin preguntas, en un
+          instante.
         </span>
         <br />
         <br />
@@ -646,6 +661,8 @@ export default function Home() {
         transformador de este curso y quiero que tengas la libertad de
         experimentarlo por ti mismo, completamente a tu ritmo y según tus
         términos.
+        <br /> <br />
+        *Abajo mayor detalle del proceso de reembolso
       </h2>
       <div className="my-2 container mx-auto flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
@@ -690,6 +707,7 @@ export default function Home() {
       >
         Mis dudas están resueltas
       </Button>
+      <FooterSection />
     </section>
   );
 }

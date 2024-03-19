@@ -1,4 +1,3 @@
-
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
@@ -33,8 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-        {/* Agrega aquí otros elementos del Head como estilos o favicon */}
-        <Script strategy="lazyOnload" src="https://app.lemonsqueezy.com/js/lemon.js" />
+      {/* Agrega aquí otros elementos del Head como estilos o favicon */}
+      <Script
+        strategy="lazyOnload"
+        src="https://app.lemonsqueezy.com/js/lemon.js"
+      />
       <body
         className={clsx(
           "min-h-screen font-sans antialiased bg-custom-background ",

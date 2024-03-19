@@ -40,17 +40,25 @@ export const FaqsSection = () => {
         >
           <AccordionTrigger>¿Tengo que pagar por Notion?</AccordionTrigger>
           <AccordionContent className="text-medium lg:text-lg xl:text-xl">
-            No hay ningún costo extra, solo necesitas una cuenta gratuita de
-            Notion para esta plantilla(Notion deja 5MB gratuitos de subida de
-            archivos como imagenes, PDF a cada cuenta).
+            <span className="font-bold">No hay ningún costo extra</span>, solo
+            necesitas una cuenta gratuita de Notion para esta plantilla(Notion
+            deja{" "}
+            <span className="font-bold">
+              5MB gratuitos de subida de archivos como imagenes, PDF a cada
+              cuenta).
+            </span>
             <br />
             <br />
-            PD: Si ya usaste notion, podrias crearte una nueva cuenta ya que es
-            probable que pese 3-4MB por el material.
+            PD: El material pesa entre 3-4MBm, si subiste archivos como imagenes
+            o PDF a Notion en tu cuenta anteriormente, considera vaciar espacio
+            o crearte una nueva cuenta si no quieres pagar por Notion.
             <br />
-            Recuerda que el espacio limite aplica para subida de archivos, no
-            para el texto que vayas a escribir, así que no te preocupes por
-            ello.
+            <br />
+            <span className="font-bold italic">
+              Recuerda que el espacio limite aplica para subida de archivos, no
+              para el texto que vayas a escribir, así que no te preocupes por
+              ello.
+            </span>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
@@ -61,9 +69,10 @@ export const FaqsSection = () => {
             ¿Cómo accedo a la plantilla después de comprarla?
           </AccordionTrigger>
           <AccordionContent className="text-medium lg:text-lg xl:text-xl">
-            Recibirás un enlace directo y pasos sencillos para duplicar la
-            plantilla en tu espacio de Notion, todo esto también será enviado a
-            tu correo electrónico(el que ingreses).
+            <span className="font-bold">
+              Recibirás pasos claros y un correo para acceder
+            </span>{" "}
+            a la plantilla y duplicarla.
             <br />
             También el link al grupo de Discord con mas información del grupo.
           </AccordionContent>
@@ -163,25 +172,49 @@ export const FaqsSection = () => {
           className="text-lg text-bold lg:text-xl xl:text-2xl"
         >
           <AccordionTrigger>
-          ¿Cómo puedo actualizar mi plantilla gratuita a la versión completa después de comprar el curso?
+            ¿Cómo puedo actualizar mi plantilla gratuita a la versión completa
+            después de comprar el curso?
           </AccordionTrigger>
           <AccordionContent className="text-medium lg:text-lg xl:text-xl">
-          <span className="font-bold">¡Actualizarse es un proceso sencillo y rápido!</span>
-          <br /> Al adquirir la versión completa de "Libertad Digital", obtendrás acceso completo a todas las lecciones y
-           plantillas especiales, asegurando que puedas continuar tu progreso sin interrupciones.
-           <br /><br />
-            Simplemente sigue estos pasos para integrar tu trabajo previo en la versión completa:
-<br />
-
-1. <span className="font-bold">Compra la versión completa de "Libertad Digital":</span> para desbloquear todas las lecciones y plantillas.
-<br />
-2. <span className="font-bold">Accede a tu nueva plantilla completa:</span> Una vez realizada la compra, recibirás un enlace para acceder a la plantilla completa en Notion.
-<br />
-3. <span className="font-bold"> Transfiere tu progreso:</span> Abre tu plantilla gratuita y la completa en pestañas diferentes. Copia y pega fácilmente el contenido que hayas creado o modificado desde la plantilla gratuita a la completa.
-<br />
-¡Continúa tu desarrollo! Con todo tu trabajo previo transferido, puedes seguir avanzando en tu camino hacia la superación personal y la desintoxicación digital.
-No te preocupes, tu esfuerzo y progreso en la versión gratuita no se perderán. 
-        </AccordionContent>
+            <span className="font-bold">
+              ¡Actualizarse es un proceso sencillo y rápido!
+            </span>
+            <br /> Al adquirir la versión completa de "Libertad Digital",
+            obtendrás acceso completo a todas las lecciones y plantillas
+            especiales, asegurando que puedas continuar tu progreso sin
+            interrupciones.
+            <br />
+            <br />
+            Simplemente sigue estos pasos para integrar tu trabajo previo en la
+            versión completa:
+            <br />
+            1.{" "}
+            <span className="font-bold">
+              Compra la versión completa de "Libertad Digital":
+            </span>{" "}
+            para desbloquear todas las lecciones y plantillas.
+            <br />
+            2.{" "}
+            <span className="font-bold">
+              Accede a tu nueva plantilla completa:
+            </span>{" "}
+            Una vez realizada la compra, recibirás un enlace para acceder a la
+            plantilla completa en Notion.
+            <br />
+            3. <span className="font-bold"> Transfiere tu progreso:</span> Abre
+            tu plantilla gratuita y la completa en pestañas diferentes. Copia y
+            pega fácilmente el contenido que hayas creado o modificado desde la
+            plantilla gratuita a la completa.
+            <br />
+            <br />
+            ¡Continúa tu desarrollo! Con todo tu trabajo previo transferido,
+            puedes seguir avanzando en tu camino hacia la superación personal y
+            la desintoxicación digital. No te preocupes,{" "}
+            <span className="font-bold">
+              {" "}
+              tu esfuerzo y progreso en la versión gratuita no se perderán.
+            </span>
+          </AccordionContent>
         </AccordionItem>
       </Accordion>
     </section>
