@@ -91,15 +91,15 @@ export const AuthorsSection = () => {
             <picture>
               {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-photo.webp"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.webp"
                 type="image/webp"
               />
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-photo.jpg"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.jpg"
                 type="image/jpeg"
               />
               <Image
-                src="tonyrobbins-photo.jpg"
+                src="tonyrobbins-img.jpg"
                 alt="Foto de Tony Robbins de Poder sin Límites y Despertando al gigante interior"
                 width={256} // Specify width
                 height={256} // Specify height
@@ -127,11 +127,11 @@ export const AuthorsSection = () => {
             <picture>
               {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-photo.webp"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.webp"
                 type="image/webp"
               />
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-photo.jpg"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.jpg"
                 type="image/jpeg"
               />
               <Image
@@ -163,11 +163,11 @@ export const AuthorsSection = () => {
             <picture>
               {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-photo.webp"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp"
                 type="image/webp"
               />
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-photo.jpg"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.jpg"
                 type="image/jpeg"
               />
               <Image
@@ -199,15 +199,15 @@ export const AuthorsSection = () => {
             <picture>
               {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrankl-photo.webp"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.webp"
                 type="image/webp"
               />
               <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrankl-photo.jpg"
+                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.jpg"
                 type="image/jpeg"
               />
               <Image
-                src="viktorfrankl-photo.jpg"
+                src="viktorfrakl-img.jpg"
                 alt="Foto de Viktor Frankl de El Hombre en Busca de Sentido"
                 width={256} // Specify width
                 height={256} // Specify height
