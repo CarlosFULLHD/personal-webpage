@@ -66,9 +66,9 @@ export default function ModalComponentContanctame() {
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
-                  Close
+                  Cerrar
                 </Button>
-                <Button color="primary" onPress={copyToClipboard}>
+                <Button color="secondary" onPress={copyToClipboard}>
                   Copiar Correo
                 </Button>
               </ModalFooter>

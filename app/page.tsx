@@ -15,6 +15,7 @@ import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
 import Image from "next/image";
 import { FooterSection } from "@/components/FooterSection";
+import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
@@ -518,107 +519,103 @@ export default function Home() {
         Este no es solo otro curso, es tu camino hacia una existencia plena en
         el siglo XXI.
       </h2>
-      <h2
-        id="seccion-compra"
-        className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
-      >
-        <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
-          "LIBERTAD DIGITAL"
-        </span>
-        <span className="line-through text-2xl font-sans text-gray-500/70 block text-right mr-14 md:mr-28 lg:mr-36 xl:mr-48">
-          $120
-        </span>
-        <span className="font-bold block text-4xl pb-3 items-center">
-          <span className="text-5xl font-bold tracking-tight text-gray-900 block items-center text-center ">
-            $69
+      <div className=" flex flex-col mx-2 md:flex-row gap-6">
+        <h2
+          id="seccion-compra"
+          className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-gray-200 rounded-lg text-black border-4 border-gray-500"
+        >
+          <span className="font-bold text-center block text-3xl bg-clip-text text-gray-600">
+            Curso Promedio
           </span>
-        </span>
-        <span className="italic text-xl font-sans text-gray-500/70 block text-center">
-          Con garantía de 30 días!!
-        </span>
-        <span className="font-bold text-center block">
-          Desarrolla dominio sobre tu vida digital y personal con estrategias
-          comprobadas para una transformación real.
-        </span>
-        <br />
-        Ten acceso de por vida a la plantilla y obtén:
-        <br />
-        ✓ Estrategias de desintoxicación digital basadas en las enseñanzas de
-        Cal Newport, para que retomes el control sobre tu tiempo y atención.
-        <br />
-        ✓ Ejercicios de autoconocimiento y desarrollo personal inspirados en los
-        principios de Jordan Peterson y Viktor Frankl, para vivir una vida con
-        propósito y significado.
-        <br />
-        ✓ Técnicas de formación y mantenimiento de hábitos efectivos, guiadas
-        por la sabiduría práctica de James Clear, para transformar tu día a día.
-        <br />
-        ✓ No solo teoría, sino práctica real: plantillas de Notion
-        personalizables para implementar lo aprendido de manera efectiva en tu
-        vida.
-        <br />
-        ✓ Comunidad de Apoyo Exclusiva: Acceso a un grupo privado donde podrás
-        compartir experiencias, desafíos y logros con personas que están en el
-        mismo camino de transformación que tú, ofreciendo un espacio de
-        motivación y apoyo mutuo.
-        <br />
-        <br />
-        <span className="font-bold">
-          Y no solo eso, en los modulos del curso también aprenderás estas
-          lecciones:
-        </span>
-        <br />
-        <br />⌛ Maestro del Tiempo: Técnicas y herramientas para gestionar
-        mejor tu tiempo y reducir las distracciones del celular.
-        <br />
-        🌱Maestro del Carácter: Estrategias para entender y mejorar tu
-        identidad, valores y auto percepción.
-        <br />
-        🛡️Cómo Dejar de Sabotearte a Ti Mismo: Superación del autosabotaje, el
-        autodesprecio y la construcción de una autoestima saludable.
-        <br />
-        🧭Cómo Encontrar tu Propósito y Pasión: Guía para descubrir y vivir
-        según tu pasión y propósito, valorando tus experiencias y sacrificios.
-        <br />
-        🌙Cómo Dormir Bien: Estrategias para mejorar tu sueño y descanso,
-        incluyendo rutinas de relajación y consejos para un sueño reparador.
-        <br />
-        📖Cómo Conocer Quién Eres: Descubre los rasgos de tu personalidad y cómo
-        estos pueden influir positivamente en tu vida.
-        <br />
-        🦁Cómo Mantenerse Disciplinado: Inspirado en David Goggins, aprende a
-        superar la procrastinación y a comprometerte con tus objetivos.
-        <br />
-        🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos: Estrategias para
-        construir una confianza auténtica y duradera.
-        <br />
-        🤝Cómo Ser el Amigo Ideal: Consejos para mejorar tus relaciones
-        personales, dejar atrás amistades tóxicas y construir conexiones
-        significativas.
-        <br />
-        ⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea: Técnicas para
-        formar y mantener hábitos saludables sin depender de la fuerza de
-        voluntad.
-        <br />
-        <br />
-        <span className="font-bold">
-          Cursos Futuros que recibirán para las primeras 100 personas,
-          totalmente gratuitos!!
-        </span>
-        <br />
-        ✓ Guía NoFap Definitiva: Herramientas y estrategias para superar la
-        adicción a la pornografía y reconstruir una sexualidad saludable.
-        <br />
-        ✓ Módulo de Inteligencia Emocional: Aprende a gestionar tus emociones,
-        superar la depresión y construir relaciones personales sólidas.
-        <br />
-        ✓ Resiliencia Estoica: Principios estoicos aplicados a la vida diaria
-        para una mentalidad resiliente ante la adversidad.
-        <br />
-        <br />
-        ¡Unete y transforma tu relación con la tecnología, contigo mismo y con
-        el mundo que te rodea!
-      </h2>
+          <span className="font-bold block text-4xl pb-3 items-center">
+            <span className="text-5xl font-bold tracking-tight text-red-500 block items-center text-center ">
+              $120/mes
+            </span>
+          </span>
+          <span className="italic text-xl font-sans text-red-600 block text-center">
+            Sin garantias y acceso limitado.
+          </span>
+          <span className="font-bold text-center block text-gray-600">
+            Resúmenes de artículos, personas sin experiencia y sin dar con la
+            solucion
+          </span>
+          <br />
+          ❌ No aprendes nada porque carece de herramientas prácticas para
+          aplicar el conocimiento.
+          <br />
+          <br />
+          ❌ Grupos de Discord inactivos, sin preocuparse en los problemas del
+          cliente.
+          <br />
+          <br />
+          ❌ Cursos que con el tiempo no se actualizan y se vuelven irrelevantes
+          con el tiempo.
+          <br />
+          <br />
+          ❌ El material es repetitivo en todos los cursos y no profundizan en
+          el tema.
+          <br />
+          <br />
+          ❌ Sin bonificaciones o valor adicional, limitando la experiencia a lo
+          que se ofrece inicialmente.
+          <br />
+          <br />❌ Precios altos, sin garantías claras y ni acceso de por vida.
+        </h2>
+        <h2 className=" mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
+          <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
+            LIBERTAD DIGITAL
+          </span>
+          <span className="line-through text-2xl font-sans text-gray-500/70 block text-right mr-14 md:mr-28 lg:mr-36 xl:mr-48">
+            $120
+          </span>
+          <span className="font-bold block text-4xl pb-3 items-center">
+            <span className="text-5xl font-bold tracking-tight text-gray-900 block items-center text-center ">
+              $69
+            </span>
+          </span>
+          <span className="italic text-xl font-sans text-gray-500/70 block text-center">
+            Un solo pago. Con garantía de 30 días!!
+            <br />
+          </span>
+          <span className="font-bold text-center block">
+            Desarrolla dominio sobre tu vida digital y personal con estrategias
+            comprobadas para una transformación real.
+          </span>
+          <br />
+          ✔️ Ofrece un enfoque holístico y detallado sobre la vida digital y
+          personal, con más de 20 módulos que abordan desde la desintoxicación
+          digital hasta la construcción de una vida con propósito.
+          <br />
+          <br />
+          ✔️ Incluye acceso a una comunidad exclusiva en Discord, facilitando el
+          soporte entre pares, discusiones enriquecedoras y una red de apoyo
+          motivacional.
+          <br />
+          <br />
+          ✔️ Se compromete a actualizaciones regulares y mejoras del curso,
+          basándose en retroalimentación real y tendencias emergentes,
+          asegurando un aprendizaje siempre relevante.
+          <br />
+          <br />
+          ✔️ Contiene lecciones profundas, basadas en las últimas
+          investigaciones y las enseñanzas de expertos reconocidos en campos
+          como la psicología, gestión del tiempo y filosofía.
+          <br />
+          <br />
+          ✔️ Ofrece bonificaciones exclusivas para las primeras 100 compras,
+          incluyendo guías especializadas, plantillas adicionales y contenido
+          exclusivo que enriquece la experiencia de aprendizaje.
+          <br />
+          <br />
+          ✔️ Precio especial de $69 con garantía de 30 días y acceso de por
+          vida, representando una
+          <span className="font-bold"> inversión a largo plazo </span>
+          en desarrollo personal y profesional.
+          <br />
+          <br />
+        </h2>
+      </div>
+
       <Button
         href="https://shop.carlitosnina.com/checkout/buy/058aac3a-9043-4af5-b9ef-8768be268d0a?logo=0&discount=0"
         as={Link}
@@ -639,30 +636,24 @@ export default function Home() {
       </span>
       <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
         {" "}
-        <span className="font-bold text-3xl lg:text-4xl">
-          Te reembolso el 100% si no te cambia la vida, sin preguntas, en un
-          instante.
+        <span className="font-bold text-2xl lg:text-4xl block text-center">
+          Si no experimentas una transformación significativa en tu vida, te
+          reembolso el 100% de tu inversión. Sin condiciones ocultas, ni
+          complicaciones.🔥
         </span>
         <br />
+        Si en cualquier momento dentro de{" "}
+        <span className="font-bold">los 30 días siguientes a tu compra </span>
+        sientes que este camino no es el adecuado para ti, sea cual sea el
+        motivo, te mereces recuperar cada centavo de tu inversión.
         <br />
-        Entiendo que cada paso hacia el cambio es único y que tu camino hacia
-        una vida digitalmente equilibrada es personal. Por eso quiero que te
-        sientas completamente libre para explorar este curso sin ningún riesgo.
         <br />
-        Si en cualquier momento dentro de los 30 días siguientes a tu compra
-        decides que este curso no es para ti, sea cual sea la razón, te ofrezco
-        una Garantía de Satisfacción Total. No necesitas completar el curso, ni
-        siquiera tienes que darme un motivo. Simplemente envíame un correo a
-        carlitos@carlitosnina.com pidiendo tu reembolso, y te devolveré el 100%
-        de tu inversión, sin preguntas.
-        <br />
-        Estoy comprometido a ofrecerte no solo conocimiento, sino también
-        confianza y seguridad en tu inversión. Creo firmemente en el valor
-        transformador de este curso y quiero que tengas la libertad de
-        experimentarlo por ti mismo, completamente a tu ritmo y según tus
-        términos.
+        No necesitas completar el curso, ni siquiera tienes que darme un motivo.
+        Simplemente envíame un correo a carlitos@carlitosnina.com pidiendo tu
+        reembolso, y te devolveré el 100% de tu inversión, sin preguntas.
         <br /> <br />
-        *Abajo mayor detalle del proceso de reembolso
+        Nota: Para más detalles sobre el proceso de reembolso, consulta la
+        sección inferior.
       </h2>
       <div className="my-2 container mx-auto flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
