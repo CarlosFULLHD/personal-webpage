@@ -7,7 +7,7 @@ const bonusData = [
     description: `Me interesa ayudarte de verdad, es por eso que quiero darlo TODO.
     - Acceso a una comunidad exclusiva en Discord de por vida.
     - En la comunidad puedes hacernos cualquier pregunta, objeción y haremos el mejor trabajo para darte con la mejor solución posible.
-    - Reuniones de 1 a 3 HORAS semanales durante 90 días para escucharte y conocerte mejor en tu camino, escuchar tus problemas y apoyarte a superarlos.
+    - Reuniones de 1 a 3 HORAS cada semana durante 90 días para escucharte y conocerte mejor en tu camino, escuchar tus problemas y apoyarte a superarlos.
     - Oportunidad de solicitar soluciones a problemas para futuras actualizaciones.`,
     avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/comunidad_seguimiento_y_apoyo`,
   },

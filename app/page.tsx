@@ -283,8 +283,7 @@ export default function Home() {
         </span>
         <br />
         <br />
-        Si es así, te ayudaré a resolver esos problemas en los siguientes 30
-        días. 💪
+        Si es así, te ayudaré a resolver esos problemas de una vez por todas. 💪
         <br />
       </h2>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
@@ -380,14 +379,18 @@ export default function Home() {
         Cada día era una conversación con mentores que nunca conocí
         personalmente, pero cuyas palabras resonaban como un diálogo interno.
         <br />
+        <br />
         Me tomaba las noches para reflexionar sobre mis éxitos, para celebrar y
         planificar mejoras aún más significativas.
         <br />
+        <br />
         Pequeños pasos incrementales hacia un futuro que, según Jordan Peterson,
         prometía ser mejor.
-        <br />Y así fue como gradualmente rompí las cadenas de la tecnología y
+        <br />
+        <br /> Y así fue como gradualmente rompí las cadenas de la tecnología y
         comencé a utilizarla como una herramienta, en lugar de ser devorado por
         ella.
+        <br />
         <br />
         Es por eso que creé este curso moderno.
         <br />
@@ -402,13 +405,14 @@ export default function Home() {
         <br /> ¿Pruebas?
         <br />
         Esta página web, los videos en YouTube, muchisimos libros leídos y mejor
-        aún.. "Aplicados", mis estrategias de marketing y ventas, y las
-        múltiples habilidades que he adquirido, incluso cursando ingeniería que
-        consideran ser una de las carreras con mayor dificultad.
+        aún.. "Aplicados", todas las múltiples habilidades que he adquirido,
+        incluso cursando ingeniería que consideran ser una de las carreras con
+        mayor dificultad.
         <br />
         Todo esto demuestra el tiempo libre que tengo para lograr todo esto.
         <br />
         <br />
+        Pero volvamos a quien importa... Tú. <br />
         Quizá no te interese hacer exactamente lo que yo hago, pero seguro que
         te gustaría tener tiempo libre para dedicarte a lo que realmente te
         apasiona, ya sea dibujar, programar, bailar...
@@ -427,9 +431,13 @@ export default function Home() {
       </h2>
       <AuthorsSection />
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        Ellos y muchos más, con su sabiduría me enseñaron a aplicar todo esto.
-        Ahora, vengo a compartir contigo las lecciones clave para que puedas
-        triunfar sobre esta adicción que te roba incontables horas de tu vida.
+        Y solo son unos cuantos autores..., hay muchos más nombres conocidos o
+        quiza no conozcas, toda su sabiduría esta concentrada en estas lecciones
+        <br />
+        <span className="font-bold">
+          Ahora, vengo a compartir contigo las lecciones clave para que puedas
+          triunfar sobre esta adicción que te roba incontables horas de tu vida.
+        </span>
       </h2>
       <Button
         onClick={() => {
@@ -484,8 +492,8 @@ export default function Home() {
           </span>
           <br />
           <em className="text-lg font-italic md:text-xl lg:text-2xl">
-            Solo para las primeras 100 personas en comprar, después subiré el
-            precio
+            Solo para las primeras 100 personas valientes dispuestas en invertir
+            en su futuro
           </em>
         </div>
       </div>
@@ -560,6 +568,24 @@ export default function Home() {
           que se ofrece inicialmente.
           <br />
           <br />❌ Precios altos, sin garantías claras y ni acceso de por vida.
+          <br />
+          <br />
+          📉Te distraes fácil, tienes menos de 8 segundos de atención.
+          <br />
+          <br />
+          🌜 Dormir a las 2 a.m., despertar a las 2p.m.
+          <br />
+          <br />
+          😟 Ansiedad, depresión y estrés.
+          <br />
+          <br />
+          🔄 Culpar al mundo, sin asumir responsabilidad.
+          <br />
+          <br />
+          ❓ Confusión sobre el inicio, soluciones fallidas.
+          <br />
+          <br />
+          💸 Ahorras hoy, pero pierdes más cada día por no actuar.
         </h2>
         <h2 className=" mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
           <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">

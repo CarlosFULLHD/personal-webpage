@@ -41,10 +41,15 @@ export const AuthorsSection = () => {
             James Clear
           </span>
           <br />
-          Es como ese amigo que te muestra que el cambio monumental comienza con
-          el mínimo esfuerzo. Su libro, "Hábitos Atómicos", te enseñará que con
-          pequeñas acciones consistentes puedes reformar tu vida entera. Él te
-          guiará para que esculpas tus días con hábitos que realmente cuentan.
+          Tú te odias a ti mismo, o te desprecias, te culpas por lo que haces y
+          te hablas mal a tí mismo, eso afecta a tu autopercepción(identidad) la
+          persona quien eres,{" "}
+          <span className="font-bold">
+            James te guiará para que esculpas tus días con hábitos que realmente
+            cuentan. Dará vuelta a ese discurso de desprecio que te tienes y lo
+            mejorará con el tiempo hasta que pase lo contrario gracias a tus
+            hábitos, por eso debemos empezar pequeño.
+          </span>
         </div>
       </div>
       {/* DIV AL LADO CONTRARIO */}
@@ -77,11 +82,14 @@ export const AuthorsSection = () => {
             Jordan Peterson
           </span>
           <br />
-          Cuando sientas que la vida te desafía, Jordan Peterson te dirá, como
-          lo hace en "12 Reglas para Vivir", que en el corazón del caos siempre
-          puedes encontrar orden. Él conversará contigo sobre cómo enfrentar la
-          vida con valentía y cómo cada regla puede ser una luz en tus momentos
-          más oscuros.
+          Te comparas con otros, en instagram, por los estados de otras
+          personas, miras sus vidas magníficas cuando tú solamente encuentras
+          caos y pura tragedia, tienes malos amigos y no tomas responsabilidad
+          por tu vida.{" "}
+          <span className="font-bold">
+            Jordan te enseñará a enfrentar la vida con valentía y a convertirte
+            en una luz en tus momentos más oscuros.
+          </span>
         </div>
       </div>
       {/* OTRO AUTOR */}
@@ -113,11 +121,16 @@ export const AuthorsSection = () => {
           <span className="text-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl ">
             Tony Robbins
           </span>
-          <br /> Es como ese entrenador incansable que te impulsa a ir más allá
-          de tus límites. En sus libros, como "Poder sin Límites", te alienta a
-          que despiertes al gigante que llevas dentro. Con Tony, aprenderás a
-          redirigir tu energía del scroll infinito hacia metas que enciendan tu
-          pasión.
+          <br />
+          Tienes creencias limitantes, piensas que no puedes vivir sin el
+          celular, que debes estar conectado siempre porque puede pasar una
+          emegencia.{" "}
+          <span className="font-bold">
+            Tony te enseñará a encontrar un mejor camino, a desafiar esas
+            creencias limitantes, a encontrar el camino hacia la libertad, dejar
+            que otras personas decidan como te sientes, para despertar el
+            gigante que tienes dentro.
+          </span>
         </div>
       </div>
       {/* DIV AL LADO CONTRARIO */}
@@ -151,10 +164,15 @@ export const AuthorsSection = () => {
             Ryan Holiday
           </span>
           <br />
-          Te introduce a la atemporalidad del estoicismo en "El Obstáculo es el
-          Camino", haciéndote ver que cada distracción es una oportunidad para
-          crecer. Él conversa contigo sobre cómo cada desvío puede fortalecer tu
-          enfoque y tu resolución.
+          Te dejas dominar por la opinion de los demás, dejas que ellos decidan
+          que harás con tu vida y solamente ves problemas y más problemas en la
+          adversidad, sin ver un sentido del porque debemos enfrentar con
+          valentía a la adversidad e injusticias de la vida.{" "}
+          <span className="font-bold">
+            Ryan te enseñará a dejar de vivir para los demás, a ver que cada
+            distracción es una oportunidad para crecer. Él conversa contigo
+            sobre cómo golpe de la vida puede fortalecerte.
+          </span>
         </div>
       </div>
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
@@ -186,10 +204,16 @@ export const AuthorsSection = () => {
             Cal Newport
           </span>
           <br />
-          Tendrás a un aliado en la batalla contra la sobrecarga tecnológica.
-          Cal te invita a simplificar tu vida digital para que puedas
-          concentrarte en lo que realmente importa, te enseña a declinar
-          gentilmente la constante demanda de atención de tu celular.
+          Tu concentración es de menos de 8 segundos, piensas que la tecnología
+          lo es todo hoy en día y que sin ella no somos nada, que todo lo que
+          importa es como los demás te ven por instagram y demostrar que mejoras
+          en la vida con fotos extravagantes pero falsas.
+          <br />
+          <span className="font-bold">
+            Cal Newport te enseñará a batallar contra la sobrecarga tecnológica,
+            a simplificar tu vida digital para que puedas concentrarte en lo que
+            realmente importa.
+          </span>
         </div>
       </div>
       {/* DIV AL LADO CONTRARIO */}
@@ -222,10 +246,13 @@ export const AuthorsSection = () => {
             Viktor Frankl
           </span>
           <br />
-          Se convertirá en tu consejero espiritual a través de su conmovedor
-          libro, "El Hombre en Busca de Sentido". Desde las profundidades del
-          sufrimiento humano, te mostrará cómo encontrar un propósito que sea
-          más fuerte que cualquier cadena de notificaciones.
+          Te preguntarás porque viniste a este mundo, cual es tú propósito,
+          sientes que tu vida no tiene valor o que no aportas a algo
+          significativo...
+          <span className="font-bold">
+            Viktor Frankl tiene las respuestas, él te mostrará cómo encontrar un
+            propósito que sea más fuerte que cualquier cadena de notificaciones.
+          </span>
         </div>
       </div>
     </section>
