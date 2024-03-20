@@ -6,7 +6,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
-import { Button } from "@nextui-org/react";
+import { Avatar, Button } from "@nextui-org/react";
 import React, { useState, useEffect } from "react";
 import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
@@ -68,9 +68,53 @@ export default function Home() {
           <p className="italic mb-6 block text-center lg:text-xl">
             Garantía de Satisfacción de 30 días
           </p>
-
-          <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
-            Accede gratuitamente a las primeras 4 lecciones de Libertad Digital:
+          <div className="flex gap-4 items-center justify-center">
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              src="https://d1kdkr2pswehq6.cloudfront.net/jamesclear-photo.webp"
+            />
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              src="https://d1kdkr2pswehq6.cloudfront.net/jordanpeterson-photo.webp"
+            />
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              src="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.webp"
+            />
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              src="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp"
+            />
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              className="absolute invisible md:static md:visible"
+              src="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.webp"
+            />
+            <Avatar
+              isBordered
+              color="warning"
+              size="lg"
+              className="absolute invisible md:static md:visible"
+              src="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.webp"
+            />
+          </div>
+          <h2 className="text-center font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
+            Respaldada por los gigantes en el mundo del desarrollo personal y la
+            productividad.
+          </h2>
+          <h3 className="mt-4 italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
+            Solo para tí, 4 Lecciones y 4 Plantillas Especiales totalmente
+            gratis.
             <br />
           </h3>
 
@@ -81,7 +125,7 @@ export default function Home() {
             color="primary"
             className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black bg-white border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
           >
-            🎁Ver mi regalo
+            🎁Abrir mi regalo
           </Button>
         </div>
 
@@ -618,19 +662,19 @@ export default function Home() {
           motivacional.
           <br />
           <br />
-          ✔️ Se compromete a actualizaciones regulares y mejoras del curso,
+          ✔️ Comprometidos a dar actualizaciones regulares y mejoras del curso,
           basándose en retroalimentación real y tendencias emergentes,
           asegurando un aprendizaje siempre relevante.
           <br />
           <br />
-          ✔️ Contiene lecciones profundas, basadas en las últimas
-          investigaciones y las enseñanzas de expertos reconocidos en campos
-          como la psicología, gestión del tiempo y filosofía.
+          ✔️ Lecciones profundas, basadas en las últimas investigaciones y las
+          enseñanzas de expertos reconocidos en campos como la psicología,
+          gestión del tiempo y filosofía.
           <br />
           <br />
-          ✔️ Ofrece bonificaciones exclusivas para las primeras 100 compras,
-          incluyendo guías especializadas, plantillas adicionales y contenido
-          exclusivo que enriquece la experiencia de aprendizaje.
+          ✔️ Bonificaciones exclusivas para las primeras 100 personas,
+          incluyendo guías especializadas, actualizaciónes exclusivas y
+          plantillas adicionales.
           <br />
           <br />
           ✔️ Precio especial de $69 con garantía de 30 días y acceso de por
