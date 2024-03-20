@@ -416,19 +416,26 @@ export default function Home() {
         más en mi prisión digital.
         <br />
         <br />
-        Pero, poco a poco, aplicando las lecciones de cada libro que devoraba,
-        empecé a tallar mi escape.
+        Cientas de horas desperdiciadas en el celular, así nadie puede lograr
+        sus sueños y objetivos, me dí cuenta de eso por las malas, reprobando en
+        la universidad, viendo como otros mejoran y yo me quedo en el mismo
+        lugar...
         <br />
         <br />
-        Cada día era una conversación con mentores que nunca conocí
-        personalmente, pero cuyas palabras resonaban como un diálogo interno.
+        Pero, poco a poco, aplicando las lecciones de cada libro que leía,
+        empecé a mejorar mi vida por ellos. Por esos maestros que tuve.
+        <br />
+        <br />
+        Cada día era una conversación con mentores que conocí gracias a sus
+        libros y trabajos, esas palabras resonaban como un diálogo interno.
+        conmigo
         <br />
         <br />
         Me tomaba las noches para reflexionar sobre mis éxitos, para celebrar y
         planificar mejoras aún más significativas.
         <br />
         <br />
-        Pequeños pasos incrementales hacia un futuro que, según Jordan Peterson,
+        Pequeños pasos incrementales hacia un futuro que, según Jordan Peterson
         prometía ser mejor.
         <br />
         <br /> Y así fue como gradualmente rompí las cadenas de la tecnología y
@@ -439,38 +446,30 @@ export default function Home() {
         Es por eso que creé este curso moderno.
         <br />
         <br />
-        Algo faltaba en el discurso convencional. Nadie ofrecía una solución
-        rápida y verdadera para obtener claridad en la dirección de tu vida.
-        <br />
-        ¿La razón? Todo esto es muy nuevo. Todos todavía lo están descifrando.
-        <br />
-        <br /> Por eso puedo decir que he descifrado el código, lo he logrado.
-        <br />
-        <br /> ¿Pruebas?
-        <br />
-        Esta página web, los videos en YouTube, muchisimos libros leídos y mejor
-        aún.. "Aplicados", todas las múltiples habilidades que he adquirido,
-        incluso cursando ingeniería que consideran ser una de las carreras con
-        mayor dificultad.
-        <br />
-        Todo esto demuestra el tiempo libre que tengo para lograr todo esto.
+        Todos saben que una gran adicción de este siglo es la tecnología,
+        principalmente... El celular.
         <br />
         <br />
-        Pero volvamos a quien importa... Tú. <br />
-        Quizá no te interese hacer exactamente lo que yo hago, pero seguro que
-        te gustaría tener tiempo libre para dedicarte a lo que realmente te
-        apasiona, ya sea dibujar, programar, bailar...
+        Pero nadie ofrecía una solución verdadera y mucho menos clara.
         <br />
         <br />
-        Sea lo que sea, podrás lograrlo si cuentas con tiempo libre.
-        <br />
-        Por eso propongo este programa que te brindará una solución definitiva y
-        de raíz a la adicción al celular, cómo construir realmente una
-        mentalidad con dirección y sentido y, finalmente, encontrar un propósito
-        en tu vida.
+        Existen soluciónes que no duran con el tiempo, la que te ofrezco te
+        durará por años y finalmente te devolverá cientas de horas que podrías
+        haber desperdiciado.
         <br />
         <br />
-        Puede sonar increíble, pero en realidad no lo descubri yo, fueron ellos:
+        Podrás lograr tus objetivos, tus metas, crear un futuro del que siempre
+        soñaste, un futuro que quizá pensaste que no nunca serías capaz de
+        lograr.
+        <br />
+        <br />
+        Con este curso, sé que serás capaz de hacerlo.
+        <br />
+        <br />
+        Puede sonar increíble, pero en realidad como dije antesm, no lo descubri
+        yo.
+        <br />
+        Fueron ellos: (Aplausos por favor)
         <br />
       </h2>
       <AuthorsSection />

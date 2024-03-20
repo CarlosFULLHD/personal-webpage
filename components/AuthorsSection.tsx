@@ -123,12 +123,12 @@ export const AuthorsSection = () => {
           </span>
           <br />
           Tienes creencias limitantes, piensas que no puedes vivir sin el
-          celular, que debes estar conectado siempre porque puede pasar una
+          celular, que debes estar conectado siempre, porque puede pasar una
           emegencia.{" "}
           <span className="font-bold">
             Tony te enseñará a encontrar un mejor camino, a desafiar esas
-            creencias limitantes, a encontrar el camino hacia la libertad, dejar
-            que otras personas decidan como te sientes, para despertar el
+            creencias limitantes, a encontrar el camino hacia la libertad y a
+            dejar que otras personas decidan como te sientes, para despertar el
             gigante que tienes dentro.
           </span>
         </div>
@@ -165,9 +165,9 @@ export const AuthorsSection = () => {
           </span>
           <br />
           Te dejas dominar por la opinion de los demás, dejas que ellos decidan
-          que harás con tu vida y solamente ves problemas y más problemas en la
-          adversidad, sin ver un sentido del porque debemos enfrentar con
-          valentía a la adversidad e injusticias de la vida.{" "}
+          que harás con tu vida y solamente te quejas de los problemas, sin ver
+          un sentido del porque debemos enfrentar con valentía a la adversidad e
+          injusticias de la vida.{" "}
           <span className="font-bold">
             Ryan te enseñará a dejar de vivir para los demás, a ver que cada
             distracción es una oportunidad para crecer. Él conversa contigo
@@ -207,7 +207,7 @@ export const AuthorsSection = () => {
           Tu concentración es de menos de 8 segundos, piensas que la tecnología
           lo es todo hoy en día y que sin ella no somos nada, que todo lo que
           importa es como los demás te ven por instagram y demostrar que mejoras
-          en la vida con fotos extravagantes pero falsas.
+          en la vida con fotos extravagantes pero falsas...
           <br />
           <span className="font-bold">
             Cal Newport te enseñará a batallar contra la sobrecarga tecnológica,
