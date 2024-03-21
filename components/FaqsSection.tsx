@@ -49,9 +49,9 @@ export const FaqsSection = () => {
             </span>
             <br />
             <br />
-            PD: El material pesa entre 3-4MBm, si subiste archivos como imagenes
-            o PDF a Notion en tu cuenta anteriormente, considera vaciar espacio
-            o crearte una nueva cuenta si no quieres pagar por Notion.
+            PD: El material pesa 3MB(aprox), si ya tienes cuenta de Notion toma
+            en cuenta tener libre esos 3MB, o puedes crearte una nueva cuenta.(ó
+            pagar si te quieres)
             <br />
             <br />
             <span className="font-bold italic">
