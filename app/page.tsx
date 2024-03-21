@@ -15,7 +15,6 @@ import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
 import Image from "next/image";
 import { FooterSection } from "@/components/FooterSection";
-import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
@@ -166,6 +165,34 @@ export default function Home() {
         </div>
       </div>
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6">
+      <span className="font-bold">El Tiempo Se Escapa Como Agua Entre los Dedos</span> <br />
+1,460 horas al año se esfuman frente a la pantalla de tu celular. <br /><br />
+Eso son 4 horas diarias que podrías invertir en tus sueños, relaciones y pasiones. <br /><br />
+ Pero en cambio, ¿qué haces? Deslizas, deslizas y te pierdes en un abismo digital. 
+ No solo estás desperdiciando tiempo,<span className="font-bold">estás desperdiciando tu vida.</span>  <br /><br />
+<span className="font-bold">Las industrias nos roban el recurso más valioso... <br />Nuestra atención </span> <br />
+Los hábitos que formamos con nuestros dispositivos no son accidentes,
+son trampas diseñadas especialmente para mantenernos enganchados. <br /><br />
+Cada notificación, cada alerta, te encadena nuevamente a esos malos comportamientos.<br /><br />
+
+<span className="font-bold">Tu Salud en la Cuerda Floja</span> <br />
+Noches en vela, mirando la pantalla hasta que tus ojos arden.
+ El celular no solo roba tu sueño, sino que también agota tu salud mental y física. 
+ <br /><br />
+ Estrés, ansiedad, y un ciclo de insomnio que parece no tener fin. <span className="font-bold">¿Cuánto más vas a permitir que este pequeño dispositivo dicte cómo te sientes?</span>
+ 
+<br /><br />
+
+No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas en energía
+ para tu vida.
+ <br /> <br /> 
+ Con el curso Libertad Digital, no solo recuperarás el tiempo perdido,
+  sino que también redescubrirás cómo tener un sueño reparador y construirás hábitos
+   que fortalecerán tu voluntad y llenarán tu propósito. 
+   <br /><br />
+   Te mostraremos cómo romper las cadenas digitales y reclamar tu libertad.  <br />
+   <span className="font-bold">No se trata de simples trucos o soluciones temporales; es un cambio de vida real y duradero.</span>  
+<br /><br />
         La educación moderna está fallando en enseñarnos cómo vivir con la
         tecnololgía.
         <br />
