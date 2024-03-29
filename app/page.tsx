@@ -20,19 +20,22 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center">
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
         <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
-          <h1 className="text-5xl font-bold tracking-tighter md:inline lg:text-5xl xl:text-7xl">
-            Si estas leyendo esto desde el celular
-          </h1>
-          <span className="text-5xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange md:inline lg:block lg:text-5xl xl:text-7xl text-gradient">
-            {" "}
-            Tienes un problema
-          </span>
-          <h1 className="text-5xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
-            Tengo la solución
+            <h1 className="text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
+            
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
+            Libertad Digital: {" "}
+            </span>
+            Transforma 1,460 Horas de Celular en 
+            <span className="underline decoration-8 decoration-custom-yellow">
+            {" "}Logros Reales y un Futuro con Propósito
+            </span>🎯
           </h1>
           <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
-            Un Sistema de Desintoxicación Digital, Desarrollo Personal y
-            Búsqueda de Propósito.
+          Un programa completo, Domina hábitos de vanguardia, potencia tu rendimiento, maximiza tu productividad y revitaliza tu descanso con 
+          <span className="underline decoration-4 decoration-custom-blue">
+            {" "}un cambio duradero en tu vida.
+            </span>
+          
             <span className="block md:inline lg:block">
               {" "}
               (En una plantilla de Notion)
@@ -44,7 +47,7 @@ export default function Home() {
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
               />
             </span>
-            <span className="block font-bold">¿Listo para el cambio?</span>
+            <span className="block font-bold">Estás a un clic de transformar tu vida</span>
           </h2>
           <Button
             onClick={() => {
@@ -62,7 +65,7 @@ export default function Home() {
               height={32} // Specify height
               className="w-8 h-8 absolute left-4"
             />
-            Si, Estoy Listo
+            Quiero unirme!
           </Button>
           <p className="italic mb-6 block text-center lg:text-xl">
             Garantía de Satisfacción de 30 días
@@ -108,12 +111,10 @@ export default function Home() {
             />
           </div>
           <h2 className="text-center font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
-            Respaldada por los gigantes en el mundo del desarrollo personal y la
-            productividad.
+            Basado en las estrategias comprobadas de los maestros del desarrollo personal y la productividad
           </h2>
           <h3 className="mt-4 italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
-            Solo para tí, 4 Lecciones y 4 Plantillas Especiales totalmente
-            gratis.
+          Exclusivo para ti: Desbloquea 4 Lecciones Clave y 4 Plantillas Premium sin costo alguno. 
             <br />
           </h3>
 
@@ -164,138 +165,62 @@ export default function Home() {
           </em>
         </div>
       </div>
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6">
-      <span className="font-bold">El Tiempo Se Escapa Como Agua Entre los Dedos</span> <br />
-1,460 horas al año se esfuman frente a la pantalla de tu celular. <br /><br />
-Eso son 4 horas diarias que podrías invertir en tus sueños, relaciones y pasiones. <br /><br />
- Pero en cambio, ¿qué haces? Deslizas, deslizas y te pierdes en un abismo digital. 
- No solo estás desperdiciando tiempo,<span className="font-bold">estás desperdiciando tu vida.</span>  <br /><br />
-<span className="font-bold">Las industrias nos roban el recurso más valioso... <br />Nuestra atención </span> <br />
-Los hábitos que formamos con nuestros dispositivos no son accidentes,
-son trampas diseñadas especialmente para mantenernos enganchados. <br /><br />
-Cada notificación, cada alerta, te encadena nuevamente a esos malos comportamientos.<br /><br />
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6 shadow-inner ">
+        <span className="font-bold">
+          Más de 1,460 horas al año se esfuman frente a la pantalla de tu celular.
+        </span>{" "}
+        <br />
+        <br />
+        Eso son 4 horas diarias que podrías invertir en
+        
+        <span className="font-bold">
+        {" "}realizar tus sueños, mejorar tu físico y mentalidad.
+        </span> 
+        <br />
+        <br />
+        Puede parecer tu culpa... en parte sí lo es, pero en esta era digital en la que las industrias hacen lo mejor para
 
-<span className="font-bold">Tu Salud en la Cuerda Floja</span> <br />
-Noches en vela, mirando la pantalla hasta que tus ojos arden.
- El celular no solo roba tu sueño, sino que también agota tu salud mental y física. 
- <br /><br />
- Estrés, ansiedad, y un ciclo de insomnio que parece no tener fin. <span className="font-bold">¿Cuánto más vas a permitir que este pequeño dispositivo dicte cómo te sientes?</span>
- 
-<br /><br />
-
-No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas en energía
- para tu vida.
- <br /> <br /> 
- Con el curso Libertad Digital, no solo recuperarás el tiempo perdido,
-  sino que también redescubrirás cómo tener un sueño reparador y construirás hábitos
-   que fortalecerán tu voluntad y llenarán tu propósito. 
-   <br /><br />
-   Te mostraremos cómo romper las cadenas digitales y reclamar tu libertad.  <br />
-   <span className="font-bold">No se trata de simples trucos o soluciones temporales; es un cambio de vida real y duradero.</span>  
-<br /><br />
-        La educación moderna está fallando en enseñarnos cómo vivir con la
-        tecnololgía.
+        <span className="font-bold">
+        {" "}obtener nuestra atención
+        </span> es complicado no hacerlo.
         <br />
         <br />
-        Miles de personas viven una vida{" "}
-        <strong>
-          sin propósito y sienten que estan desperdiciando su vida
-        </strong>
+        Cada notificación, cada alerta, te encadena nuevamente a esos malos
+        comportamientos.
         <br />
         <br />
-        La adicción al celular se ha convertido en una de las mayores adicciones
-        en todo el mundo, afectando a adolescentes, universitarios y adultos.
+        Noches en vela, mirando la pantalla hasta que tus ojos arden. El celular
+        no solo roba tu sueño, sino que también agota tu salud mental y física.
         <br />
         <br />
-        <ul className="list-disc px-8">
-          <li>
-            <strong>📈 El aislamiento digital está creciendo.</strong>
-            <br />
-            En un mundo hiperconectado, paradójicamente nos encontramos más
-            solos que nunca.
-          </li>
-          <br />
-          <li>
-            <strong>
-              😖 El miedo a perdernos de alguna tendencia o mensaje nos mantiene
-              pegados a las pantallas
-            </strong>
-            <br />
-            pero en el proceso, estamos perdiendo lo que realmente importa.
-          </li>
-        </ul>
-        <ul className="list-disc px-8">
-          <br />
-          <strong>
-            👀 Tan solo te invito a dar una vuelta por tu colegio, universidad o
-            por el trabajo, compruebalo por tí mismo
-          </strong>
-          <br />
-          <br />
-          Es como un virus, al que todos se hacen a la vista gorda, como si nada
-          malo pasara
-          <br />
-          <li>
-            🥴 Las redes sociales te prometen conexión, pero a menudo te deja
-            sintiéndote más vacío y tonto que antes.
-          </li>
-          <li>
-            🔔 Las notificaciones constantes interrumpen, estresa y solamente
-            fueron creadas para hacerte adicto al celular.
-          </li>
-          <li>
-            📉 Tiktok, Shorts y muchas plataformas reducen nuestro tiempo de
-            atención a menos de 8 segundos.
-          </li>
-          <li>
-            😥 La comparación constante en plataformas como Instagram y Facebook
-            te hace cuestionar tu valor y logros.
-          </li>
-          <li>
-            🥵 El celular te deja expuesto a adicciones más severas como el
-            p*rn0, onlyfans, redes sociales etc.
-          </li>
-        </ul>
-        <br />
-        Veo esto repetidas veces en internet:
+        Estrés, ansiedad, y un ciclo de insomnio que parece no tener fin.<span className="font-bold">{" "}Un sentimiento de culpa por desperdiciar esas horas te atormenta...</span>
         <br />
         <br />
-        <span className="text-bold italic ">
-          "He pasado más tiempo preocupándome por las cosas subo en Instagram
-          que viviendo mi propia vida, vivo solo para los demás."
+        <span className="font-bold">
+          ¿Cuánto más vas a permitir que este pequeño dispositivo dicte cómo te
+          sientes?
         </span>
         <br />
         <br />
+        Necesitas cambiar tu autopercepción para mantener un cambio permanente y así te liberes de esa adicción al celular
         <br />
-        Una mejor vida te espera si{" "}
-        <span className="text-bold">
-          decides tomar el control de tu vida y tu relación con la tecnología.
+        <br />
+        Eso lo haces con:
+        <span className="font-bold">
+        {" "}La autopercepción de uno mismo también llamado identidad.
         </span>
         <br />
         <br />
-        <ul className="list-disc px-8">
-          <li>
-            🌞 Si buscas redescubrir la alegría de los momentos sin una pantalla
-            vacía.
-          </li>
-
-          <li>
-            ✂️ Si estas dispuesto a romper la normas de la sociedad actual,
-            eligiendo conscientemente qué, cuándo y cómo interactuar con el
-            mundo digital.
-          </li>
-
-          <li>
-            🔥 Si anhelas recuperar tu tiempo, atención y energía para
-            invertirlo en pasiones, personas y proyectos que realmente
-            enriquezcan tu vida.
-          </li>
-        </ul>
+        No se trata de simples trucos o soluciones temporales como afirmaciones sin sentido.
+        <br /><br />
+        Son Varias habilidades y conocimientos que una a una se complementan ayudandote a cambiar tu autopercepción.
+        <br />
         <br />
         Estas habilidades y conocimientos no solo se pueden aprender, sino que
-        son esenciales para cualquier persona que desee liderar una vida plena
-        en el siglo XXI.
-        <br />
+        <span className="underline decoration-4 decoration-custom-blue">
+            {" "}son esenciales
+        </span>
+        {" "}para cualquier persona que desee liberar su máximo potencial con una vida plena.
         <br />
         <br />
         <span className="text-bold">Este curso es para ti si:</span>
@@ -340,12 +265,7 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
               {" "}
               pero se siente que todos son lo mismo
             </span>{" "}
-            (y no estas seguro en cual debes invertir tu dinero)
-          </li>
-          <li>
-            Por ultimo si no tienes tiempo para invertir todo el día intentando
-            leer libros y ver videos en youtube para solucionar tus problemas.
-            (A lo que me refiero es que puedo ahorrarte bastante tiempo)
+            (y no estas seguro en cual debes invertir tu TIEMPO y dinero)
           </li>
         </ul>
         <br />
@@ -354,7 +274,7 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
         </span>
         <br />
         <br />
-        Si es así, te ayudaré a resolver esos problemas de una vez por todas. 💪
+        Si es así, te ayudaré a transformar tu vida y resolver esos problemas de una vez por todas. 💪
         <br />
       </h2>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
@@ -383,25 +303,27 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
         Lo intenté todo...
         <br />
         Después de incontables horas pegado a la pantalla, innumerables intentos
-        fallidos y noches en vela buscando la solución, estaba exhausto.
+        fallidos y noches en vela buscando la solución, estaba exhausto
         <br />
         <br />
         No solo había fallado en cada táctica, sino que cada intento me alejaba
-        más de la verdadera solución. <br />
+        más de la verdadera solución <br /><br />
         Sabía que necesitaba una respuesta que atacara la raíz de mi problema,
-        algo que finalmente encontré tras años de lectura y experimentación.{" "}
+        algo que finalmente encontré tras años de lectura y experimentación{" "}
         <br />
         <br />
         Quizás era porque estaba demasiado enganchado al celular, o tal vez era
-        especial y necesitaba una solución excepcional para romper el ciclo.{" "}
-        <br />A pesar de mi adicción de más de 14 horas diarias frente a
-        pantallas, principalmente el celular, logré controlarla y cambiar mi
-        vida radicalmente. <br />
+        especial y necesitaba una solución excepcional para romper el ciclo{" "}
         <br />
+        <br />
+        A pesar de mi adicción de más de 14 horas diarias frente a
+        pantallas, principalmente el celular, logré controlarla y cambiar mi
+        vida radicalmente
       </h2>
       <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end w-auto h-auto">
-          <picture>
+        <div className="relative w-32 h-32 lg:h-screen mx-auto">
+          <picture className="">
             {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
             <source
               srcSet="https://d1kdkr2pswehq6.cloudfront.net/carlitos_photo.webp"
@@ -414,86 +336,84 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
             <Image
               src="carlitos_photo.jpg"
               alt="Foto del instructor carlitos"
-              width={200} // Specify width
-              height={200} // Specify height
-              className="max-w-44 max-h-44 lg:max-h-64 lg:max-w-64 mx-auto xl:ml-80 2xl:ml-96"
+              objectFit="contain" fill
+              className=""
             />
           </picture>
+          </div>
         </div>
         <div className="text-xl lg:text-2xl lg:text-left md:basis-1/2 lg:p-0  text-white lg:max-w-sm">
           <span className="text-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-4xl ">
-            Hey, soy Carlitos.
+            Hey, soy Carlitos
           </span>
           <br />
+          Estudiante de último año en ingeniería de sistemas y contabilidad
           <br />
-          Soy estudiante de último año en ingeniería de sistemas y contabilidad.
-          <br />
-          Me fascina construir sistemas y leer apasionadamente sobre filosofía y
-          psicología.
+          Soy un lector amante de la filosofía y
+          psicología
         </div>
       </div>
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        Comencé como cualquiera
-        <br />
-        <br />
-        Sumergido en el peor escenario posible con las redes sociales
+        Mi historia comienza sumergido en el peor escenario posible con las redes sociales
         <br />
         <br />
         Una espiral de consumo sin fin, donde cada notificación era una cadena
-        más en mi prisión digital.
+        más en mi prisión digital
         <br />
         <br />
         Cientas de horas desperdiciadas en el celular, así nadie puede lograr
-        sus sueños y objetivos, me dí cuenta de eso por las malas, reprobando en
-        la universidad, viendo como otros mejoran y yo me quedo en el mismo
+        sus sueños y objetivos, me dí cuenta de eso por las malas
+        <br />
+        <br />
+        Reprobando asignaturas en la universidad, viendo como otros mejoran y yo me quedo en el mismo
         lugar...
         <br />
         <br />
         Pero, poco a poco, aplicando las lecciones de cada libro que leía,
-        empecé a mejorar mi vida por ellos. Por esos maestros que tuve.
+        empecé a mejorar mi vida, gracias a esos maestros que tuve
         <br />
         <br />
-        Cada día era una conversación con mentores que conocí gracias a sus
-        libros y trabajos, esas palabras resonaban como un diálogo interno.
-        conmigo
+        Cada día era una conversación con mentores que conocí por sus libros y trabajos, esas palabras resonaban como un diálogo interno conmigo
         <br />
         <br />
         Me tomaba las noches para reflexionar sobre mis éxitos, para celebrar y
-        planificar mejoras aún más significativas.
+        planificar mejoras aún más significativas
         <br />
         <br />
         Pequeños pasos incrementales hacia un futuro que, según Jordan Peterson
-        prometía ser mejor.
+        prometía ser mejor
         <br />
         <br /> Y así fue como gradualmente rompí las cadenas de la tecnología y
         comencé a utilizarla como una herramienta, en lugar de ser devorado por
         ella.
         <br />
         <br />
-        Es por eso que creé este curso moderno.
+        Es por eso que creé este curso moderno
         <br />
         <br />
-        Todos saben que una gran adicción de este siglo es la tecnología,
-        principalmente... El celular.
+        <span className="font-bold">Todos saben que una gran adicción de este siglo es la tecnología,
+        principalmente... <br /> El celular.</span>
+        
         <br />
         <br />
-        Pero nadie ofrecía una solución verdadera y mucho menos clara.
+        Pero nadie ofrecía una solución verdadera y mucho menos clara
         <br />
         <br />
         Existen soluciónes que no duran con el tiempo, la que te ofrezco te
-        durará por años y finalmente te devolverá cientas de horas que podrías
+        <span className="font-bold">{" "}durará de por vida{" "}</span> y finalmente te devolverá cientas de horas que podrías
         haber desperdiciado.
         <br />
         <br />
-        Podrás lograr tus objetivos, tus metas, crear un futuro del que siempre
+        <span className="font-bold">Podrás lograr tus objetivos, tus metas, crear un futuro del que siempre
         soñaste, un futuro que quizá pensaste que no nunca serías capaz de
-        lograr.
+        lograr.</span>
+        
         <br />
         <br />
-        Con este curso, sé que serás capaz de hacerlo.
+        Con este programa, sé que serás capaz de hacerlo.
         <br />
         <br />
-        Puede sonar increíble, pero en realidad como dije antesm, no lo descubri
+        Puede sonar increíble, pero en realidad como dije antes, no lo descubri
         yo.
         <br />
         Fueron ellos: (Aplausos por favor)
@@ -501,8 +421,7 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
       </h2>
       <AuthorsSection />
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        Y solo son unos cuantos autores..., hay muchos más nombres conocidos o
-        quiza no conozcas, toda su sabiduría esta concentrada en estas lecciones
+        David Goggins, Alex Hormozi, Chris Williamson, Ali Abdaal..., hay muchos más nombres conocidos y toda su sabiduría esta concentrada en estas lecciones
         <br />
         <span className="font-bold">
           Ahora, vengo a compartir contigo las lecciones clave para que puedas
@@ -537,7 +456,7 @@ No todo está perdido. Imagina recuperar esas 4 horas diarias y transformarlas e
         </div>
       </div>
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        Lo Que Obtendrás dentro de este curso:
+        Al unirte, obtendrás acceso a:
       </h2>
       <ModulesSection />
       <Button

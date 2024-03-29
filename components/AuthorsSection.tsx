@@ -41,8 +41,7 @@ export const AuthorsSection = () => {
             James Clear
           </span>
           <br />
-          Tú te odias a ti mismo, o te desprecias, te culpas por lo que haces y
-          te hablas mal a tí mismo, eso afecta a tu autopercepción(identidad) la
+          Si te desprecias a ti mismo o te culpas por lo que haces, hablandote mal a tí mismo, eso afecta a tu autopercepción(identidad) la
           persona quien eres,{" "}
           <span className="font-bold">
             James te guiará para que esculpas tus días con hábitos que realmente
@@ -82,8 +81,7 @@ export const AuthorsSection = () => {
             Jordan Peterson
           </span>
           <br />
-          Te comparas con otros, en instagram, por los estados de otras
-          personas, miras sus vidas magníficas cuando tú solamente encuentras
+          Si te comparas con los demás, en instagram, facebook, al mirar sus vidas magníficas te sientes mal, porque cuando miras tu vida te encuentras
           caos y pura tragedia, tienes malos amigos y no tomas responsabilidad
           por tu vida.{" "}
           <span className="font-bold">
@@ -122,7 +120,7 @@ export const AuthorsSection = () => {
             Tony Robbins
           </span>
           <br />
-          Tienes creencias limitantes, piensas que no puedes vivir sin el
+          Si crees que no puedes lograr algo que sueñas y piensas que no puedes vivir sin el
           celular, que debes estar conectado siempre, porque puede pasar una
           emegencia.{" "}
           <span className="font-bold">
@@ -164,10 +162,9 @@ export const AuthorsSection = () => {
             Ryan Holiday
           </span>
           <br />
-          Te dejas dominar por la opinion de los demás, dejas que ellos decidan
+          Si te dejas dominar por la opinion de los demás, que ellos decidan
           que harás con tu vida y solamente te quejas de los problemas, sin ver
-          un sentido del porque debemos enfrentar con valentía a la adversidad e
-          injusticias de la vida.{" "}
+          un sentido a la vida.{" "}
           <span className="font-bold">
             Ryan te enseñará a dejar de vivir para los demás, a ver que cada
             distracción es una oportunidad para crecer. Él conversa contigo
@@ -204,10 +201,7 @@ export const AuthorsSection = () => {
             Cal Newport
           </span>
           <br />
-          Tu concentración es de menos de 8 segundos, piensas que la tecnología
-          lo es todo hoy en día y que sin ella no somos nada, que todo lo que
-          importa es como los demás te ven por instagram y demostrar que mejoras
-          en la vida con fotos extravagantes pero falsas...
+          Si no puedes concentrarte, tienes problemas con la tecnología y no puedes para de usarla...
           <br />
           <span className="font-bold">
             Cal Newport te enseñará a batallar contra la sobrecarga tecnológica,
@@ -246,12 +240,10 @@ export const AuthorsSection = () => {
             Viktor Frankl
           </span>
           <br />
-          Te preguntarás porque viniste a este mundo, cual es tú propósito,
-          sientes que tu vida no tiene valor o que no aportas a algo
-          significativo...
+          Si te preguntas cual es el sentido de la vida,¿Por qué viniste a este mundo?, ¿Cual es tú propósito?...
           <span className="font-bold">
             Viktor Frankl tiene las respuestas, él te mostrará cómo encontrar un
-            propósito que sea más fuerte que cualquier cadena de notificaciones.
+            propósito que sea más fuerte que la dependencia hacia la tecnología.
           </span>
         </div>
       </div>
