@@ -2,8 +2,7 @@ import DetailedCard from "./DetailedCard";
 const cardsData = [
   {
     id: 1,
-    subtitle: `¿Cansado de Sentir que Pierdes Tu Tiempo y Desperdicias tu Vida?`,
-    title: ` ⌛Maestro del Tiempo`,
+    title: ` ⌛Estrategias Efectivas para dejar de desperdiciar tu tiempo`,
     description: `
                   - Guía paso a paso sobre cómo identificar y limitar las distracciones del celular.
                   - Plantilla del Menú del Descanso para programar tu tiempo.
@@ -14,8 +13,7 @@ const cardsData = [
   },
   {
     id: 2,
-    subtitle: `¿Sientes que no eres todo lo que podrías llegar a ser?`,
-    title: `🌱Maestro del Carácter`,
+    title: `🌱Forjando el Carácter para un Legado de Impacto y sin arrepentimientos`,
     description: `
                   - Aprende cómo funciona tu IDENTIDAD, entendimiento psicológico y profundo de los VALORES, CREENCIAS que tenemos de nosotros mismos y autopercepciones.
                   - Cambia tu identidad y dejar ir esa parte de ti para poder desarrollarte como una mejor persona.
@@ -27,8 +25,7 @@ const cardsData = [
   },
   {
     id: 3,
-    subtitle: `¿El Autosabotaje Te Detiene?¿Te autodesprecias u odias a ti mismo?`,
-    title: `🛡️Cómo Dejar de Sabotearte a Ti Mismo`,
+    title: `🛡️Rompe las Cadenas del Autosabotaje y Renueva tu Autoestima`,
     description: `
                   - Como dejar de autodespreciarte y empezar a quererse uno mismo 
                   - Entiende el PORQUE del autodesprecio humano y el cómo dejar atrás el autosabotaje.
@@ -36,40 +33,12 @@ const cardsData = [
                   - Cómo obtener confianza en tus acciones, paso a paso hacia la mejor versión de ti con logros y satisfacción personal.
                   `,
   },
+
   {
     id: 4,
-    subtitle: `¿Anhelas Crecimiento y Un Propósito?`,
-    title: `🧭Cómo Encontrar Definitivamente tu Propósito y Pasión`,
+    title: `Revelando tu Verdadera Identidad y Potencial`,
     description: `
-                  - Exploraremos la responsabilidad personal de vivir a plenitud.
-                  - Valorar tus experiencias y encontrar significado en tus sacrificios.
-                  - Cómo disfrutar de este viaje, ya que no se trata sobre éxitos rápidos o ganancias monetarias instantáneas; te ofrezco algo infinitamente más valioso.
-                  - Encontrar finalmente lo que llaman TU PASIÓN.
-                  - Descubre el peligro de la arrogancia y valora la humildad.
-                  - Descubre el beneficio oculto del sufrimiento hacia la transformación personal.
-                  `,
-  },
-  {
-    id: 5,
-    subtitle: `¿Tienes falta de sueño y no consigues descansar lo suficiente?`,
-    title: `🌙Cómo Llegar a Dormir Tan Bien como un Bebé`,
-    description: `
-                  - Rutinas de relajación antes de dormir para mejorar la calidad del descanso.
-                  - Redescubre cómo volver a tener un sueño reparador, sin preocupaciones ni el estrés del celular por el trabajo y despertando cada día con propósito.
-                  - Cómo alejarte de tu celular a altas horas de la noche.
-                  - Cómo volver a recuperar un horario de sueño sano.
-                  - Paso a paso de cómo superar dificultades para dormir.
-                  - La magia de la escritura y liberación de preocupaciones.
-                  - Guía sobre alimentación, ambiente necesario para dormir mejor.
-                  - Aprende qué es y como trabaja el ciclo circadiano para despues MEJORAR TU SUEÑO.
-                  `,
-  },
-  {
-    id: 6,
-    subtitle: `¿Quieres Conocerte Mejor?`,
-    title: `📖Cómo Conocer Quién Rayos Eres`,
-    description: `
-                  - Aprende la magia detrás de cada uno de tus rasgos de la personalidad.
+                  - Aprende la magia detrás de cada uno de tus RASGOS de tu personalidad.
                   - Crea objetivos basados en tu personalidad y lo que te motivará hacia tu éxito futuro.
                   - Aprende sobre las ventajas y desventajas de tu personalidad.
                   - Cómo sacarle el mejor partido a tu personalidad y también cómo puedes influir en esos rasgos para una mejor vida.
@@ -77,9 +46,8 @@ const cardsData = [
                   `,
   },
   {
-    id: 7,
-    subtitle: `¿El Miedo y la Procrastinación Te Dominan?`,
-    title: `🦁Cómo matenerse disciplinado al igual que David Goggins`,
+    id: 5,
+    title: `🦁Cómo matenerse disciplinado al igual que David Goggins y eliminar la procrastinación`,
     description: `
                   - Aprende a superar la procrastinación creando una visión negativa que te motive hacia adelante y una visión futura para obtener dirección y claridad de tu futuro deseado.
                   - Aprende cómo las personas millonarias toman decisiones y se comprometen a su propósito.
@@ -89,20 +57,18 @@ const cardsData = [
                   `,
   },
   {
-    id: 8,
-    subtitle: `¿Tienes Falta de Confianza?`,
-    title: `🏔️Cómo los Verdaderos Ganadores Confían en Sí Mismos`,
+    id: 6,
+    title: `🏔️Construye el Historial de victorias que te desmuestre tu valor y te de confianza`,
     description: `
-                  - Aprende por qué las soluciones superficiales como afirmaciones o frases bonitas no funcionan. Entonces te revelaré qué SÍ te da confianza.
+                  - Aprende a crear un historial que demuestre tu valía personal y genere confianza.
                   - Aprende a aceptar a tu yo pasado y seguir un camino incluso si te encuentras en el peor momento de tu vida.
                   - Encuentra propósito y significado en hacer sacrificios.
                   - Entiende el HISTORIAL detrás de tí, aprecialo y ve a por mucho más.
                   `,
   },
   {
-    id: 9,
-    subtitle: `¿Tienes Amistades Verdaderas?`,
-    title: `🤝Cómo Convertirte y Ser el Amigo que Siempre Estará a tu Lado`,
+    id: 7,
+    title: `🤝Cómo dejar amistades venenosas y el Arte de Construir Amistades que Perduran`,
     description: `
                   - Entiende la razón verdadera por la cual debes cuidarte a ti mismo y a tu familia.
                   - Aprende porqué y cómo dejar atrás malas amistades y encontrar buenas amistades que te eleven y no te hundan.
@@ -112,9 +78,8 @@ const cardsData = [
                   `,
   },
   {
-    id: 10,
-    subtitle: `¿Intentaste mejorar tus hábitos y nada te funcionó?`,
-    title: `⚙️Cómo Disciplinarte a Ti Mismo para Lograr Lo Que Sea`,
+    id: 8,
+    title: `⚙️Cómo Disciplinarte a Ti mismo para Convertir Intenciones en Realidades`,
     description: `
                   - Crea, descubre y destruye hábitos, paso a paso.
                   - Construye una vida llena de disciplina con sencillos pasos NO necesitas ACCION MASIVA.
@@ -133,7 +98,6 @@ export const ModulesSection = () => {
           {cardsData.map((card) => (
             <DetailedCard
               key={card.id}
-              subtitle={card.subtitle}
               title={card.title}
               description={card.description}
             />

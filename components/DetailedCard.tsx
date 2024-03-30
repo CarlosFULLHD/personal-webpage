@@ -3,13 +3,11 @@ import { Card, CardHeader} from "@nextui-org/react";
 // Define una interfaz para las props de tu componente
 interface DetailedCardProps {
   title: string;
-  subtitle: string;
   description: string;
 }
 // Añade las propiedades title, description, y avatarSrc como argumentos de la función
 export default function DetailedCard({
   title,
-  subtitle,
   description,
 }: DetailedCardProps) {
   const descriptionItems = description
@@ -19,8 +17,6 @@ export default function DetailedCard({
   return (
     <Card className="py-4 bg-white text-black rounded-xl mb-2 mx-2 md:mx-16">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        {/* Utiliza la propiedad title para mostrar el subtítulo */}
-        <h4 className="font-bold text-xl">{subtitle}</h4>
         {/* Utiliza la propiedad title para mostrar el título */}
         <h1 className="font-bold text-2xl">{title}</h1>
         {/* Utiliza la propiedad description para mostrar la descripción */}
