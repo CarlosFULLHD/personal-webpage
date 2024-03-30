@@ -36,7 +36,7 @@ export default function Home() {
             {" "}un cambio duradero en tu vida.
             </span>
           
-            <span className="block md:inline lg:block">
+            <span className="block md:inline">
               {" "}
               (En una plantilla de Notion)
               <Image
@@ -320,9 +320,9 @@ export default function Home() {
         pantallas, principalmente el celular, logré controlarla y cambiar mi
         vida radicalmente
       </h2>
-      <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 ">
-        <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end w-auto h-auto">
-        <div className="relative w-32 h-32 lg:h-screen mx-auto">
+      <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 relative">
+        <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl">
+        <div className="relative w-32 h-32 mx-auto md:w-44 md:h-44 md:mr-10 lg:mr-20 xl:mr-36">
           <picture className="">
             {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
             <source
