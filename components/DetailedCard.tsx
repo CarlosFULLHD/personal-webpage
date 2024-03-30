@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader} from "@nextui-org/react";
+import { Card, CardHeader } from "@nextui-org/react";
 // Define una interfaz para las props de tu componente
 interface DetailedCardProps {
   title: string;

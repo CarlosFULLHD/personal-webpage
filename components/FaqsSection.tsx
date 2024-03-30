@@ -124,47 +124,28 @@ export const FaqsSection = () => {
             ¿Cómo funciona el proceso de reembolso y cuáles son los requisitos?
           </AccordionTrigger>
           <AccordionContent className="text-medium lg:text-lg xl:text-xl">
-            Si sientes que el curso no ha cumplido con tus expectativas,
-            ofrecemos una política de reembolso clara para asegurar tu
-            tranquilidad.
+            Envia un correo electrónico a
+            <span className="font-bold"> carlosninabusiness@gmail.com</span>
+            <br />
+            Asegúrate de incluir tu nombre, dirección de correo electrónico
+            usada para la compra, y el número de pedido.
             <br />
             <br />
-            <span className="font-bold">
-              Para solicitar un reembolso, por favor sigue estos pasos:
-            </span>
-            <br />
-            Debes enviar un correo electrónico a{" "}
-            <span className="font-bold">carlitos@carlitosnina.com</span> antes
-            de que finalice el día 30 tras tu compra, hasta la medianoche (hora
-            local). Asegúrate de incluir tu nombre, dirección de correo
-            electrónico usada para la compra, y el número de pedido.
-            <br />
-            <br />
-            <span className="font-bold">Proceso de Reembolso:</span>
-            <br />
-            Una vez recibamos tu solicitud, revisaremos los detalles y nos
-            pondremos en contacto contigo para confirmar el proceso. Nos
-            esforzamos por realizar los reembolsos lo más rápido posible, pero
-            por favor, permite hasta 7 días hábiles para completar la
-            transacción.
-            <br />
-            <span className="font-bold">Si te pasas del día 30</span>, te
+            <span className="font-bold">Y Si me paso del día 30?</span>, te
             invitamos a contactarnos igualmente. Aunque nuestra política es
             estricta, entendemos que pueden surgir situaciones excepcionales y
             estamos dispuestos a escuchar tu caso.
             <br />
-            <span className="font-bold">¿Qué Pasa Después?</span>
             <br />
-            Recibirás un correo electrónico confirmando la cancelación de tu
-            acceso al curso y la emisión del reembolso. Queremos asegurarnos de
-            que tu experiencia con Libertad Digital sea positiva, incluso si
-            decides que el curso no es adecuado para ti en este momento.
+            <span className="font-bold">Proceso de Reembolso:</span>
+            <br />
+            Una vez recibamos tu solicitud, te devolveremos tu inversión
+            inmediatamente.
             <br />
             <span className="font-bold">¿Tienes más preguntas?</span>
             <br />
             Si tienes cualquier otra duda o necesitas asistencia adicional, no
-            dudes en contactarnos a través de carlitos@carlitosnina.com. Estamos
-            aquí para ayudarte.
+            dudes en contactarme a través de carlosninabusiness@gmail.com
           </AccordionContent>
         </AccordionItem>
         <AccordionItem

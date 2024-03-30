@@ -41,8 +41,9 @@ export const AuthorsSection = () => {
             James Clear
           </span>
           <br />
-          Si te desprecias a ti mismo o te culpas por lo que haces, hablandote mal a tí mismo, eso afecta a tu autopercepción(identidad) la
-          persona quien eres,{" "}
+          Si te desprecias a ti mismo o te culpas por lo que haces, hablandote
+          mal a tí mismo, eso afecta a tu autopercepción(identidad) la persona
+          quien eres,{" "}
           <span className="font-bold">
             James te guiará para que esculpas tus días con hábitos que realmente
             cuentan. Dará vuelta a ese discurso de desprecio que te tienes y lo
@@ -81,9 +82,10 @@ export const AuthorsSection = () => {
             Jordan Peterson
           </span>
           <br />
-          Si te comparas con los demás, en instagram, facebook, al mirar sus vidas magníficas te sientes mal, porque cuando miras tu vida te encuentras
-          caos y pura tragedia, tienes malos amigos y no tomas responsabilidad
-          por tu vida.{" "}
+          Si te comparas con los demás, en instagram, facebook, al mirar sus
+          vidas magníficas te sientes mal, porque cuando miras tu vida te
+          encuentras caos y pura tragedia, tienes malos amigos y no tomas
+          responsabilidad por tu vida.{" "}
           <span className="font-bold">
             Jordan te enseñará a enfrentar la vida con valentía y a convertirte
             en una luz en tus momentos más oscuros.
@@ -120,9 +122,9 @@ export const AuthorsSection = () => {
             Tony Robbins
           </span>
           <br />
-          Si crees que no puedes lograr algo que sueñas y piensas que no puedes vivir sin el
-          celular, que debes estar conectado siempre, porque puede pasar una
-          emegencia.{" "}
+          Si crees que no puedes lograr algo que sueñas y piensas que no puedes
+          vivir sin el celular, que debes estar conectado siempre, porque puede
+          pasar una emegencia.{" "}
           <span className="font-bold">
             Tony te enseñará a encontrar un mejor camino, a desafiar esas
             creencias limitantes, a encontrar el camino hacia la libertad y a
@@ -162,9 +164,9 @@ export const AuthorsSection = () => {
             Ryan Holiday
           </span>
           <br />
-          Si te dejas dominar por la opinion de los demás, que ellos decidan
-          que harás con tu vida y solamente te quejas de los problemas, sin ver
-          un sentido a la vida.{" "}
+          Si te dejas dominar por la opinion de los demás, que ellos decidan que
+          harás con tu vida y solamente te quejas de los problemas, sin ver un
+          sentido a la vida.{" "}
           <span className="font-bold">
             Ryan te enseñará a dejar de vivir para los demás, a ver que cada
             distracción es una oportunidad para crecer. Él conversa contigo
@@ -201,7 +203,8 @@ export const AuthorsSection = () => {
             Cal Newport
           </span>
           <br />
-          Si no puedes concentrarte, tienes problemas con la tecnología y no puedes para de usarla...
+          Si no puedes concentrarte, tienes problemas con la tecnología y no
+          puedes para de usarla...
           <br />
           <span className="font-bold">
             Cal Newport te enseñará a batallar contra la sobrecarga tecnológica,
@@ -240,7 +243,8 @@ export const AuthorsSection = () => {
             Viktor Frankl
           </span>
           <br />
-          Si te preguntas cual es el sentido de la vida,¿Por qué viniste a este mundo?, ¿Cual es tú propósito?...
+          Si te preguntas cual es el sentido de la vida,¿Por qué viniste a este
+          mundo?, ¿Cual es tú propósito?...
           <span className="font-bold">
             Viktor Frankl tiene las respuestas, él te mostrará cómo encontrar un
             propósito que sea más fuerte que la dependencia hacia la tecnología.

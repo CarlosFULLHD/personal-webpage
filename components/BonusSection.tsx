@@ -11,7 +11,7 @@ const bonusData = [
                   - Descubre el peligro de la arrogancia y valora la humildad.
                   - Descubre el beneficio oculto del sufrimiento hacia la transformación personal.
                   `,
-                  avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito`,
+    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito`,
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ const bonusData = [
     - Construye tu Antivisión, ten un futuro que te de miedo llegar y por lo tanto alejarte de el 
     - Registrador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
     avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/plantillas_de_notion`,
-  }, 
+  },
 ];
 export const BonusSection = () => {
   return (
