@@ -488,37 +488,25 @@ export default function Home() {
       </div>
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
       <BonusSection />
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
+      <div id="seccion-compra"
+      className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             UNETE HOY
           </span>
           <br />
           <span className="text-2xl font-bold md:text-2xl lg:text-4xl">
-            Únete a la comunidad de personas decididas a transformar su vida
+            Únete a una comunidad de personas decididas a transformar su vida
           </span>
           <br />
           <em className="text-lg font-italic md:text-xl lg:text-2xl">
-            Obtén el curso inmediatamente.
+            Obtén acceso inmediatamente
           </em>
         </div>
       </div>
-      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
-        En un mundo que nos empuja constantemente hacia la distracción digital,
-        este curso es tu brújula hacia una vida con sentido, alejada de la
-        superficialidad de las pantallas y llena de propósitos auténticos.
-        <br /> <br />
-        He aquí donde la sabiduría de figuras como James Clear, Jordan Peterson,
-        Tony Robbins, Ryan Holiday, y Viktor Frankl se convierten en tu guía
-        hacia un renacer personal.
-        <br />
-        <br />
-        Este no es solo otro curso, es tu camino hacia una existencia plena en
-        el siglo XXI.
-      </h2>
       <div className=" flex flex-col mx-2 md:flex-row gap-6">
         <h2
-          id="seccion-compra"
+          
           className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-gray-200 rounded-lg text-black border-4 border-gray-500"
         >
           <span className="font-bold text-center block text-3xl bg-clip-text text-gray-600">
@@ -533,12 +521,11 @@ export default function Home() {
             Sin garantias y acceso limitado.
           </span>
           <span className="font-bold text-center block text-gray-600">
-            Resúmenes de artículos, personas sin experiencia y sin dar con la
-            solucion
+          Resúmenes superficiales, falta de experiencia práctica.
           </span>
           <br />
-          ❌ No aprendes nada porque carece de herramientas prácticas para
-          aplicar el conocimiento.
+          ❌ Carece de herramientas prácticas para
+          aplicar el conocimiento y aprendizajes.
           <br />
           <br />
           ❌ Grupos de Discord inactivos, sin preocuparse en los problemas del
@@ -549,32 +536,28 @@ export default function Home() {
           con el tiempo.
           <br />
           <br />
-          ❌ El material es repetitivo en todos los cursos y no profundizan en
-          el tema.
+          ❌ Material repetitivo, sin profundización ni valor añadido.
           <br />
           <br />
           ❌ Sin bonificaciones o valor adicional, limitando la experiencia a lo
           que se ofrece inicialmente.
           <br />
-          <br />❌ Precios altos, sin garantías claras y ni acceso de por vida.
+          <br />❌ Costoso a largo plazo, sin compromiso con el éxito del cliente y accesos limitados por pagos mensuales.
           <br />
           <br />
-          📉Te distraes fácil, tienes menos de 8 segundos de atención.
+          ❌ Quedarte con 8 segundos de atención.
           <br />
           <br />
-          🌜 Dormir a las 2 a.m., despertar a las 2p.m.
+          ❌ Seguir con horarios de sueño de 2 am
           <br />
           <br />
-          😟 Ansiedad, depresión y estrés.
+          ❌ Ansiedad, depresión y estrés por la tecnología.
           <br />
           <br />
-          🔄 Culpar al mundo, sin asumir responsabilidad.
+          ❌ Sin claridad en el camino y soluciones falsas.
           <br />
           <br />
-          ❓ Confusión sobre el inicio, soluciones fallidas.
-          <br />
-          <br />
-          💸 Ahorras hoy, pero pierdes más cada día por no actuar.
+          ❌ Ahorras hoy, pero pierdes más cada día por no actuar.
         </h2>
         <h2 className=" mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
           <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
@@ -597,32 +580,30 @@ export default function Home() {
             comprobadas para una transformación real.
           </span>
           <br />
-          ✔️ Ofrece un enfoque holístico y detallado sobre la vida digital y
+          📘 Enfoque holístico y detallado sobre la vida digital y
           personal, con más de 20 módulos que abordan desde la desintoxicación
           digital hasta la construcción de una vida con propósito.
           <br />
           <br />
-          ✔️ Incluye acceso a una comunidad exclusiva en Discord, facilitando el
+          💬 Incluye acceso a una comunidad exclusiva en Discord, facilitando el
           soporte entre pares, discusiones enriquecedoras y una red de apoyo
           motivacional.
           <br />
           <br />
-          ✔️ Comprometidos a dar actualizaciones regulares y mejoras del curso,
+          🔄 Comprometidos a dar actualizaciones regulares y mejoras del curso,
           basándose en retroalimentación real y tendencias emergentes,
           asegurando un aprendizaje siempre relevante.
           <br />
           <br />
-          ✔️ Lecciones profundas, basadas en las últimas investigaciones y las
+          🎓 Lecciones profundas, basadas en las últimas investigaciones y las
           enseñanzas de expertos reconocidos en campos como la psicología,
           gestión del tiempo y filosofía.
           <br />
           <br />
-          ✔️ Bonificaciones exclusivas para las primeras 100 personas,
-          incluyendo guías especializadas, actualizaciónes exclusivas y
-          plantillas adicionales.
+          🎁 Bonificaciones exclusivas para los primeros 100 inscritos, incluyendo guías, actualizaciones y plantillas especiales.
           <br />
           <br />
-          ✔️ Precio especial de $69 con garantía de 30 días y acceso de por
+          💸 Precio único con garantía de 30 días y acceso de por
           vida, representando una
           <span className="font-bold"> inversión a largo plazo </span>
           en desarrollo personal y profesional.
@@ -634,20 +615,20 @@ export default function Home() {
       <Button
         href="https://shop.carlitosnina.com/checkout/buy/058aac3a-9043-4af5-b9ef-8768be268d0a?logo=0&discount=0"
         as={Link}
-        className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 lg:px-50 xl:px-50 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+        className="mx-auto md:mx-auto text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 md:px-52 md:py-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >
         <Image
           src="shoppingcart.png"
           alt="Carrito de compras"
-          width={32} // Specify width
-          height={32} // Specify height
-          className="w-8 h-8 absolute left-4"
+          width={25} // Specify width
+          height={25} // Specify height
+          className="w-6 h-6 absolute left-4 md:w-8 md:h-8"
         />
-        Unete al curso!!
+        Unirme a Libertad Digital!!
       </Button>
 
       <span className="italic text-xl font-sans  block text-center">
-        Sin pagos ocultos ni costos extras
+      Acceso completo y de por vida. Sin tarifas adicionales
       </span>
       <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
         {" "}

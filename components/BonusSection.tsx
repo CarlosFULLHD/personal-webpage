@@ -91,7 +91,7 @@ const bonusData = [
     description: ` - Menú del Descanso, programa tu descanso conscientemente 
     - Construye tu Visión Futura, ten un futuro que te de esperanza 
     - Construye tu Antivisión, ten un futuro que te de miedo llegar y por lo tanto alejarte de el 
-    - Trackeador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
+    - Registrador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
     avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/plantillas_de_notion`,
   }, 
 ];
