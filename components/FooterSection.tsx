@@ -7,24 +7,14 @@ export const FooterSection = () => {
     <section className="w-full">
       <div className=" max-w-screen-xl mx-auto p-4 md:p-1">
         <div className="sm:flex sm:items-center sm:justify-between flex flex-col gap-2 md:flex-row">
-          <picture>
-            {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-            <source
-              srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.webp"
-              type="image/webp"
-            />
-            <source
-              srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.jpg"
-              type="image/jpeg"
-            />
-            <Image
-              src="logocarlitosnina.jpg" // Use your Cloudflare URL pointing, FALLBACK
-              alt="Logo de Carlitos Nina Marca Personal"
-              width={200} // Specify width
-              height={50} // Specify height
-              className=""
-            />
-          </picture>
+          <Image
+            src="logocarlitosnina.webp" // Use your Cloudflare URL pointing, FALLBACK
+            alt="Logo de Carlitos Nina Marca Personal"
+            width={200} // Specify width
+            height={50} // Specify height
+            className=""
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
           <div className="">
             <span className="font-bold mx-2 md:mb-4">
               Una historia de sabiduría en tu email cada Lunes:
@@ -34,7 +24,6 @@ export const FooterSection = () => {
               src="https://embeds.beehiiv.com/4bac08d8-cef4-44c7-ac9d-4cb41094e2c3?slim=true"
               data-test-id="beehiiv-embed"
               height="52"
-              scrolling="no"
               loading="lazy"
               title="Newsletter Carlitos Nina"
               className="bg-transparent rounded-lg overflow-hidden lg:w-96"

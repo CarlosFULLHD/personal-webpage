@@ -392,24 +392,13 @@ export default function Home() {
       <div className="container my-4 md:my-0 md:py-4 md:px-6 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 relative">
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl">
           <div className="relative w-32 h-32 mx-auto md:w-44 md:h-44 md:mr-10 lg:mr-20 xl:mr-36">
-            <picture className="">
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/carlitos_photo.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/carlitos_photo.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="carlitos_photo.jpg"
-                alt="Foto del instructor carlitos"
-                objectFit="contain"
-                fill
-                className=""
-              />
-            </picture>
+            <Image
+              src="carlitos_photo.webp"
+              alt="Foto del instructor carlitos"
+              fill
+              className=""
+              sizes="33vw"
+            />
           </div>
         </div>
         <div className="text-xl lg:text-2xl lg:text-left md:basis-1/2 lg:p-0  text-white lg:max-w-sm">

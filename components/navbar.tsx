@@ -25,24 +25,13 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start gap-1" href="/">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/logocarlitosnina.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="logocarlitosnina.jpg" // Use your Cloudflare URL pointing, FALLBACK
-                alt="Logo de Carlitos Nina Marca Personal"
-                width={350} // Specify width
-                height={50} // Specify height
-                className=""
-              />
-            </picture>
+            <Image
+              src="logocarlitosnina.webp" // Use your Cloudflare URL pointing, FALLBACK
+              alt="Logo de Carlitos Nina Marca Personal"
+              width={350}
+              height={50}
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
