@@ -15,9 +15,11 @@ import { FaqsSection } from "@/components/FaqsSection";
 import { BonusSection } from "@/components/BonusSection";
 import Image from "next/image";
 import { FooterSection } from "@/components/FooterSection";
+import CountdownTimer from "@/components/CountdownTimer";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
+      <CountdownTimer />
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
         <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
           <h1 className="text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
