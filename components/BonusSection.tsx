@@ -11,7 +11,7 @@ const bonusData = [
                   - Descubre el peligro de la arrogancia y valora la humildad.
                   - Descubre el beneficio oculto del sufrimiento hacia la transformación personal.
                   `,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/encuentra_proposito`,
+    avatarSrc: `encuentra_proposito.webp`,
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const bonusData = [
                   - Guía sobre alimentación, ambiente necesario para dormir mejor.
                   - Aprende qué es y como trabaja el ciclo circadiano para despues MEJORAR TU SUEÑO.
                   `,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/triplica_tu_energia`,
+    avatarSrc: `triplica_tu_energia.webp`,
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const bonusData = [
     - Mindfulness y Herramientas Prácticas: Incorpora técnicas de atención plena para manejar impulsos y desarrollar autocontrol.
     - Deconstrucción de Creencias Limitantes: Desmonta las falsas creencias que perpetúan el ciclo de la adicción.
     - Evitar la Culpa y Crear Nuevos Condicionamientos: Aprende a liberarte de la culpa y establece un nuevo condicionamiento positivo hacia la sexualidad.`,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/superar_adiccion`,
+    avatarSrc: `superar_adiccion.webp`,
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const bonusData = [
     - Resiliencia Frente al Fracaso: Aprende a vivir con el fracaso, a aprender de él y a ser resiliente ante las adversidades.
     - Lucha Contra el Miedo, el Estrés y la Ansiedad: Herramientas y técnicas para gestionar el miedo, reducir el estrés y controlar la ansiedad.
     - Mejorando las Relaciones Personales: Consejos para fortalecer tus relaciones interpersonales a través de una mayor empatía y entendimiento emocional. `,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/cultivando_inteligencia_emocional`,
+    avatarSrc: `cultivando_inteligencia_emocional.webp`,
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const bonusData = [
     - Principios Estoicos para la Vida Diaria: Aprende a aplicar enseñanzas estoicas en situaciones cotidianas, enfocándote en lo que realmente puedes controlar.
     - Desarrolla una Mentalidad Resiliente: Fortalece tu capacidad para enfrentar adversidades, aprendiendo de los desafíos y manteniéndote firme ante las dificultades.
     - Enfócate en lo que Puedes Controlar: Estrategias para concentrarte en tus acciones y reacciones, dejando de lado lo que escapa de tu control.`,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/fortaleza_sabiduria_estoica`,
+    avatarSrc: `fortaleza_sabiduria_estoica.webp`,
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ const bonusData = [
     - Sesiones semanales interactivas donde podrás compartir tus desafíos, obtener soluciones personalizadas y colaborar con mentes afines. 
     - Reuniones de 1 a 3 HORAS cada semana durante 90 días para escucharte y conocerte mejor en tu camino, escuchar tus problemas y apoyarte a superarlos.
     - Oportunidad de solicitar soluciones a problemas para futuras actualizaciones.`,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/comunidad_seguimiento_y_apoyo`,
+    avatarSrc: `comunidad_seguimiento_y_apoyo.webp`,
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ const bonusData = [
     - Contenido audiovisual exclusivo
     - Guia paso a paso para cada actualización haciendo fácil cualquier nueva lección añadida
      `,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/actualizaciones_exclusivas_para_los_cursos`,
+    avatarSrc: `actualizaciones_exclusivas_para_los_cursos.webp`,
   },
   {
     id: 8,
@@ -92,7 +92,7 @@ const bonusData = [
     - Construye tu Visión Futura, ten un futuro que te de esperanza 
     - Construye tu Antivisión, ten un futuro que te de miedo llegar y por lo tanto alejarte de el 
     - Registrador de Habitos, una manera de dar seguimiento a tus hábitos de manera facil y que te motiven`,
-    avatarSrc: `https://d1kdkr2pswehq6.cloudfront.net/plantillas_de_notion`,
+    avatarSrc: `plantillas_de_notion.webp`,
   },
 ];
 export const BonusSection = () => {

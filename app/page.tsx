@@ -576,7 +576,7 @@ export default function Home() {
           </span>
           <span className="font-bold block text-4xl pb-3 items-center">
             <span className="text-5xl font-bold tracking-tight text-red-500 block items-center text-center ">
-              $120/mes
+              $99/mes
             </span>
           </span>
           <span className="italic text-xl font-sans text-red-600 block text-center">
@@ -626,15 +626,17 @@ export default function Home() {
             LIBERTAD DIGITAL
           </span>
           <span className="line-through text-2xl font-sans text-gray-500/70 block text-right mr-14 md:mr-28 lg:mr-36 xl:mr-48">
-            $120
+            $99
           </span>
           <span className="font-bold block text-4xl pb-3 items-center">
             <span className="text-5xl font-bold tracking-tight text-gray-900 block items-center text-center ">
-              $69
+              $29
             </span>
           </span>
           <span className="italic text-xl font-sans text-gray-500/70 block text-center">
-            Un solo pago. Con garantía de 30 días!!
+            Un solo pago
+            <br />
+            Con garantía de 30 días!!
             <br />
           </span>
           <span className="font-bold text-center block">
@@ -676,7 +678,7 @@ export default function Home() {
       </div>
 
       <Button
-        href="https://shop.carlitosnina.com/checkout/buy/058aac3a-9043-4af5-b9ef-8768be268d0a?logo=0&discount=0"
+        href="https://shop.carlitosnina.com/buy/058aac3a-9043-4af5-b9ef-8768be268d0a?logo=0"
         as={Link}
         className="mx-auto md:mx-auto text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-2xl shadow-custom-yellow  text-white w-40 mt-6 py-6 px-40 md:px-52 md:py-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
       >

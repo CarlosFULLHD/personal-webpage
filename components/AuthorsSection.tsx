@@ -15,25 +15,14 @@ export const AuthorsSection = () => {
       <div className="container lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 md:my-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 md:my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/jamesclear-photo.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/jamesclear-photo.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="jamesclear-photo.jpg" // Use your Cloudflare URL pointing, FALLBACK
-                alt="Foto de James Clear de Hábitos Atómicos"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+            <Image
+              src="jamesclear-photo.webp" // Use your Cloudflare URL pointing, FALLBACK
+              alt="Foto de James Clear de Hábitos Atómicos"
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
@@ -56,25 +45,14 @@ export const AuthorsSection = () => {
       <div className="container md:my-0 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/jordanpeterson-photo.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/jordanpeterson-photo.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="jordanpeterson-photo.jpg" // Use your Cloudflare URL pointing, FALLBACK
-                alt="Jordan Peterson de 12 Reglas para Vivir Un antidoto al caos"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+            <Image
+              src="jordanpeterson-photo.webp" // Use your Cloudflare URL pointing, FALLBACK
+              alt="Jordan Peterson de 12 Reglas para Vivir Un antidoto al caos"
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
@@ -96,25 +74,14 @@ export const AuthorsSection = () => {
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="tonyrobbins-img.jpg"
-                alt="Foto de Tony Robbins de Poder sin Límites y Despertando al gigante interior"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+            <Image
+              src="tonyrobbins-img.webp"
+              alt="Foto de Tony Robbins de Poder sin Límites y Despertando al gigante interior"
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
@@ -137,26 +104,15 @@ export const AuthorsSection = () => {
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="ryanholiday-photo.jpg"
-                alt="Foto de Ryan Holiday de El Obstáculo es el
+            <Image
+              src="ryanholiday-photo.webp"
+              alt="Foto de Ryan Holiday de El Obstáculo es el
             Camino - Disciplina es el destino, Diario para estoicos, el ego es el enemigo"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
@@ -177,25 +133,14 @@ export const AuthorsSection = () => {
       <div className="container md:my-0 md:py-0 md:px-6 lg:p-0 flex flex-col md:flex-row lg:flex-grow xl:max-w-none py-3 text-black m-0 lg:mt-2">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="calnewport-photo.jpg"
-                alt="Foto de Cal Newport de Enfócate - Minimalismo digital"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+            <Image
+              src="calnewport-photo.webp"
+              alt="Foto de Cal Newport de Enfócate - Minimalismo digital"
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-1/2 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
@@ -217,25 +162,14 @@ export const AuthorsSection = () => {
       <div className="container md:my-0  md:py-0 md:px-6 lg:p-0 lg:mt-2 flex flex-col md:flex-row-reverse lg:flex-grow xl:max-w-none py-3 text-black m-0">
         <div className=" lg:text-left md:flex md:items-center md:basis-1/3 lg:basis-2/8 lg:p-0 xl:text-3xl 2xl:text-4xl xl:justify-end bg-white rounded-2xl max-w-44 max-h-44 overflow-hidden md:mx-3 my-auto md:max-h-80 lg:max-w-md xl:max-w-lg">
           <Skeleton isLoaded={isLoaded} className="rounded-lg">
-            <picture>
-              {/* Aqui usar URLs porque es srcSet, asi que usar con cloudflare url */}
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.webp"
-                type="image/webp"
-              />
-              <source
-                srcSet="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.jpg"
-                type="image/jpeg"
-              />
-              <Image
-                src="viktorfrakl-img.jpg"
-                alt="Foto de Viktor Frankl de El Hombre en Busca de Sentido"
-                width={256} // Specify width
-                height={256} // Specify height
-                className="w-full aspect-square object-cover xl:max-w-80"
-                onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
-              />
-            </picture>
+            <Image
+              src="viktorfrakl-img.webp"
+              alt="Foto de Viktor Frankl de El Hombre en Busca de Sentido"
+              width={256} // Specify width
+              height={256} // Specify height
+              className="w-full aspect-square object-cover xl:max-w-80"
+              onLoad={handleImageLoad} // Se llama a esta función una vez que la imagen ha terminado de cargar
+            />
           </Skeleton>
         </div>
         <div className="md:basis-2/3 lg:basis-6/8 md:ml-6 text-xl mt-2 p-4 lg:text-left text-black bg-white rounded-xl  lg:max-w-sm ">
