@@ -21,10 +21,10 @@ const CountdownTimer = () => {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   return (
-<div className=" "> 
-  <div className="font-bold  bg-white p-4 rounded-lg shadow-md">
-  Countdown: {days}d {hours}h {minutes}m {seconds}s
-  </div>
+<div className=""> 
+    <span className='font-bold text-xl'>
+      {days}d {hours}h {minutes}m {seconds}s
+    </span>  
 </div>
   );
 };
