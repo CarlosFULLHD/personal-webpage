@@ -16,9 +16,11 @@ import { BonusSection } from "@/components/BonusSection";
 import Image from "next/image";
 import { FooterSection } from "@/components/FooterSection";
 import CountdownTimer from "@/components/CountdownTimer";
+import ModalOneMinute from "@/components/ModalOneMinute";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
+      <ModalOneMinute />
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
         <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
           <h1 className="text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
@@ -50,10 +52,15 @@ export default function Home() {
                 className="w-8 h-8 inline lg:w-12 lg:h-12"
               />
             </span>
-            <span className="block font-bold">
-              Estás a un clic de transformar tu vida
-            </span>
           </h2>
+          <div className="text-center font-bold px-4">
+            ⚠️Las puertas cierran en:📢
+            <br />
+            <span className="font-bold text-xl">
+              <CountdownTimer />
+            </span>
+          </div>
+
           <Button
             onClick={() => {
               const section = document.getElementById("seccion-compra");
@@ -61,7 +68,7 @@ export default function Home() {
                 section.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 mt-6 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
           >
             <Image
               src="shoppingcart.png"
@@ -407,9 +414,9 @@ export default function Home() {
             Hey, soy Carlitos
           </span>
           <br />
-          Estudiante de último año en ingeniería de sistemas y contabilidad
+          Estudiante de último año de Ingeniería de Sistemas y Contabilidad
           <br />
-          Soy un lector amante de la filosofía y psicología
+          Además un lector amante de la filosofía y psicología
         </div>
       </div>
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
@@ -536,16 +543,7 @@ export default function Home() {
       >
         Estoy listo para unirme
       </Button>
-      <div className="w-full border-y-4 border-custom-yellow">
-        <div className="text-center font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange px-4 shadow-md">
-          ⏰ Estos bonos exclusivos, desaparecerán el 31 de abril. No dejes
-          pasar esta oportunidad única.
-          <br />
-          <span className="font-bold text-xl">
-            <CountdownTimer />
-          </span>
-        </div>
-      </div>
+
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
@@ -564,6 +562,16 @@ export default function Home() {
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
 
       <BonusSection />
+      <div className="w-full border-y-4 border-custom-yellow">
+        <div className="text-center font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange px-4 shadow-md">
+          ⏰ Estos bonos exclusivos, desaparecerán el 31 de abril. No dejes
+          pasar esta oportunidad única.
+          <br />
+          <span className="font-bold text-xl">
+            <CountdownTimer />
+          </span>
+        </div>
+      </div>
       <div
         id="seccion-compra"
         className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white"
