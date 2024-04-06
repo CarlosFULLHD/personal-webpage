@@ -504,6 +504,7 @@ export default function Home() {
       >
         Estoy listo para unirme
       </Button>
+
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
@@ -535,6 +536,16 @@ export default function Home() {
       >
         Estoy listo para unirme
       </Button>
+      <div className="w-full border-y-4 border-custom-yellow">
+        <div className="text-center font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange px-4 shadow-md">
+          ⏰ Estos bonos exclusivos, desaparecerán el 31 de abril. No dejes
+          pasar esta oportunidad única.
+          <br />
+          <span className="font-bold text-xl">
+            <CountdownTimer />
+          </span>
+        </div>
+      </div>
       <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0 text-white">
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
@@ -551,6 +562,7 @@ export default function Home() {
         </div>
       </div>
       {/* BONUS CARD DE BONUSES PARA EL CURSO */}
+
       <BonusSection />
       <div
         id="seccion-compra"
@@ -677,6 +689,7 @@ export default function Home() {
           <br />
         </h2>
       </div>
+
       <Button
         href="https://shop.carlitosnina.com/buy/058aac3a-9043-4af5-b9ef-8768be268d0a?logo=0"
         as={Link}

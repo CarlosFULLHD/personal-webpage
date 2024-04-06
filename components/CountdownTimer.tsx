@@ -23,11 +23,10 @@ const CountdownTimer = () => {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   return (
-    <div className=" ">
-      <div className="font-bold text-black bg-gradient-to-r from-custom-yellow to-custom-orange p-4 shadow-md">
-        ¡Tiempo Limitado!: Inscríbete antes del 31 de Abril y obtén acceso a
-        estos bonos exclusivos. {days}d {hours}h {minutes}m {seconds}s
-      </div>
+    <div className="">
+      <span className="font-bold text-xl">
+        {days}d {hours}h {minutes}m {seconds}s
+      </span>
     </div>
   );
 };
