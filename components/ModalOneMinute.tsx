@@ -18,7 +18,7 @@ export default function ModalOneMinute() {
   useEffect(() => {
     const timer = setTimeout(() => {
       onOpen();
-    }, 6000); // Abre el modal después de 1 minuto
+    }, 60000); // Abre el modal después de 1 minuto
     return () => clearTimeout(timer);
   }, [onOpen]);
 
