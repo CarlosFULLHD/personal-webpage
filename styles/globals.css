@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.5s cubic-bezier(0.21, 1.02, 0.73, 1) forwards;
+}
+
+
 @font-face {
   font-family: 'Circular';
   src: url('/fonts/CircularStd-Book.otf') format('otf');
