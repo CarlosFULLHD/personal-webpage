@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -7,7 +8,6 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DetailedCard from "@/components/DetailedCard";
 import { Avatar, Button, Tooltip } from "@nextui-org/react";
-import React, { useState, useEffect } from "react";
 import BonusCard from "@/components/BonusCard";
 import { AuthorsSection } from "@/components/AuthorsSection";
 import { ModulesSection } from "@/components/ModulesSection";
@@ -19,10 +19,50 @@ import CountdownTimer from "@/components/CountdownTimer";
 import ModalOneMinute from "@/components/ModalOneMinute";
 import PopUp from "@/components/PopUp";
 export default function Home() {
+  const [currentSection, setCurrentSection] = useState("");
+
+  const sectionRefs = useRef({
+    introduction: useRef(null),
+    instructor: useRef(null),
+    modules: useRef(null),
+    bonuses: useRef(null),
+    pricing: useRef(null),
+    guarantee: useRef(null),
+    faqs: useRef(null),
+  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCurrentSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    ); // Ajustar el threshold para cada sección es donde se activa este observer
+
+    Object.values(sectionRefs.current).forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      Object.values(sectionRefs.current).forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, []);
+
   return (
     <section className="flex flex-col items-center justify-center">
-      <ModalOneMinute />
-      <PopUp />
+      {/* <ModalOneMinute /> */}
+      <PopUp sectionInView={currentSection} />
+
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
         <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
           <h1 className="text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
@@ -217,7 +257,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
+      <div
+        id="introduction"
+        ref={sectionRefs.current.introduction}
+        className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white"
+      >
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             EL MUNDO ESTÁ CAMBIANDO
@@ -356,7 +400,11 @@ export default function Home() {
         una vez por todas. 💪
         <br />
       </h2>
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
+      <div
+        id="instructor"
+        ref={sectionRefs.current.instructor}
+        className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white"
+      >
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             EL INSTRUCTOR
@@ -492,6 +540,7 @@ export default function Home() {
         <br />
       </h2>
       <AuthorsSection />
+
       <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
         David Goggins, Alex Hormozi, Chris Williamson, Ali Abdaal..., hay muchos
         más nombres conocidos y toda su sabiduría esta concentrada en estas
@@ -514,7 +563,11 @@ export default function Home() {
         Estoy listo para unirme
       </Button>
 
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white">
+      <div
+        id="modules"
+        ref={sectionRefs.current.modules}
+        className="bg-custom-blue w-full text-center flex justify-center items-center py-3 my-6 text-white"
+      >
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             LA HABILIDAD DEL SIGLO
@@ -546,7 +599,11 @@ export default function Home() {
         Estoy listo para unirme
       </Button>
 
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0 text-white">
+      <div
+        id="bonuses"
+        ref={sectionRefs.current.bonuses}
+        className="bg-custom-blue w-full text-center flex justify-center items-center py-3 mb-6 lg:m-0 text-white"
+      >
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             Y ESO NO ES TODO
@@ -578,7 +635,11 @@ export default function Home() {
         id="seccion-compra"
         className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white"
       >
-        <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
+        <div
+          id="pricing"
+          ref={sectionRefs.current.pricing}
+          className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl"
+        >
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             UNETE HOY
           </span>
@@ -718,7 +779,11 @@ export default function Home() {
       <span className="text-white italic text-xl font-sans  block text-center">
         Acceso completo y de por vida. Sin tarifas adicionales
       </span>
-      <h2 className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
+      <h2
+        id="guarantee"
+        ref={sectionRefs.current.guarantee}
+        className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
+      >
         {" "}
         <span className="font-bold text-2xl lg:text-4xl block text-center">
           Decide Dentro, No Desde Afuera
@@ -769,7 +834,11 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white">
+      <div
+        id="faqs"
+        ref={sectionRefs.current.faqs}
+        className="bg-custom-blue w-full text-center flex justify-center items-center py-3 text-white"
+      >
         <div className="max-w-lg w-full px-4 md:max-w-xl lg:max-w-2xl">
           <span className="text-2xl tracking-espaciadomas font-bold md:text-3xl lg:text-4xl text-gradient leading-none bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             TIENES PREGUNTAS?
