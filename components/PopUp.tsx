@@ -15,40 +15,50 @@ interface SectionMessages {
 
 const messages: SectionMessages = {
   introduction: {
-    title: "Cal Newport ⚠️",
-    message:
-      "Deja que tu tecnología trabaje para ti, no al revés. Recupera tu enfoque y tu vida.",
-    image: "calnewport-img.webp",
+    title: "Youtube",
+    message: "Hoy perdiste 8 horas, ¿listo para perder unas cuantas más?",
+    image: "Youtube.png",
   },
   instructor: {
-    title: "Instructor Insight",
-    message: "Conoce al cerebro detrás de tu éxito.",
-    image: "/path/to/instructor-img.webp",
+    title: "Carlos Nina",
+    message:
+      "Sé lo que es sentirse atrapado por el celular. He estado allí, y he salido. Déjame guiarte hacia la libertad.",
+    image: "carlitos_photo.webp",
   },
   modules: {
-    title: "Explore Modules",
-    message: "Descubre cómo cada módulo te acerca a tu libertad digital.",
-    image: "/path/to/modules-img.webp",
+    title: "Jordan Peterson",
+    message:
+      "No es suficiente desear un cambio; debes actuar para hacerlo posible, la responsabilidad es el camino hacia la libertad. ",
+    image: "jordanpeterson-photo.webp",
+  },
+  modules2: {
+    title: "Simon Sinek",
+    message:
+      "No es solo lo que haces, sino por qué lo haces. Aprende a inyectar pasión y propósito en cada aspecto de tu vida",
+    image: "simon-sinek.webp",
   },
   bonuses: {
-    title: "Bonus exclusivos",
-    message: "Descubre bonuses",
-    image: "url.webp",
+    title: "Carlos Nina",
+    message: "Recibe un 15% de descuento con el codigo 'LIBERTAD'",
+    image: "carlitos_photo.webp",
   },
   pricing: {
-    title: "Explore Modules",
-    message: "Descubre cómo cada módulo te acerca a tu libertad digital.",
-    image: "/path/to/modules-img.webp",
+    title: "Warren Buffett",
+    message:
+      "La mejor inversión que puedes hacer es en ti mismo. El precio de hoy es mínimo comparado con los dividendos que pagará tu futuro.",
+    image: "warren-buffet.webp",
   },
   guarantee: {
-    title: "Explore Modules",
-    message: "Descubre cómo cada módulo te acerca a tu libertad digital.",
-    image: "/path/to/modules-img.webp",
+    title: "Mark Manson",
+    message:
+      "Invertir en ti mismo siempre vale la pena, es una apuesta segura. ",
+    image: "mark-manson.webp",
   },
   faqs: {
-    title: "Explore Modules",
-    message: "Descubre cómo cada módulo te acerca a tu libertad digital.",
-    image: "/path/to/modules-img.webp",
+    title: "Carlos Nina",
+    message:
+      "No hay preguntas pequeñas cuando se trata de tu crecimiento. Cualquier duda que tengas, estoy aquí para ayudarte a avanzar con confianza.",
+    image: "carlitos_photo.webp",
   },
   // Agregar más secciones según sea necesario
 };
@@ -71,8 +81,8 @@ const PopUp = ({ sectionInView }: PopUpProps) => {
   const { title, message, image } = messages[sectionInView];
 
   return (
-    <div className="fixed top-10 right-8 left-0 z-50 flex justify-end animate-slideInFromTop">
-      <div className="w-[330px] sm:w-[350px] md:w-[400px] mb-1 flex items-start space-x-3 bg-gray-200/75 backdrop-blur-md p-3 shadow-lg rounded-2xl text-base">
+    <div className="fixed top-10 right-3 left-0 z-50 flex justify-end animate-slideInFromTop">
+      <div className="w-[350px] md:w-[400px] mb-1 flex items-start space-x-3 bg-gray-200/75 backdrop-blur-md p-3 shadow-lg rounded-2xl text-base">
         <div className="shrink-0">
           <Image
             className="w-12 h-12 object-cover rounded-xl"
@@ -87,7 +97,7 @@ const PopUp = ({ sectionInView }: PopUpProps) => {
           <div className="text-gray-700 leading-tight">{message}</div>
         </div>
         <div>
-          <p className="text-gray-600">hace 7 minutos</p>
+          <p className="text-gray-600 absolute right-6">hace 7 minutos</p>
         </div>
       </div>
     </div>
