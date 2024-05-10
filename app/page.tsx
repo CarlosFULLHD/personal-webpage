@@ -18,6 +18,7 @@ import { FooterSection } from "@/components/FooterSection";
 import CountdownTimer from "@/components/CountdownTimer";
 import ModalOneMinute from "@/components/ModalOneMinute";
 import PopUp from "@/components/PopUp";
+import WistiaVideo from "@/components/WistiaVideo";
 export default function Home() {
   const [currentSection, setCurrentSection] = useState("");
 
@@ -236,24 +237,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:basis-1/2 lg:p-6">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full max-w-md h-auto"
-            style={{ maxWidth: "100%", height: "auto" }}
-          >
-            <source
-              src="https://d1kdkr2pswehq6.cloudfront.net/notion_libertaddigital_adiccionalcelular.webm"
-              type="video/webm"
-            />
-            <source
-              src="https://d1kdkr2pswehq6.cloudfront.net/notion_libertaddigital_adiccionalcelular.mp4"
-              type="video/mp4"
-            />
-            Tu navegador no soporta la etiqueta "video".
-          </video>
+          <WistiaVideo />
         </div>
       </div>
 
