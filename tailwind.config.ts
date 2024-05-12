@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 import { nextui } from "@nextui-org/theme";
 const config = {
+  
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',

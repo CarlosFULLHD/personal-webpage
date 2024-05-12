@@ -68,7 +68,7 @@ const SocialProof: React.FC = () => {
           isBordered
           color="warning"
           size="lg"
-          className="absolute invisible md:static md:visible lg:w-20 lg:h-20 lg:text-large"
+          className=" lg:w-20 lg:h-20 lg:text-large"
           src="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.webp"
         />
       </Tooltip>
@@ -82,7 +82,7 @@ const SocialProof: React.FC = () => {
           isBordered
           color="warning"
           size="lg"
-          className="absolute invisible md:static md:visible lg:w-20 lg:h-20 lg:text-large"
+          className=" lg:w-20 lg:h-20 lg:text-large"
           src="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.webp"
         />
       </Tooltip>

@@ -42,11 +42,12 @@ export default function RootLayout({
           "min-h-screen font-sans antialiased bg-custom-background ",
           fontSans.variable
         )}
+        style={{ zIndex: 0 }}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col font-circular ">
             <Navbar />
-            <main className="bg-custom-background">{children}</main>
+            <main className="relative bg-custom-background">{children}</main>
             <Analytics />
             <footer className="w-full flex items-center justify-center py-3"></footer>
           </div>

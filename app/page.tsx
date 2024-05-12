@@ -20,6 +20,7 @@ import ModalOneMinute from "@/components/ModalOneMinute";
 import PopUp from "@/components/PopUp";
 import WistiaVideo from "@/components/WistiaVideo";
 import SocialProof from "@/components/SocialProof";
+import { HeroSection } from "@/components/HeroSection";
 export default function Home() {
   const [currentSection, setCurrentSection] = useState("");
 
@@ -63,97 +64,7 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center">
       <PopUp sectionInView={currentSection} />
-
-      <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
-        <div className=" lg:text-left lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
-          <h1 className="text-4xl font-bold tracking-tighter lg:text-4xl xl:text-5xl lg:px-32 ">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
-              Libertad Digital:{" "}
-            </span>
-            Transforma 1,460 Horas de Celular en
-            <span className="underline decoration-8 decoration-custom-yellow">
-              {" "}
-              Logros Reales y un Futuro con Propósito
-            </span>
-            🎯
-          </h1>
-          <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:px-32  lg:text-3xl xl:text-4xl">
-            Un programa completo, Domina hábitos de vanguardia, potencia tu
-            rendimiento, maximiza tu productividad y revitaliza tu descanso con
-            <span className="underline decoration-4 decoration-custom-blue">
-              {" "}
-              un cambio duradero en tu vida.
-            </span>
-            <span className="block md:inline">
-              {" "}
-              (En una plantilla de Notion)
-              <Image
-                src="Notion_app_logo.png"
-                alt="Logo de Notion"
-                width={32} // Specify width
-                height={32} // Specify height
-                className="w-8 h-8 inline lg:w-12 lg:h-12"
-              />
-            </span>
-          </h2>
-          <div className="text-center font-bold px-4">
-            ⚠️Las puertas cierran en:📢
-            <br />
-            <span className="font-bold text-xl">
-              <CountdownTimer />
-            </span>
-          </div>
-          <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full">
-            <div className="w-full px-4 lg:w-auto">
-              <Button
-                onClick={() => {
-                  const section = document.getElementById("seccion-compra");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                className="w-full md:w-80 lg:mt-7 mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white py-6 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
-              >
-                <Image
-                  src="shoppingcart.png"
-                  alt="Carrito de compras"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8 absolute left-4 md:left-6 lg:left-8"
-                />
-                Comienza Ahora
-              </Button>
-              <p className="italic text-center text-lg lg:text-xl mt-2">
-                Garantía exclusiva de 30 días
-              </p>
-            </div>
-            <div className="w-full px-4 lg:w-auto mt-4 lg:mt-0 lg:px-0">
-              <Button
-                href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
-                as={Link}
-                isExternal
-                color="primary"
-                variant="light"
-                className="w-full md:w-80 mx-auto text-xl lg:text-2xl font-bold text-custom-orange py-6  px-6 lg:px-10 flex items-center justify-center"
-              >
-                Ver Demo ⮕
-              </Button>
-            </div>
-          </div>
-
-          <div className=" lg:p-6 mt-4">
-            <WistiaVideo />
-          </div>
-          <div className="flex gap-4 items-center justify-center lg:left-48 lg:w-8/12 lg:z-10 xl:left-64 2xl:static 2xl:mx-auto 2xl:w-full">
-            <SocialProof />
-          </div>
-          <h2 className="text-center font-bold md:px-4 text-xl tracking-tighter pt-3  lg:text-2xl xl:text-3xl 2xl:mx-auto">
-            Basado en las estrategias comprobadas de los maestros del desarrollo
-            personal y la productividad
-          </h2>
-        </div>
-      </div>
-
+      <HeroSection />
       <div
         id="introduction"
         ref={sectionRefs.current.introduction}
@@ -173,6 +84,7 @@ export default function Home() {
           </em>
         </div>
       </div>
+
       <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6 shadow-inner ">
         <span className="font-bold">
           Más de 1,460 horas al año se esfuman frente a la pantalla de tu
