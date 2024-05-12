@@ -82,9 +82,9 @@ export const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            <div className=" lg:p-6 mt-4 lg:mx-32 xl:mx-52">
+            {/* <div className=" lg:p-6 mt-4 lg:mx-32 xl:mx-52">
               <WistiaVideo />
-            </div>
+            </div> */}
             <div className="lg:p-6 mt-4 mx-auto md:w-[550px] flex">
               <SocialProof />
             </div>
