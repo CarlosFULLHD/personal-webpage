@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black mt-6 shadow-inner ">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black mt-6 shadow-inner ">
         <span className="font-bold">
           Más de 1,460 horas al año se esfuman frente a la pantalla de tu
           celular.
@@ -228,7 +228,7 @@ export default function Home() {
           </em>
         </div>
       </div>
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black">
         Probé todas las soluciones superficiales:
         <ul className="list-disc px-8">
           <li>Aplicaciones de bloqueo</li>
@@ -278,7 +278,7 @@ export default function Home() {
           Además un lector amante de la filosofía y psicología
         </div>
       </div>
-      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black">
         Mi historia comienza sumergido en el peor escenario posible con las
         redes sociales
         <br />
@@ -350,7 +350,7 @@ export default function Home() {
       </h2>
       <AuthorsSection />
 
-      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black">
         David Goggins, Alex Hormozi, Chris Williamson, Ali Abdaal..., hay muchos
         más nombres conocidos y toda su sabiduría esta concentrada en estas
         lecciones
@@ -392,7 +392,7 @@ export default function Home() {
           </em>
         </div>
       </div>
-      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <h2 className="mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black">
         Al unirte, obtendrás acceso a:
       </h2>
       <ModulesSection />
@@ -514,7 +514,7 @@ export default function Home() {
           <br />
           <br />❌ Ahorras hoy, pero pierdes más cada día por no actuar.
         </h2>
-        <h2 className=" mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow">
+        <h2 className=" mt-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black border-4 border-custom-yellow">
           <span className="font-bold text-center block text-3xl bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
             LIBERTAD DIGITAL
           </span>
@@ -591,7 +591,7 @@ export default function Home() {
       <h2
         id="guarantee"
         ref={sectionRefs.current.guarantee}
-        className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black border-4 border-custom-yellow"
+        className="my-2 container mx-auto px-6 py-6 flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black border-4 border-custom-yellow"
       >
         {" "}
         <span className="font-bold text-2xl lg:text-4xl block text-center">
@@ -627,7 +627,7 @@ export default function Home() {
         inscribirte en nuestro programa de Desintoxicación Digital, obtendrás
         exactamente lo que necesitas para transformar tu vida.
       </h2>
-      <div className="my-2 container mx-auto flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-white rounded-lg text-black">
+      <div className="my-2 container mx-auto flex-grow max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl  md:px-10 lg:px-8 text-xl font-normal lg:text-2xl bg-slate-50 rounded-lg text-black">
         <h3 className="italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl">
           Accede gratuitamente a las primeras 4 lecciones de Libertad Digital:
           <br />
@@ -637,7 +637,7 @@ export default function Home() {
           as={Link}
           isExternal
           color="primary"
-          className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold bg-white hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
+          className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold bg-slate-50 hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
         >
           🎁Ver mi regalo
         </Button>

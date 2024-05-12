@@ -25,7 +25,7 @@ const CountdownTimer = () => {
   return (
     <div className="">
       <span className="font-bold text-xl">
-        {days}d {hours}h {minutes}m {seconds}s
+        Solo quedan {days}d {hours}h {minutes}m {seconds}s
       </span>
     </div>
   );

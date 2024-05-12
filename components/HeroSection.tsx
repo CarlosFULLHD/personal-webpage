@@ -13,45 +13,33 @@ import SocialProof from "@/components/SocialProof";
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative px-0 first-letter:container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none bg-white text-black m-0">
+      <div className="relative px-0 first-letter:container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none bg-white text-black m-0 text-center">
         {/* Fondo específico para HeroSection con posición relativa y altura mínima */}
-        <div className="relative z-10 w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="relative z-10 w-full bg-slate-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
           {/* <div className="bg-[radial-gradient(circle_800px_at_100%_200px,#FFE3A4,transparent)]"> */}
           {/* Contenido del HeroSection */}
-          <div className="relative z-20 p-6">
-            <h1 className="text-4xl font-bold tracking-tighter lg:text-4xl xl:text-5xl md:px-32 lg:px-52">
+          <div className="relative p-6 md:mt-28 ">
+            <h1 className=" text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl md:px-16">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
                 Libertad Digital:{" "}
               </span>
-              Transforma 1,460 Horas de Celular en
+              Convierte Tiempo Perdido en
               <span className="underline decoration-8 decoration-custom-yellow">
                 {" "}
                 Logros Reales y un Futuro con Propósito
               </span>
               🎯
             </h1>
-            <h2 className="text-2xl tracking-tighter pt-3 md:px-32 lg:px-52 lg:text-3xl xl:text-4xl">
-              Un programa completo, Domina hábitos de vanguardia, potencia tu
-              rendimiento, maximiza tu productividad y revitaliza tu descanso
-              con
-              <span className="underline decoration-4 decoration-custom-blue">
-                {" "}
-                un cambio duradero en tu vida.
-              </span>
-              <span className="block md:inline">
-                {" "}
-                (En una plantilla de Notion)
-                <Image
-                  src="Notion_app_logo.png"
-                  alt="Logo de Notion"
-                  width={32} // Specify width
-                  height={32} // Specify height
-                  className="w-8 h-8 inline lg:w-12 lg:h-12"
-                />
-              </span>
+            <h2 className="text-2xl tracking-tighter pt-3 md:px-32  lg:text-3xl xl:text-4xl">
+              Siempre supe que pasaba demasiado tiempo en mi teléfono, pero no
+              sabía cómo parar. Me perdía en las redes sociales, viendo la vida
+              de otros en lugar de vivir la mía. Como muchos, caí en las garras
+              de las nuevas adicciones digitales.
+              <br /> ¿Estás listo para cambiar eso juntos?
             </h2>
-            <div className="text-center font-bold px-4">
-              ⚠️Las puertas cierran en:📢
+            <div className="text-center font-bold px-4 mt-6">
+              ⏳ Oferta Limitada: ¡Inscríbete antes de que se cierre el acceso!
+              ⏳
               <br />
               <span className="font-bold text-xl">
                 <CountdownTimer />
