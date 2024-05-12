@@ -19,6 +19,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 import ModalOneMinute from "@/components/ModalOneMinute";
 import PopUp from "@/components/PopUp";
 import WistiaVideo from "@/components/WistiaVideo";
+import SocialProof from "@/components/SocialProof";
 export default function Home() {
   const [currentSection, setCurrentSection] = useState("");
 
@@ -61,12 +62,11 @@ export default function Home() {
 
   return (
     <section className="flex flex-col items-center justify-center">
-      {/* <ModalOneMinute /> */}
       <PopUp sectionInView={currentSection} />
 
       <div className="container md:pt-16 md:px-6 flex flex-col lg:flex-row lg:flex-grow xl:max-w-none py-3 bg-white text-black m-0  ">
-        <div className=" lg:text-left lg:basis-1/2 lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
-          <h1 className="text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl">
+        <div className=" lg:text-left lg:p-0  xl:text-3xl 2xl:text-4xl xl:pl-14">
+          <h1 className="text-4xl font-bold tracking-tighter lg:text-4xl xl:text-5xl lg:px-32 ">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
               Libertad Digital:{" "}
             </span>
@@ -77,7 +77,7 @@ export default function Home() {
             </span>
             🎯
           </h1>
-          <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-3xl xl:text-4xl">
+          <h2 className="md:px-4 text-2xl tracking-tighter pt-3 lg:px-32  lg:text-3xl xl:text-4xl">
             Un programa completo, Domina hábitos de vanguardia, potencia tu
             rendimiento, maximiza tu productividad y revitaliza tu descanso con
             <span className="underline decoration-4 decoration-custom-blue">
@@ -96,134 +96,67 @@ export default function Home() {
               />
             </span>
           </h2>
-          <div className="text-center font-bold px-4">
-            ⚠️Las puertas cierran en:📢
-            <br />
-            <span className="font-bold text-xl">
-              <CountdownTimer />
-            </span>
-          </div>
-
-          <Button
-            onClick={() => {
-              const section = document.getElementById("seccion-compra");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-            className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
-          >
-            <Image
-              src="shoppingcart.png"
-              alt="Carrito de compras"
-              width={32} // Specify width
-              height={32} // Specify height
-              className="w-8 h-8 absolute left-4"
-            />
-            Quiero unirme!
-          </Button>
-          <p className="italic mb-6 block text-center lg:text-xl">
-            Garantía exclusiva de 30 días
-          </p>
-
-          <div className="flex gap-4 items-center justify-center lg:absolute lg:left-48 lg:w-8/12 lg:z-10 xl:left-64 2xl:static 2xl:mx-auto 2xl:w-full">
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="James Clear"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                src="https://d1kdkr2pswehq6.cloudfront.net/jamesclear-photo.webp"
-                className="lg:w-20 lg:h-20 lg:text-large"
-              />
-            </Tooltip>
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="Jordan B. Peterson"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                src="https://d1kdkr2pswehq6.cloudfront.net/jordanpeterson-photo.webp"
-                className="lg:w-20 lg:h-20 lg:text-large"
-              />
-            </Tooltip>
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="Tony Robbins"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                src="https://d1kdkr2pswehq6.cloudfront.net/tonyrobbins-img.webp"
-                className="lg:w-20 lg:h-20 lg:text-large"
-              />
-            </Tooltip>
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="Cal Newport"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                src="https://d1kdkr2pswehq6.cloudfront.net/calnewport-img.webp"
-                className="lg:w-20 lg:h-20 lg:text-large"
-              />
-            </Tooltip>
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="Ryan Holiday"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                className="absolute invisible md:static md:visible lg:w-20 lg:h-20 lg:text-large"
-                src="https://d1kdkr2pswehq6.cloudfront.net/ryanholiday-img.webp"
-              />
-            </Tooltip>
-            <Tooltip
-              placement="bottom"
-              color="primary"
-              showArrow={true}
-              content="Viktor Frankl"
-            >
-              <Avatar
-                isBordered
-                color="warning"
-                size="lg"
-                className="absolute invisible md:static md:visible lg:w-20 lg:h-20 lg:text-large"
-                src="https://d1kdkr2pswehq6.cloudfront.net/viktorfrakl-img.webp"
-              />
-            </Tooltip>
-          </div>
-          <div className="lg:h-96 bg-white lg:relative ">
-            <div className="lg:absolute lg:left-64 lg:w-full lg:top-20 2xl:static 2xl:items-center">
-              <h2 className="text-center font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl 2xl:mx-auto">
-                Basado en las estrategias comprobadas de los maestros del
-                desarrollo personal y la productividad
-              </h2>
-              <h3 className="text-center mt-4 italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:max-w-[600px] lg:text-2xl xl:text-3xl 2xl:mx-auto">
-                Desbloquea 4 Lecciones Clave y 4 Plantillas Premium sin costo
-                alguno.
+          <div className="flex flex-col lg:gap-10 lg:flex-row lg:mx-auto lg:w-9/12">
+            <div>
+              <div className="text-center font-bold px-4">
+                ⚠️Las puertas cierran en:📢
                 <br />
-              </h3>
+                <span className="font-bold text-xl">
+                  <CountdownTimer />
+                </span>
+              </div>
 
+              <Button
+                onClick={() => {
+                  const section = document.getElementById("seccion-compra");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+              >
+                <Image
+                  src="shoppingcart.png"
+                  alt="Carrito de compras"
+                  width={32} // Specify width
+                  height={32} // Specify height
+                  className="w-8 h-8 absolute left-4"
+                />
+                Comienza Ahora
+              </Button>
+              <p className="italic block text-center lg:text-xl">
+                Garantía exclusiva de 30 días
+              </p>
+            </div>
+            <Button
+              href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
+              as={Link}
+              isExternal
+              color="primary"
+              variant="light"
+              className="mx-auto lg:mx-0 lg:mt-12 mb-3 text-xl lg:text-2xl font-bold text-custom-orange w-10 mt-1 py-6 px-28  lg:px-44 flex items-center justify-center relative"
+            >
+              Ver Demo ⮕
+            </Button>
+          </div>
+
+          <div className=" lg:p-6">
+            <WistiaVideo />
+          </div>
+          <div className="flex gap-4 items-center justify-center lg:left-48 lg:w-8/12 lg:z-10 xl:left-64 2xl:static 2xl:mx-auto 2xl:w-full">
+            <SocialProof />
+          </div>
+          <h2 className="text-center font-bold md:px-4 text-xl tracking-tighter pt-3  lg:text-2xl xl:text-3xl 2xl:mx-auto">
+            Basado en las estrategias comprobadas de los maestros del desarrollo
+            personal y la productividad
+          </h2>
+          <h3 className="text-center mt-4 italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:text-2xl xl:text-3xl 2xl:mx-auto">
+            Desbloquea 4 Lecciones Clave y 4 Plantillas Premium sin costo
+            alguno.
+            <br />
+          </h3>
+          <div className="lg:h-96 bg-white lg:relative ">
+            <div className="lg lg:left-64 lg:w-full lg:top-20 2xl:static 2xl:items-center">
               <Button
                 href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
                 as={Link}
@@ -235,9 +168,6 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </div>
-        <div className="lg:basis-1/2 lg:p-6">
-          <WistiaVideo />
         </div>
       </div>
 
