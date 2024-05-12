@@ -96,16 +96,15 @@ export default function Home() {
               />
             </span>
           </h2>
-          <div className="flex flex-col lg:gap-10 lg:flex-row lg:mx-auto lg:w-9/12">
-            <div>
-              <div className="text-center font-bold px-4">
-                ⚠️Las puertas cierran en:📢
-                <br />
-                <span className="font-bold text-xl">
-                  <CountdownTimer />
-                </span>
-              </div>
-
+          <div className="text-center font-bold px-4">
+            ⚠️Las puertas cierran en:📢
+            <br />
+            <span className="font-bold text-xl">
+              <CountdownTimer />
+            </span>
+          </div>
+          <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-center lg:gap-10 lg:w-full">
+            <div className="w-full px-4 lg:w-auto">
               <Button
                 onClick={() => {
                   const section = document.getElementById("seccion-compra");
@@ -113,34 +112,36 @@ export default function Home() {
                     section.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="mx-auto md:mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white w-40 py-6 px-36 lg:px-44 xl:px-40 xl:py-8 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none"
+                className="w-full md:w-80 lg:mt-7 mx-auto text-2xl font-bold bg-gradient-to-tr from-custom-yellow to-custom-orange hover:text-black shadow-lg shadow-custom-blue animate-pulse text-white py-6 px-6 lg:px-10 flex items-center justify-center relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
               >
                 <Image
                   src="shoppingcart.png"
                   alt="Carrito de compras"
-                  width={32} // Specify width
-                  height={32} // Specify height
-                  className="w-8 h-8 absolute left-4"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 absolute left-4 md:left-6 lg:left-8"
                 />
                 Comienza Ahora
               </Button>
-              <p className="italic block text-center lg:text-xl">
+              <p className="italic text-center text-lg lg:text-xl mt-2">
                 Garantía exclusiva de 30 días
               </p>
             </div>
-            <Button
-              href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
-              as={Link}
-              isExternal
-              color="primary"
-              variant="light"
-              className="mx-auto lg:mx-0 lg:mt-12 mb-3 text-xl lg:text-2xl font-bold text-custom-orange w-10 mt-1 py-6 px-28  lg:px-44 flex items-center justify-center relative"
-            >
-              Ver Demo ⮕
-            </Button>
+            <div className="w-full px-4 lg:w-auto mt-4 lg:mt-0 lg:px-0">
+              <Button
+                href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
+                as={Link}
+                isExternal
+                color="primary"
+                variant="light"
+                className="w-full md:w-80 mx-auto text-xl lg:text-2xl font-bold text-custom-orange py-6  px-6 lg:px-10 flex items-center justify-center"
+              >
+                Ver Demo ⮕
+              </Button>
+            </div>
           </div>
 
-          <div className=" lg:p-6">
+          <div className=" lg:p-6 mt-4">
             <WistiaVideo />
           </div>
           <div className="flex gap-4 items-center justify-center lg:left-48 lg:w-8/12 lg:z-10 xl:left-64 2xl:static 2xl:mx-auto 2xl:w-full">
@@ -150,24 +151,6 @@ export default function Home() {
             Basado en las estrategias comprobadas de los maestros del desarrollo
             personal y la productividad
           </h2>
-          <h3 className="text-center mt-4 italic font-bold md:px-4 text-xl tracking-tighter pt-3 lg:text-2xl xl:text-3xl 2xl:mx-auto">
-            Desbloquea 4 Lecciones Clave y 4 Plantillas Premium sin costo
-            alguno.
-            <br />
-          </h3>
-          <div className="lg:h-96 bg-white lg:relative ">
-            <div className="lg lg:left-64 lg:w-full lg:top-20 2xl:static 2xl:items-center">
-              <Button
-                href="https://carlitosnina.notion.site/Una-Vida-M-s-All-de-las-Pantallas-GRATIS-35df50bd12e84052821efc9f6a4087b9?pvs=4"
-                as={Link}
-                isExternal
-                color="primary"
-                className="mb-4 mx-auto md:mx-auto text-xl lg:text-2xl font-bold hover:text-white hover:bg-custom-yellow shadow-lg shadow-custom-background text-black bg-white border-custom-yellow border-2 w-10 mt-1 py-6 px-28 lg:px-30 flex items-center justify-center relative"
-              >
-                🎁Abrir mi regalo
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
 
