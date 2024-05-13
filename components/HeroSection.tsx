@@ -13,9 +13,9 @@ import SocialProof from "@/components/SocialProof";
 export const HeroSection = () => {
   return (
     <>
-      <div className="relative px-0 first-letter:container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none bg-white text-black m-0 text-center">
+      <div className="relative px-0 first-letter:container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none  text-black m-0 text-center">
         {/* Fondo específico para HeroSection con posición relativa y altura mínima */}
-        <div className="relative z-10 w-full bg-slate-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="relative z-10 w-full bg-slate-100 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
           {/* <div className="bg-[radial-gradient(circle_800px_at_100%_200px,#FFE3A4,transparent)]"> */}
           {/* Contenido del HeroSection */}
           <div className="relative p-6 md:mt-28 ">

@@ -4,26 +4,26 @@ import Image from "next/image";
 
 export default function Newsletter() {
   return (
-    <div className="flex flex-col items-center justify-center text-white min-h-screen bg-slate-50">
+    <div className="flex flex-col items-center justify-center text-white bg-slate-50">
       <div className="relative z-10 w-full bg-slate-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-4 py-10 md:py-20">
-          <div className="space-y-6 md:w-2/3 lg:pl-20">
-            <h1 className="text-black text-2xl md:text-4xl text-center md:text-left font-bold">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-4 py-10 md:py-20 md:px-14 xl:px-auto mx-auto xl:px-0 ">
+          <div className="space-y-6 md:w-2/3 lg:pl-10 xl:pl-0">
+            <h1 className="text-black text-3xl md:text-4xl lg:text-5xl text-center md:text-left font-bold">
               Estrategias para Disminuir el Tiempo Frente a Pantallas y
               <span className="underline decoration-8 decoration-custom-yellow">
                 {" "}
                 Mejorar Tu Calidad de Vida
               </span>
             </h1>
-            <p className="text-black text-center md:text-left">
+            <p className="text-black text-center md:text-left lg:text-xl">
               Cada domingo, recibirás un mini-boletín directo a tu correo con
               estrategias, herramientas y motivación para menos pantalla y más
               vida real.
             </p>
-            <p className="text-black text-center md:text-left font-semibold">
+            <p className="text-black text-center md:text-left font-semibold lg:text-xl">
               ¿Qué puedes esperar?
             </p>
-            <ul className="text-black text-center md:text-left font-semibold list-disc list-inside">
+            <ul className="text-black text-center md:text-left font-semibold list-disc list-inside lg:text-xl">
               <li>
                 <strong>Estrategias Efectivas:</strong> Estas estrategias te
                 ayudarán a mejorar tu enfoque y productividad.
@@ -39,7 +39,18 @@ export default function Newsletter() {
               </li>
             </ul>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-              <Input
+              <div className="iframe-container bg-transparent rounded-lg overflow-hidden shadow-lg w-full md:w-2/3">
+                <iframe
+                  src="https://embeds.beehiiv.com/4bac08d8-cef4-44c7-ac9d-4cb41094e2c3?slim=true"
+                  frameBorder="0"
+                  scrolling="no"
+                  className="w-full"
+                  style={{ height: "53px" }} // Ajusta esta altura según la necesidad real del contenido del iframe
+                  title="Newsletter Subscription"
+                ></iframe>
+              </div>
+
+              {/* <Input
                 className="flex-1"
                 placeholder="Tu mejor Email"
                 fullWidth
@@ -50,18 +61,19 @@ export default function Newsletter() {
                 size="lg"
               >
                 Suscríbete Gratis
-              </Button>
+              </Button> */}
             </div>
             <div className="text-black text-sm mt-4">
               Ya somos 23 lectores! ⭐⭐⭐⭐⭐
             </div>
           </div>
-          <div className="md:w-1/3 flex justify-center md:justify-end mt-8 md:mt-0 lg:pr-16">
+          <div className="md:w-1/3 flex justify-center md:justify-end mt-8 md:mt-0 lg:px-6">
             <Image
               src="newsletter.png"
-              alt="User Avatars"
-              width={150}
-              height={200}
+              alt="Newsletter image"
+              width={300} // Default width, you can adjust it based on your design requirement
+              height={400} // Default height, adjust accordingly
+              className="w-auto h-auto transform transition-all duration-300 ease-in-out md:w-64 md:h-85 lg:w-96 lg:h-128"
             />
           </div>
         </div>
