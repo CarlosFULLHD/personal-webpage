@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Logo } from "../icons";
 import { SidebarRoutes } from "./SidebarRoutes";
+import ModalComponentContanctame from "../sections/phoneAdiction/components/ModalComponentContanctame";
 
 const Sidebar = () => {
   return (
@@ -14,6 +15,7 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col w-full">
         <SidebarRoutes />
+        <ModalComponentContanctame />
       </div>
     </div>
   );

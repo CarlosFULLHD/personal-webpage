@@ -9,6 +9,8 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import { User } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function ModalComponentContanctame() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -29,13 +31,17 @@ export default function ModalComponentContanctame() {
   };
   return (
     <>
-      <Button
-        variant="light"
-        className="text-white font-bold italic"
-        onPress={onOpen}
+      <button
+        onClick={onOpen}
+        type="button"
+        className={cn(
+          "flex items-center gap-x-2 px-6 py-4 text-slate-50 text-xs lg:text-base font-[500] transition-all hover:text-slate-300  rounded-xl",
+          "bg-transparent"
+        )}
       >
+        <User size={22} className="text-slate-50" />
         Contáctame
-      </Button>
+      </button>
       <Modal
         backdrop="blur"
         isOpen={isOpen}
@@ -49,7 +55,7 @@ export default function ModalComponentContanctame() {
                 Contáctame
               </ModalHeader>
               <ModalBody>
-                <p className=" text-black">
+                <p className="text-black">
                   Si eres una marca, negocio o estás interesado en alguna
                   colaboración, no dudes en enviarme un correo electrónico.
                   ¡Estoy abierto a discutir nuevas oportunidades!
@@ -57,7 +63,7 @@ export default function ModalComponentContanctame() {
                 <h1 className="font-bold mt-4 text-black">
                   Correo electrónico:
                 </h1>
-                <h2 className="bg-custom-yellow p-2 rounded-lg text-black font-bold ">
+                <h2 className="bg-custom-yellow p-2 rounded-lg text-black font-bold">
                   {email}
                 </h2>
                 {copySuccess && (

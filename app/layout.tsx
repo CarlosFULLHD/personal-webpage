@@ -54,7 +54,7 @@ export default function RootLayout({
             <footer className="w-full flex items-center justify-center py-3"></footer>
           </div> */}
           <div className="relative flex flex-col font-circular h-full dark:bg-black-50">
-            <div className="h-12 md:h-16 lg:h-16 fixed inset-y-0 w-full z-40 bg-custom-background dark:bg-blue-25">
+            <div className="h-12 md:h-16 lg:h-16 inset-y-0 fixed top-0 left-0 w-full z-40 bg-custom-background">
               <div className="pl-6 md:p-4 h-full flex items-center shadow-sm z-50 bg-custom-background text-white">
                 <MobileSidebar />
                 <Navbar />

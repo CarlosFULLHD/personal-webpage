@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -15,36 +16,42 @@ import NextLink from "next/link";
 import clsx from "clsx";
 import ModalComponentContanctame from "../sections/phoneAdiction/components/ModalComponentContanctame";
 import { Logo } from "../icons";
+import { routes } from "./SidebarRoutes";
 
 export const Navbar = () => {
   return (
     <NextUINavbar
-      className="bg-custom-background"
+      className="bg-custom-background h-12 md:h-16 lg:h-16 sticky"
       maxWidth="full"
-      shouldHideOnScroll
+      shouldHideOnScroll={false}
     >
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <Link className="flex justify-start gap-1" href="/">
           <Logo className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40" />
         </Link>
       </NavbarContent>
-      <p className="invisible md:visible">
-        <ModalComponentContanctame />
-      </p>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full "
+        className="hidden md:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <ul className="hidden md:flex gap-14 italic text-white">
-          {siteConfig.navItems.map((item) => (
+        <ul className=" hidden md:flex gap-14 text-white">
+          {routes.map((item) => (
             <NavbarItem key={item.href}>
-              <Link isExternal className="text-white" href={item.href}>
+              <Link
+                isExternal
+                className="text-white text-xs lg:text-lg flex items-center gap-2"
+                href={item.href}
+              >
+                <item.icon className="w-5 h-5" />
                 {item.label}
               </Link>
             </NavbarItem>
           ))}
         </ul>
+        <div className="md:flex hidden">
+          <ModalComponentContanctame />
+        </div>
       </NavbarContent>
     </NextUINavbar>
   );
