@@ -21,9 +21,9 @@ import { routes } from "./SidebarRoutes";
 export const Navbar = () => {
   return (
     <NextUINavbar
-      className="bg-custom-background h-12 md:h-16 lg:h-16 sticky"
+      className="bg-custom-background h-12 md:h-10 lg:h-12 xl:h-14 sticky"
       maxWidth="full"
-      shouldHideOnScroll={false}
+      shouldHideOnScroll
     >
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <Link className="flex justify-start gap-1" href="/">
@@ -39,7 +39,6 @@ export const Navbar = () => {
           {routes.map((item) => (
             <NavbarItem key={item.href}>
               <Link
-                isExternal
                 className="text-white text-xs lg:text-lg flex items-center gap-2"
                 href={item.href}
               >

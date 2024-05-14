@@ -35,11 +35,11 @@ export default function ModalComponentContanctame() {
         onClick={onOpen}
         type="button"
         className={cn(
-          "flex items-center gap-x-2 px-6 py-4 text-slate-50 text-xs lg:text-base font-[500] transition-all hover:text-slate-300  rounded-xl",
+          "flex items-center gap-x-2 px-6 py-4 text-slate-50 text-sm lg:text-base font-[500] transition-all hover:text-slate-300  rounded-xl",
           "bg-transparent"
         )}
       >
-        <User size={22} className="text-slate-50" />
+        <User size={22} className="text-slate-500 lg:text-slate-50" />
         Contáctame
       </button>
       <Modal
