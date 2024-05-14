@@ -1,4 +1,4 @@
-import BonusCard from "./BonusCard";
+import BonusCard from "./components/BonusCard";
 const bonusData = [
   {
     id: 1,

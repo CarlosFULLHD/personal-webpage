@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ModalComponentContanctame from "./ModalComponentContanctame";
+import ModalComponentContanctame from "../sections/phoneAdiction/components/ModalComponentContanctame";
 
 export const FooterSection = () => {
   return (

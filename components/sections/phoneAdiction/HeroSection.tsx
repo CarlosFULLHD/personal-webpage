@@ -5,10 +5,10 @@ import { Avatar, Button, Tooltip } from "@nextui-org/react";
 
 import Image from "next/image";
 
-import CountdownTimer from "@/components/CountdownTimer";
+import CountdownTimer from "@/components/sections/phoneAdiction/components/CountdownTimer";
 
-import WistiaVideo from "@/components/WistiaVideo";
-import SocialProof from "@/components/SocialProof";
+import WistiaVideo from "@/components/sections/phoneAdiction/components/WistiaVideo";
+import SocialProof from "@/components/sections/phoneAdiction/components/SocialProof";
 
 export const HeroSection = () => {
   return (

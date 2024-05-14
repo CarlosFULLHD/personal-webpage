@@ -1,4 +1,4 @@
-import DetailedCard from "./DetailedCard";
+import DetailedCard from "./components/DetailedCard";
 const cardsData = [
   {
     id: 1,
