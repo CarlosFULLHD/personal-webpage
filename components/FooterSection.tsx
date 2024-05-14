@@ -22,12 +22,12 @@ export const FooterSection = () => {
 
             <iframe
               src="https://embeds.beehiiv.com/4bac08d8-cef4-44c7-ac9d-4cb41094e2c3?slim=true"
-              data-test-id="beehiiv-embed"
-              height="52"
-              loading="lazy"
-              title="Newsletter Carlitos Nina"
-              className="bg-transparent rounded-lg overflow-hidden lg:w-96"
-            />
+              frameBorder="0"
+              scrolling="no"
+              className="w-full"
+              style={{ height: "53px" }} // Ajusta esta altura según la necesidad real del contenido del iframe
+              title="Newsletter Subscription"
+            ></iframe>
           </div>
 
           <ul className="flex flex-wrap md:flex-row items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
