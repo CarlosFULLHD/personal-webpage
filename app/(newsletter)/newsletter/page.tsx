@@ -7,18 +7,6 @@ import IframeNewsletter from "@/components/common/IframeNewsletter";
 import LoadingNewsletter from "./loading";
 
 export default function Newsletter() {
-  const [isLoading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simula un retraso antes de mostrar el contenido de la página
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000); // 3 segundos de retraso
-  }, []);
-
-  if (isLoading) {
-    return <LoadingNewsletter />;
-  }
   return (
     <div className="flex flex-col items-center justify-center text-white bg-slate-50">
       <div className="relative z-10 w-full bg-slate-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
