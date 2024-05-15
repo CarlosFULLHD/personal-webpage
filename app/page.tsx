@@ -14,13 +14,14 @@ import { ModulesSection } from "@/components/sections/phoneAdiction/ModulesSecti
 import { FaqsSection } from "@/components/sections/phoneAdiction/FaqsSection";
 import { BonusSection } from "@/components/sections/phoneAdiction/BonusSection";
 import Image from "next/image";
-import { FooterSection } from "@/components/common/FooterSection";
+
 import CountdownTimer from "@/components/sections/phoneAdiction/components/CountdownTimer";
 import ModalOneMinute from "@/components/sections/phoneAdiction/components/ModalOneMinute";
 import PopUp from "@/components/PopUp";
 import WistiaVideo from "@/components/sections/phoneAdiction/components/WistiaVideo";
 import SocialProof from "@/components/sections/phoneAdiction/components/SocialProof";
 import { HeroSection } from "@/components/sections/phoneAdiction/HeroSection";
+import FooterSection from "@/components/common/FooterSection";
 export default function Home() {
   const [currentSection, setCurrentSection] = useState("");
 
