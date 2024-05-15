@@ -1,8 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Button, Input } from "@nextui-org/react";
 import Image from "next/image";
+import IframeLoader from "@/components/common/IframeNewsletter";
+import IframeNewsletter from "@/components/common/IframeNewsletter";
+import LoadingNewsletter from "./loading";
 
 export default function Newsletter() {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simula un retraso antes de mostrar el contenido de la página
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 segundos de retraso
+  }, []);
+
+  if (isLoading) {
+    return <LoadingNewsletter />;
+  }
   return (
     <div className="flex flex-col items-center justify-center text-white bg-slate-50">
       <div className="relative z-10 w-full bg-slate-50 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
@@ -39,16 +55,7 @@ export default function Newsletter() {
               </li>
             </ul>
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-              <div className="iframe-container bg-transparent rounded-lg overflow-hidden shadow-lg w-full md:w-2/3">
-                <iframe
-                  src="https://embeds.beehiiv.com/4bac08d8-cef4-44c7-ac9d-4cb41094e2c3?slim=true"
-                  frameBorder="0"
-                  scrolling="no"
-                  className="w-full"
-                  style={{ height: "53px" }} // Ajusta esta altura según la necesidad real del contenido del iframe
-                  title="Newsletter Subscription"
-                ></iframe>
-              </div>
+              <IframeNewsletter src="https://embeds.beehiiv.com/4bac08d8-cef4-44c7-ac9d-4cb41094e2c3?slim=true" />
 
               {/* <Input
                 className="flex-1"
