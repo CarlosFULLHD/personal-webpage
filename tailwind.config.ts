@@ -11,6 +11,7 @@ const config = {
 	],
   prefix: "",
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -20,7 +21,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        circular: ["Circular", "sans-serif"],
+        sans: ["Poppins", "sans-serif"],
       },
       letterSpacing: {
         tighter: "-0.06em", // -2% aproximadamente
