@@ -18,7 +18,7 @@ export const HeroSection = () => {
         <div className="relative z-10 w-full bg-slate-100 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
           {/* <div className="bg-[radial-gradient(circle_800px_at_100%_200px,#FFE3A4,transparent)]"> */}
           {/* Contenido del HeroSection */}
-          <div className="relative p-6 md:mt-28 ">
+          <div className="relative py-6 md:mt-28 ">
             <h1 className=" text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl md:px-16">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
                 Libertad Digital:{" "}
