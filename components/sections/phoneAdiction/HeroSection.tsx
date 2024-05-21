@@ -20,9 +20,13 @@ export const HeroSection = () => {
           {/* Contenido del HeroSection */}
           <div className="relative py-6 md:mt-28 ">
             <h1 className=" text-4xl font-bold tracking-tighter lg:text-5xl xl:text-7xl md:px-16">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-custom-yellow to-custom-orange">
-                Libertad Digital:{" "}
-              </span>
+              <div className="relative inline-block">
+                <span className="relative z-10">Libertad Digital:</span>
+                <span
+                  className="absolute -inset-3 bg-custom-yellow h-8 transform translate-y-1/2 -z-10 lg:h-10 xl:h-12"
+                  aria-hidden="true"
+                ></span>
+              </div>
               Convierte Tiempo Perdido en
               <span className="underline decoration-8 decoration-custom-yellow">
                 {" "}
