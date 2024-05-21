@@ -13,6 +13,12 @@ import SocialProof from "@/components/sections/phoneAdiction/components/SocialPr
 export const HeroSection = () => {
   return (
     <>
+      {/* <iframe
+        src="https://app.youform.io/forms/bb5l1fde"
+        loading="lazy"
+        width="100%"
+        height="700"
+      ></iframe> */}
       <div className="relative px-0 first-letter:container flex flex-col lg:flex-row lg:flex-grow xl:max-w-none  text-black m-0 text-center">
         {/* Fondo específico para HeroSection con posición relativa y altura mínima */}
         <div className="relative z-10 w-full bg-slate-100 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
