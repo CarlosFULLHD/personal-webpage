@@ -31,11 +31,12 @@ const config = {
       },
 
       colors: {
+        "custom-white":"#f2f2f2",
         "custom-blue": "#006692",
-        "custom-yellow": "#FFE3A4",
+        "custom-yellow": "#ffe17e",
         "custom-orange": "#F5A67E",
-        "custom-gray": "#8A92A6",
-        "custom-background": "#1A3A50",
+        "custom-gray": "#8992a6",
+        "custom-background": "#262d3b",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
