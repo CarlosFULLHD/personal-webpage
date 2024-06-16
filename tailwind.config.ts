@@ -31,6 +31,17 @@ const config = {
       },
 
       colors: {
+        'blue-light': '#052845', // blue-50
+        'yellow-light': '#FFD527', // yellow-50
+        'background-light': '#ffffff', // white (native)
+
+        // Modo oscuro
+        'blue-dark': '#1c537d', // blue-25
+        'yellow-dark': '#FFC107', // yellow-25
+        'background-dark': '#23272A', // black-50
+        'off-white': '#f5f5f5',
+        'background-darker': '#18181B', // black-50
+        
         "custom-white":"#f2f2f2",
         "custom-blue": "#006692",
         "custom-yellow": "#ffe17e",
