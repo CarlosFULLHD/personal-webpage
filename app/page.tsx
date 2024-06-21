@@ -261,7 +261,7 @@ export default function Home() {
         <div className=" lg:text-left md:basis-1/2 lg:p-0 xl:text-3xl 2xl:text-4xl">
           <div className="relative w-32 h-32 mx-auto md:w-44 md:h-44 md:mr-10 lg:mr-20 xl:mr-36">
             <Image
-              src="carlitos_photo.webp"
+              src="carlitos_photo1.webp"
               alt="Foto del instructor carlitos"
               fill
               className=""
