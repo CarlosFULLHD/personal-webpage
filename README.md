@@ -1,4 +1,4 @@
-# Landing page in next js
+# Landing Page with Next JS
 
 ## Table of Contents
 
@@ -12,6 +12,10 @@
    - [FAQs Section](#faqs-section)
    - [Guarantee](#guarantee)
    - [Free Trial (Demo)](#free-trial-demo)
+   - [Checkout](#checkout)
+   - [Contact Modal](#contact-modal)
+   - [Form Nested to Next.js](#form-nested-to-nextjs)
+   - [Newsletter Page](#newsletter-page)
 3. [Technologies Used](#technologies-used)
 4. [Static Content and Media Management](#static-content-and-media-management)
    - [Adding Images in AWS](#adding-images-in-aws)
@@ -27,68 +31,80 @@ This landing page is designed to provide a comprehensive platform for promoting 
 ## Features
 
 View on desktop:
-![alt text](readme-imgs/image-1.png)
+![Desktop View](readme-imgs/image-1.png)
 
 View on mobile:
-![alt text](image-2.png)
+![Mobile View](readme-imgs/image-2.png)
 
 ### Interactive Pop-Ups
 
 To maximize sales, the website utilizes interactive pop-ups. These pop-ups deliver targeted messages and offers to visitors, encouraging them to take action, such as signing up for the course or taking advantage of limited-time discounts.
 
-![alt text](image-3.png)
+![Interactive Pop-Ups](readme-imgs/image-3.png)
 
-![alt text](image-4.png)
+![Interactive Pop-Ups](readme-imgs/image-4.png)
 
-### Authors Section
+### Author Section
 
-The author section provides social validation by showcasing the credibility and expertise of Book authros. This section includes a detailed biography, accomplishments, and testimonials from authors of many books, reinforcing trust and authenticity.
+The author section provides social validation by showcasing the credibility and expertise of Carlitos Nina. This section includes a detailed biography, accomplishments, and testimonials from satisfied users, reinforcing trust and authenticity.
 
-![alt text](image-5.png)
+![Author Section](readme-imgs/image-5.png)
 
-![alt text](image-6.png)
+![Author Section](readme-imgs/image-6.png)
 
 ### Course Points and Features
 
 This section highlights the key points and features of the "Libertad Digital" course. It breaks down the course into easy-to-understand modules, outlining what users will learn and how it will benefit them in their journey to digital detox and personal growth.
 
-![alt text](image-7.png)
+![Course Points and Features](readme-imgs/image-7.png)
 
 ### Bonuses Section
 
 To add more value, the bonuses section lists all the exclusive bonuses that come with the course. These bonuses include additional resources, templates, and access to a private community, enhancing the overall offer and making it more appealing.
 
-![alt text](image-8.png)
+![Bonuses Section](readme-imgs/image-8.png)
 
 ### Product Comparison Section
 
 A product comparison section is included to highlight the advantages of "Libertad Digital" over other similar products. This section uses clear, concise comparisons to showcase the unique features and superior value of the course.
 
-![alt text](image-9.png)
+![Product Comparison Section](readme-imgs/image-9.png)
 
-gned to remove any doubts and provide clear, reassuring answers to help users make an informed decision.
+### FAQs Section
+
+The FAQs section addresses common questions and concerns potential customers might have. This section is designed to remove any doubts and provide clear, reassuring answers to help users make an informed decision.
+
+![FAQs Section](readme-imgs/image-12.png)
 
 ### Guarantee
 
 To help users feel more secure in their purchase, the website offers a 30-day money-back guarantee. This guarantee provides peace of mind, showing users that their satisfaction is the top priority.
 
-![alt text](image-10.png)
+![Guarantee](readme-imgs/image-10.png)
 
 ### Checkout
 
 A checkout page with Lemon Squeezy, with the price of the product
 
-![alt text](image-11.png)
+![Checkout](readme-imgs/image-11.png)
 
-### FAQs Section
+### Contact Modal
 
-The FAQs section addresses common questions and concerns potential customers might have. This section is desi
+A modal made for users and interested users that want to collaborate with the creator.
 
-![alt text](image-12.png)
+![Contact Modal](readme-imgs/image-15.png)
 
-### Free Trial (Demo)
+### Form Nested to Next.js
 
-A free trial or demo of the course is available to give potential customers a taste of what they can expect. This allows them to experience the value of the course firsthand before committing to a purchase.
+A form to make quizzes to users and receive feedback powered by Youform.
+
+![Form Nested to Next.js](readme-imgs/image-13.png)
+
+### Newsletter Page
+
+A page made for users that want to subscribe to a newsletter of the site's owner.
+
+![Newsletter Page](readme-imgs/image-14.png)
 
 ## Technologies Used
 
@@ -109,7 +125,7 @@ To manage images, mp4 videos, and other static content with proper caching in AW
 1. **Change File Names:** For any new content or updates, ensure you change the file name to enforce the cache.
 2. **Configure Metadata:** Set appropriate metadata for each new or updated element.
 
-![alt text](image.png)
+![Adding Images in AWS](readme-imgs/image.png)
 
 ### Content Management System
 
